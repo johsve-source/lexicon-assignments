@@ -51,6 +51,11 @@
         flex-basis: calc(70% - 20px);
       }
 
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
       #cooking {
         flex-basis: calc(30% - 20px);
       }
@@ -59,6 +64,18 @@
       #instructions,
       #misc {
         margin-bottom: 20px;
+      }
+
+      #ingredients li {
+        margin-bottom: 10px;
+      }
+
+      #ingredients input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      #ingredients label {
+        display: inline-block;
       }
 
       #misc {
@@ -105,14 +122,38 @@
           <h3>Ingredienser</h3>
           <p>1 - 3 ostkakor som kan servera - ca. 8 - 10 portioner</p>
           <ul>
-            <li>3 liter mjölk (3%, ej högpastöriserad)</li>
-            <li>0,75 dl vetemjöl</li>
-            <li>1 msk ostlöpe</li>
-            <li>0,5 dl sötmandel</li>
-            <li>2 st bittermandlar</li>
-            <li>3 st ägg</li>
-            <li>0,5 dl strösocker</li>
-            <li>3 dl grädde</li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">3 liter mjölk (3%, ej högpastöriserad)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">0,75 dl vetemjöl</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">1 msk ostlöpe</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">0,5 dl sötmandel</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">2 st bittermandlar</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">3 st ägg</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">0,5 dl strösocker</label>
+            </li>
+            <li>
+              <input type="checkbox" id="milk" />
+              <label for="milk">3 dl grädde</label>
+            </li>
           </ul>
         </div>
         <div id="cooking">

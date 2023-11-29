@@ -29,53 +29,49 @@
       }
 
       .content {
-        max-width: 50%;
+        max-width: 80%; /* Adjust the width of the content */
         width: 100%;
         padding: 0.3rem;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
 
       header {
-        flex-basis: 1rem;
+        flex-basis: 100%; /* Full width for the header */
         text-align: flex-start;
         margin-bottom: 0.2rem;
       }
 
       .banner {
-        max-width: 100%;
+        width: 350px;
+        height: 150px;
+        border-radius: 25%;
       }
 
       article {
-        flex-basis: calc(70% - 20px);
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      #cooking {
-        flex-basis: calc(30% - 20px);
+        flex-basis: 100%; /* Full width for the article */
+        display: flex;
+        flex-direction: column;
       }
 
       #ingredients,
-      #instructions,
-      #misc {
+      #cooking,
+      #instructions {
+        flex-basis: calc(25% - 20px); /* Adjust the width as needed */
+        margin-right: 20px; /* Add margin for spacing */
         margin-bottom: 20px;
       }
 
-      #ingredients li {
-        margin-bottom: 10px;
+      #ingredients ul {
+        list-style-type: none;
+        padding: 10px;
       }
 
-      #ingredients input[type="checkbox"] {
-        margin-right: 5px;
-      }
-
-      #ingredients label {
-        display: inline-block;
+      #ingredients h3,
+      #cooking h3,
+      #instructions h4 {
+        margin-top: 0; /* Remove top margin for the headings */
       }
 
       #misc {
@@ -89,6 +85,7 @@
 
       footer {
         margin-top: auto;
+        flex-basis: 100%; /* Full width for the footer */
       }
     </style>
   </head>
@@ -112,10 +109,13 @@
             >
           </p>
         </section>
-        <div class="banner">
-          <img src="./assets/img/ostkaka.jpg" alt="Bild på Ostkaka" />
-        </div>
       </header>
+
+      <img
+        src="./assets/img/ostkaka.jpg"
+        alt="Bild på Ostkaka"
+        class="banner"
+      />
 
       <article>
         <div id="ingredients">

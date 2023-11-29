@@ -4,49 +4,66 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Om mig - Johan Svensson</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="En beskrivning om Johan Svensson och även en bild till höger om beskrivningen"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
       body {
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .text {
+        flex: 1;
+        max-width: 600px;
+        margin-right: 20px;
+      }
+
+      .text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .text p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .image {
+        flex: 1;
+        max-width: 400px;
+      }
+
+      .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
       }
     </style>
   </head>
-  <header>
-    <h2>Johan Svensson</h2>
-    <p>
-      Självdisciplinerad teknikentusiast med ett livslångt intresse för datorer
-      och teknik. Min passion sträcker sig från att utforska innerligheterna i
-      teknologivärlden till att följa spänningen på hockeyisen, där mitt hjärta
-      klappar extra för HV71 i Jönköping. Utöver mitt tekniska och sportintresse
-      finner jag glädje i realistiska datorspel som Squad, DayZ och Project
-      Zomboid. Genom dessa virtuella världar får jag en välbehövlig paus från
-      verkligheten och möjligheten att utmana mig själv samt samarbeta med andra
-      spelare.
-    </p>
-  </header>
   <body>
-    <ul id="hobbies">
-      <li>
-        <p>
-          Sedan barnsben har jag haft en passion för datorer och teknik. Att
-          utforska och förstå hur teknologin fungerar har alltid fascinerat mig.
-          Det var denna tidiga kärlek som ledde till mitt fortsatta intresse och
-          engagemang inom datorvärlden.
-        </p>
-      </li>
-      <li>
-        <p>
-          Hockey har alltid varit en stor del av mitt liv, och mitt hjärta
-          klappar extra för HV71 i Jönköping. Att följa laget och uppleva
-          spänningen på isen är något jag verkligen njuter av. Hockey är för mig
-          inte bara en sport, det är en passion som förenar människor och skapar
-          oförglömliga ögonblick.
-        </p>
-      </li>
-      <li>
+    <header>
+      <h1>Johan Svensson</h1>
+    </header>
+    <div class="container">
+      <div class="text">
         <p>
           Utöver mina tekniska och sportintressen finner jag stor glädje i
           datorspel, särskilt de som strävar efter en så realistisk upplevelse
@@ -57,7 +74,23 @@
           ger mig inte bara underhållning utan även möjlighet att utmana mig
           själv och samarbeta med andra spelare.
         </p>
-      </li>
-    </ul>
+        <p>
+          Hockey har alltid varit en stor del av mitt liv, och mitt hjärta
+          klappar extra för HV71 i Jönköping. Att följa laget och uppleva
+          spänningen på isen är något jag verkligen njuter av. Hockey är för mig
+          inte bara en sport, det är en passion som förenar människor och skapar
+          oförglömliga ögonblick.
+        </p>
+        <p>
+          Sedan barnsben har jag haft en passion för datorer och teknik. Att
+          utforska och förstå hur teknologin fungerar har alltid fascinerat mig.
+          Det var denna tidiga kärlek som ledde till mitt fortsatta intresse och
+          engagemang inom datorvärlden.
+        </p>
+      </div>
+      <div class="image">
+        <img src="./assets/img/jag.jpg" alt="Bild på Johan Svensson" />
+      </div>
+    </div>
   </body>
 </html>

@@ -56,11 +56,43 @@
         height: auto;
         border-radius: 8px;
       }
+
+      .links-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .link-box {
+        margin: 10px;
+        padding: 15px;
+        background-color: #88949c;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .link-box a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Johan Svensson</h1>
+      <div class="links-container">
+        <div class="link-box">
+          <a href="https://github.com/johsve-source">GitHub</a>
+        </div>
+        <div class="link-box">
+          <a href="https://www.linkedin.com/in/johan-svensson-427a3323b/"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
     </header>
     <div class="container">
       <div class="text">

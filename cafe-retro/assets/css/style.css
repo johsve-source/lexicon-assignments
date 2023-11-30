@@ -36,12 +36,15 @@ section {
 }
 
 section:nth-child(1) {
+  background: url("./assets/img/hot.jpg") center/cover no-repeat;
 }
 
 section:nth-child(2) {
+  background: url("./assets/img/juicy.jpg") center/cover no-repeat;
 }
 
 section:nth-child(3) {
+  background: url("./assets/img/cosy.jpg") center/cover no-repeat;
 }
 
 .red-box {

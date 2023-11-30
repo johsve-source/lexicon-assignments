@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+/* NAVIGATION */
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: RGBA(72, 81, 103, 0.7);
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+}
+
+.links {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  position: relative;
+  top: 15px;
+}
+
+a:hover {
+  background-color: #cd9575;
+}
+
+/* NAVIGATION */
+
+/* MAIN */
+
+main {
+  display: block;
+}
+
+

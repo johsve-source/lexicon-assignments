@@ -1,29 +1,75 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #fff2df;
+  display: block;
+}
+
+main {
+  font-family: "Oswald", sans-serif;
+}
+
+main #servings,
+#ingredients,
+#misc,
+#directions {
+  margin: 0.8rem 3rem 3rem 3rem;
 }
 
 header {
   display: inline-block;
   position: relative;
   text-align: center;
-}
-
-header {
-  text-transform: uppercase;
-}
-
-header #description {
-  font-size: 0.7em;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 header img {
-  position: relative;
-  right: 0%;
+  background-size: contain;
   width: 100%;
-  height: 20%;
+  height: auto;
+}
+
+main .block-left {
+  background-color: #fff2df;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+main .block-right {
+  background-color: #fff;
+  float: right;
+  width: 75%;
+  height: 100%;
+}
+
+main #recipeName {
+  margin: 5% 0 0 25%;
+}
+
+main #recipeName h2 {
+  font-size: 2em;
+}
+
+main #recipeName p {
+  font-size: 1.2em;
+}
+
+main #ingredients,
+#servings,
+ul li {
+  list-style-type: none;
+}
+
+main #directions p {
+  padding-bottom: 15px; 
+}
+
+footer {
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 10px;
 }

@@ -64,8 +64,12 @@ ul li {
   list-style-type: none;
 }
 
+main #directions h4 {
+  font-size: 1.9em;
+}
+
 main #directions p {
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 
 footer {

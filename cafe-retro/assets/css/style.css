@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 70vw;
+  min-height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 60px;
+}
+
+.flex-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(43, 28, 35, 0.8);
+  padding: 20px 0;
+  justify-content: center;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#hot-bg {
+  background-image: url(/assets/img/hot.jpg);
+}
+
+#juicy-bg {
+  background-image: url(/assets/img/juicy.jpg);
+}
+
+#cosy-bg {
+  background-image: url(/assets/img/cosy.jpg);
+}

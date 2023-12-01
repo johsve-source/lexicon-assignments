@@ -11,6 +11,7 @@ body {
     center/cover;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* NAVIGATION */

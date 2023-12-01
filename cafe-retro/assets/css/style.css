@@ -31,8 +31,9 @@ nav a:active {
   display: block;
   margin: 0 30px;
   text-decoration: none;
-  color: white;
-  font-size: 3em;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 2.6em;
+  font-family: "Spirax", sans-serif;
 }
 
 main {

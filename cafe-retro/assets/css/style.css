@@ -8,6 +8,31 @@ body {
   color: white;
   background-color: black;
   margin: 0 35vh;
+  font-family: "Poiret One", sans-serif;
+}
+
+header {
+  display: block;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(43, 28, 35, 0.8);
+  padding: 5px 0;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  float: left;
+  display: block;
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
 }
 
 main {
@@ -16,6 +41,7 @@ main {
   flex-grow: 1;
   margin: auto;
   align-items: center;
+  max-width: 100%;
 }
 
 section {
@@ -24,23 +50,6 @@ section {
   flex-direction: column;
   max-width: 100vw;
   min-height: 100vh;
-}
-
-nav {
-  display: flex;
-  background-color: rgba(43, 28, 35, 0.8);
-  padding: 5px 0;
-  justify-content: center;
-}
-
-nav a,
-nav a:visited,
-nav a:hover,
-nav a:active {
-  margin: 0 30px;
-  text-decoration: none;
-  color: white;
-  font-size: 3em;
 }
 
 .background {
@@ -61,4 +70,36 @@ nav a:active {
 
 #cosy-bg {
   background-image: url(/assets/img/cosy.jpg);
+}
+
+.img-header {
+  color: rgba(139, 0, 0);
+  font-family: "Spirax", sans-serif;
+}
+
+.redbox-right {
+  background-color: rgba(139, 0, 0, 0.7);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.redbox-left {
+  background-color: rgba(139, 0, 0, 0.7);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.blackbox {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }

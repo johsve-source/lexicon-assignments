@@ -39,6 +39,7 @@ main {
   margin: auto;
   align-items: center;
   max-width: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -63,10 +64,12 @@ section {
 
 #juicy-bg {
   background-image: url(/assets/img/juicy.jpg);
+  border-top: 0.8rem solid darkred;
 }
 
 #cosy-bg {
   background-image: url(/assets/img/cosy.jpg);
+  border-top: 0.8rem solid darkred;
 }
 
 .img-header {

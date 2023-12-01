@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 html,
 body {
@@ -7,24 +6,28 @@ body {
 }
 
 body {
-  background-color: white;
+  background-color: #f4fce3;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* NAVIGATION */
 
-nav {
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #343a40;
-  font-family: "Roboto Condensed", sans-serif;
+.top-navbar {
+  position: relative; /* eller position: static; */
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  text-align: center;
 }
 
-nav a {
-  padding: 14px 16px;
-  font-size: 17px;
-  display: inline-block;
+.bottom-navbar {
+  position: fixed; /* eller position: absolute; */
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 a:active,
@@ -34,19 +37,7 @@ a:focus {
 }
 
 a:hover {
-  color: white;
-}
-
-.links-right {
-  text-align: right;
-}
-
-.links-left {
-  text-align: left;
-}
-
-.links-center {
-  text-align: center;
+  color: #f4fce3;
 }
 
 /* NAVIGATION */
@@ -54,6 +45,4 @@ a:hover {
 /* MAIN */
 
 main {
-  padding: 16px;
-  margin-bottom: 30px;
 }

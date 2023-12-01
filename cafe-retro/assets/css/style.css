@@ -16,12 +16,26 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(43, 28, 35, 0.8);
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
 }
 
 nav a {
+  font-family: "Spirax", sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 0 50px;
+  font-size: 2.3em;
 }
 
 section {

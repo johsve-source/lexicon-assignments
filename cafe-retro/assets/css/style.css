@@ -14,9 +14,12 @@ body {
 
 nav {
   display: flex;
+  position: fixed;
+  width: 66.5%;
   justify-content: center;
   background-color: rgba(43, 28, 35, 0.863);
   padding: 0.2rem 0 0.5rem 0;
+  z-index: 1100;
 }
 
 nav a,

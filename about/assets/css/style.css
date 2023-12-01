@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 html,
 body {
@@ -6,28 +7,32 @@ body {
 }
 
 body {
+  display: block;
   background-color: #f4fce3;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 /* NAVIGATION */
 
+nav p {
+  font-size: 3em;
+  margin: 0;
+  font-family: "Indie Flower", cursive;
+}
+
+nav {
+  background-color: #ffffff6c;
+  color: black;
+}
+
 .top-navbar {
   position: relative; /* eller position: static; */
-  background-color: #333;
-  color: white;
   padding: 5px;
   text-align: center;
 }
 
-.bottom-navbar {
-  position: fixed; /* eller position: absolute; */
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
+.top-navbar {
+  padding: 15px 0 15px 0;
 }
 
 a:active,
@@ -37,12 +42,9 @@ a:focus {
 }
 
 a:hover {
-  color: #f4fce3;
+  color: #b5b69c;
 }
 
 /* NAVIGATION */
 
 /* MAIN */
-
-main {
-}

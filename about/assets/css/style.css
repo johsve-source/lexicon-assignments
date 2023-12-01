@@ -7,18 +7,19 @@ body {
 }
 
 body {
-  display: block;
-  background-color: #f4fce3;
+  background-color: black;
   font-family: "Roboto Condensed", sans-serif;
+  color: white; /* Set default text color */
 }
 
 /* NAVIGATION */
 
 .top-navbar {
-  position: relative; /* eller position: static; */
+  position: relative;
   text-align: center;
-  background-color: #ffffff6c;
+  background-color: #b5b69cb4;
   color: black;
+  z-index: 2; /* Ensure the navigation bar is above the main content */
 }
 
 .top-navbar p {
@@ -31,9 +32,9 @@ body {
   margin: 10px 15px 30px 15px;
 }
 
-a:active,
-a:visited,
-a:focus {
+.top-navbar a:active,
+.top-navbar a:visited,
+.top-navbar a:focus {
   text-decoration: none;
 }
 
@@ -44,3 +45,16 @@ a:hover {
 /* NAVIGATION */
 
 /* MAIN */
+
+main {
+  text-align: center;
+  margin: 30px; /* Adjust margins for responsiveness */
+}
+
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.795); /* Transparent white background */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}

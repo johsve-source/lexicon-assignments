@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&family=Roboto+Condensed&display=swap");
 
 html,
 body {
@@ -6,32 +7,46 @@ body {
 }
 
 body {
-  background-color: #000;
+  background-color: white;
 }
 
 /* NAVIGATION */
 
 nav {
-  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #343a40;
-  font-family: "Nunito Sans", sans-serif;
-  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.links {
-  text-align: center;
+nav a {
+  padding: 14px 16px;
+  font-size: 17px;
+  display: inline-block;
 }
 
-a {
+a:active,
+a:visited,
+a:focus {
   text-decoration: none;
-  padding: 15px;
-  position: relative;
-  top: 15px;
 }
 
 a:hover {
-  background-color: #white;
+  color: white;
+}
+
+.links-right {
+  text-align: right;
+}
+
+.links-left {
+  text-align: left;
+}
+
+.links-center {
+  text-align: center;
 }
 
 /* NAVIGATION */
@@ -39,12 +54,6 @@ a:hover {
 /* MAIN */
 
 main {
-  display: block;
-}
-
-main #hobbies {
-  position: absolute;
-  top: 40px; /* Header Height */
-  bottom: 20px; /* Footer Height */
-  width: 100%;
+  padding: 16px;
+  margin-bottom: 30px;
 }

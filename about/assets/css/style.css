@@ -14,25 +14,21 @@ body {
 
 /* NAVIGATION */
 
-nav p {
+.top-navbar {
+  position: relative; /* eller position: static; */
+  text-align: center;
+  background-color: #ffffff6c;
+  color: black;
+}
+
+.top-navbar p {
   font-size: 3em;
   margin: 0;
   font-family: "Indie Flower", cursive;
 }
 
-nav {
-  background-color: #ffffff6c;
-  color: black;
-}
-
-.top-navbar {
-  position: relative; /* eller position: static; */
-  padding: 5px;
-  text-align: center;
-}
-
-.top-navbar {
-  padding: 15px 0 15px 0;
+.top-navbar a i {
+  margin: 10px 15px 30px 15px;
 }
 
 a:active,

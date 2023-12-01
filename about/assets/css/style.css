@@ -7,7 +7,8 @@ body {
 }
 
 body {
-  background-color: black;
+  background: url("/Lexicon/lexicon-assignments/about/assets/img/background.jpg")
+    center/cover;
   font-family: "Roboto Condensed", sans-serif;
   color: white; /* Set default text color */
 }
@@ -17,19 +18,19 @@ body {
 .top-navbar {
   position: relative;
   text-align: center;
-  background-color: #b5b69cb4;
-  color: black;
+  color: white;
   z-index: 2; /* Ensure the navigation bar is above the main content */
 }
 
 .top-navbar p {
-  font-size: 3em;
-  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 4em;
+  margin: 30px 0 0 0;
   font-family: "Indie Flower", cursive;
 }
 
 .top-navbar a i {
-  margin: 10px 15px 30px 15px;
+  margin: 30px 15px 30px 15px;
 }
 
 .top-navbar a:active,
@@ -53,8 +54,16 @@ main {
 
 .container {
   position: relative;
-  background: rgba(255, 255, 255, 0.795); /* Transparent white background */
+  background-color: rgba(0, 0, 0, 0.603); /* Transparent white background */
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.container img {
+  padding: 25px 0 0 0;
+}
+
+.container p {
+  padding: 25px 33.3% 50px 33.3%;
 }

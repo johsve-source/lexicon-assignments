@@ -5,22 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Change me</title>
   </head>
   <body>
-    <header><span class="material-icons"> play_arrow </span></header>
-    <main>
-      <div class="container">
-        <div class="row"></div>
-      </div>
+    <main class="player-box">
+      <section class="player-box">
+        <section id="playlist"></section>
+        <section id="playing-now"></section>
+        <section id="icon-box">
+          <button onclick="buttonOn(this, '_Shuffle')">
+            <span class="material-symbols-outlined" id="_Shuffle">
+              shuffle
+            </span>
+          </button>
+          <button onclick="buttonOn(this, '_Previous')">
+            <span class="material-symbols-outlined" id="_Previous">
+              skip_previous
+            </span>
+          </button>
+          <button onclick="buttonOn(this, '_Play')">
+            <span class="material-symbols-outlined" id="_Play">
+              play_circle
+            </span>
+          </button>
+          <button onclick="buttonOn(this, '_Next')">
+            <span class="material-symbols-outlined" id="_Next">
+              skip_next
+            </span>
+          </button>
+          <button onclick="buttonOn(this, '_Repeat')">
+            <span class="material-symbols-outlined" id="_Repeat"> repeat </span>
+          </button>
+        </section>
+      </section>
     </main>
-    <footer>
-      <p>&copy;</p>
-    </footer>
-    <script src=""></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

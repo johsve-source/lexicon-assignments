@@ -35,9 +35,9 @@ main {
 
 .player-box {
   background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 150px rgba(255, 255, 255, 0.164);
   flex: 1 0 100%;
-  padding: 45vh 50px 30px 50px;
+  padding: 40vh 50px 30px 50px;
   border-radius: 30px;
   position: relative; /* Added position relative for positioning children */
 }
@@ -48,7 +48,7 @@ main {
 
 #cover {
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 280px;
@@ -65,6 +65,7 @@ main {
 
 #song {
   font-weight: 700;
+  padding: 35px 0 0 0;
 }
 
 /* _____________________________________ ICONS */

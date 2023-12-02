@@ -13,6 +13,7 @@ body {
   justify-content: center;
   position: relative;
   background: url("../img/background.jpg") no-repeat center/cover;
+  overflow: hidden;
 }
 
 body::before {
@@ -71,4 +72,23 @@ button {
   color: #ffffff;
   border-radius: 5px;
 }
+
 /* _____________________________________ ICONS */
+
+@media (max-width: 767px) {
+  .player-box {
+    padding: 50vh 20px 10px 20px; /* Adjust padding for mobile screens */
+  }
+
+  #icon-box {
+    padding: 1vh 1em; /* Adjust padding for mobile screens */
+    font-size: 1.5em; /* Adjust font size for mobile screens */
+  }
+}
+
+.filled {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border-radius: 5px;
+}

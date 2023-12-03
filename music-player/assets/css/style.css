@@ -28,7 +28,7 @@ body::before {
 
 main {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   z-index: 1100;
 }
@@ -36,10 +36,40 @@ main {
 .player-box {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 150px rgba(255, 255, 255, 0.164);
-  flex: 1 0 100%;
-  padding: 40vh 50px 30px 50px;
-  border-radius: 30px;
-  position: relative; /* Added position relative for positioning children */
+  padding: 30px 50px 30px 50px;
+  border-radius: 10px;
+}
+
+.playlist-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 150px rgba(255, 255, 255, 0.164);
+  padding: 0px 50px 32px 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.song-container {
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  margin: 21px 0 10px 0;
+  padding: 4px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.playlist > .song-container > .song {
+  display: flex;
+  flex-flow: row wrap; /* Make #song a flex container */
+  align-items: center;
+}
+
+.playlist > .song-container > .song > img {
+  height: 75px;
+  width: auto;
+  margin: 1px 0;
+}
+
+.playlist > .song-container > .song > p {
+  margin: 0 0 0 30px; /* Remove default margin for paragraphs */
 }
 
 #playing-now {
@@ -47,10 +77,6 @@ main {
 }
 
 #cover {
-  position: absolute;
-  top: 37%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   height: 280px;
   width: auto;
   border-radius: 3%;
@@ -116,7 +142,6 @@ button {
   #cover {
     height: 200px;
     width: auto;
-    padding: 0 0 15px 0;
   }
 
   button {

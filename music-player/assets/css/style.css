@@ -112,7 +112,14 @@ main {
 
 #song {
   font-weight: 700;
-  padding: 35px 0 0 0;
+}
+
+#playing-now > hr {
+  border: none;
+  border-bottom: 1.2px solid #00000036;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 /* _____________________________________ ICONS */
@@ -120,7 +127,6 @@ main {
   background-color: rgba(255, 255, 255, 0.6);
   flex: 1 0 100%;
   padding: 1vh 1.5em;
-  margin: 15px 0 0 0;
   font-size: 2em;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,

@@ -53,7 +53,7 @@ main {
 
 .playlist {
   overflow: auto;
-  max-height: calc(75px * 5);
+  max-height: calc(85px * 5);
 }
 
 .playlist::-webkit-scrollbar {

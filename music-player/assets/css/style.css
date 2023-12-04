@@ -51,6 +51,23 @@ main {
   transition: box-shadow 0.6s ease;
 }
 
+.playlist {
+  overflow: auto;
+  max-height: calc(75px * 5);
+}
+
+.playlist::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 .playlist > .song-container:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,

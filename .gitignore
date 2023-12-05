@@ -19,5 +19,8 @@
 
 # Ignore test-bar.html
 test-bar.html
+check-out.png
+poster.png
+screens.png
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode

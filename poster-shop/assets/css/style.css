@@ -43,6 +43,7 @@ body {
 
 header > h1 {
   font-size: 3.9em;
+  color: black;
 }
 
 #ninja {
@@ -91,20 +92,36 @@ header > h1 {
   grid-template-columns: repeat(3, 240px);
   grid-template-rows: auto auto auto auto;
   gap: 33px;
+  justify-content: center;
 }
 
-.cardLg img,
 .cardSm img {
   height: 250px;
   width: auto;
   object-fit: contain;
 }
 
+.cardLg img {
+  height: 350px;
+  width: auto;
+  object-fit: contain;
+}
+
 .cardLg {
-  width: 250px;
+  width: 350px;
   background-color: white;
   color: black;
   padding-bottom: 10px;
+  grid-row: span 2;
+}
+
+.cardLg:nth-child(10) {
+  grid-column: 1 / span 1;
+}
+
+.cardLg:nth-child(11) {
+  grid-column: 2 / span 1;
+  margin-left: 175px;
 }
 
 .cardTxt {
@@ -130,7 +147,7 @@ header > h1 {
   width: 150px;
   height: 26px;
   float: left;
-  font-size: 0.7em;
+  font-size: 0.76em;
   border: 0;
   border-radius: 5px;
   color: #ffffff;

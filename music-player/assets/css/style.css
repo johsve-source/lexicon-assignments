@@ -96,19 +96,20 @@ main {
   align-items: center;
 }
 
+.playlist > .song-container > .song > p {
+  margin: 0 30px;
+}
+
 .song > img {
   height: 75px;
   width: auto;
   margin: 1px 0;
+  border-radius: 3px;
 }
 
 img {
   box-shadow: rgba(0, 0, 0, 0.137) 0px 0px 0px 2px,
     rgb(0, 0, 0) 0px 4px 6px -1px, rgb(0, 0, 0) 0px 1px 0px inset;
-}
-
-.playlist > .song-container > .song > p {
-  margin: 0 30px;
 }
 
 #playing-now {

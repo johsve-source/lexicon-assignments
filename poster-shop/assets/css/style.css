@@ -128,13 +128,17 @@ header > h1 {
 .cardBtn {
   background-color: rgb(192, 6, 6);
   width: 150px;
-  height: 30px;
+  height: 26px;
   float: left;
   font-size: 0.7em;
   border: 0;
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
+}
+
+.cardLg > .cardBtn {
+  height: 35px;
 }
 
 footer {

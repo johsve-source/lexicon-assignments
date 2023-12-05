@@ -128,6 +128,7 @@ header > h1 {
 .cardTxt {
   font-family: "Raleway", sans-serif;
   text-align: left;
+  padding-right: 10px;
 }
 
 .cardLg > .cardTxt,

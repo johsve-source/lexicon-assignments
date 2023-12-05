@@ -113,6 +113,7 @@ header > h1 {
   color: black;
   padding-bottom: 10px;
   grid-row: span 2;
+  margin-bottom: 30px;
 }
 
 .cardLg:nth-child(10) {
@@ -158,7 +159,35 @@ header > h1 {
   height: 35px;
 }
 
-footer {
-  margin-top: 50px;
+.footer {
   background-color: rgb(54, 54, 54);
+  padding-left: 12%;
+  width: 100%;
+}
+
+.footer section > #nav {
+  float: left;
+  text-align: left;
+}
+
+.footer section > #nav > ul,
+li,
+a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+.footer > #address {
+  position: absolute;
+  left: 40%;
+  padding-bottom: 15px;
+  margin-right: 30px;
+}
+
+.footer > #socialMedia {
+  position: absolute;
+  left: 60%;
+  padding-bottom: 30px;
 }

@@ -161,8 +161,7 @@ header > h1 {
 
 .footer {
   background-color: rgb(54, 54, 54);
-  padding-left: 12%;
-  width: 100%;
+  padding-left: 100px;
 }
 
 .footer section > #nav {
@@ -177,6 +176,11 @@ a {
   text-decoration: none;
   list-style-type: none;
   outline: none;
+}
+
+.footer > #footerNav > ul li a {
+  color: white;
+  text-align: left;
 }
 
 .footer > #address {

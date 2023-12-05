@@ -15,10 +15,10 @@
           <img src="assets/img/ninjahead.svg" alt="" />
         </section>
         <nav aria-label="Main" class="hamburger">
-          <div class="menu-icon" onclick="toggleMenu()">
+          <div class="menuIcon" onclick="toggleMenu()">
             <img src="assets/img/navicon.svg" alt="Hamburger Icon" />
           </div>
-          <ul class="menu-list">
+          <ul class="menuList">
             <li><a href="" aria-current="page">Current Page</a></li>
             <li><a href="">Another Page</a></li>
             <li><a href="">Another Page</a></li>
@@ -122,6 +122,11 @@
         </section>
       </footer>
     </section>
-    <script></script>
+    <script>
+      function toggleMenu() {
+        const menuList = document.querySelector(".hamburger .menuList");
+        menuList.classList.toggle("show-menu");
+      }
+    </script>
   </body>
 </html>

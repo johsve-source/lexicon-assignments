@@ -1,3 +1,41 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid container horizontally */
+}
+
+.header,
+.main,
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.cardLg:last-child,
+.cardSm:last-child {
+  grid-column: span 1;
+}
+
+.cardSm img,
+.cardLg img {
+  height: 100px;
+  width: auto;
+}
+
 .hamburger .menuList {
   display: none;
   list-style: none;

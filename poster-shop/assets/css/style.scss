@@ -23,6 +23,7 @@ body {
 
 /* ______ */
 /* HEADER */
+
 .header,
 .main,
 .footer {
@@ -54,35 +55,41 @@ header > h1 {
   height: 100.5px;
 }
 
-.hamburger .menuList {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  margin: 0;
-  background-color: rgb(255, 255, 255);
-  padding: 0;
-  list-style: none;
-}
-.hamburger .menuList.show-menu {
-  display: flex;
-}
-.hamburger .menuList li {
-  margin-bottom: 10px;
-}
-.hamburger .menuIcon {
-  display: grid;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
+.hamburger {
+  .menuList {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    list-style: none;
+
+    &.show-menu {
+      display: flex;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .menuIcon {
+    display: grid;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 /* HEADER */
 /* ______ */
+
 .main {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -99,24 +106,27 @@ header > h1 {
 }
 
 .cardLg {
+  img {
+    width: auto;
+    height: 370px;
+    object-fit: contain;
+  }
+
   grid-row: span 2;
   margin: 28px 0 60px 0;
   background-color: white;
   padding-bottom: 10px;
   width: 370px;
   color: black;
-}
-.cardLg img {
-  width: auto;
-  height: 370px;
-  object-fit: contain;
-}
-.cardLg:nth-child(10) {
-  grid-column: 1/span 1;
-}
-.cardLg:nth-child(11) {
-  grid-column: 2/span 1;
-  margin-left: 150px;
+
+  &:nth-child(10) {
+    grid-column: 1 / span 1;
+  }
+
+  &:nth-child(11) {
+    grid-column: 2 / span 1;
+    margin-left: 150px;
+  }
 }
 
 .cardTxt {
@@ -125,18 +135,23 @@ header > h1 {
   text-align: left;
 }
 
-.cardLg > .cardTxt,
-.cardLg > .cardBtn {
-  margin-left: 10px;
+.cardLg > {
+  .cardTxt,
+  .cardBtn {
+    margin-left: 10px;
+  }
 }
 
-.cardTxt h4 {
-  margin: 10px 0 10px 0;
-  font-size: 1.5em;
-}
-.cardTxt p {
-  margin: 15px 0 45px 0;
-  font-size: 0.9em;
+.cardTxt {
+  h4 {
+    margin: 10px 0 10px 0;
+    font-size: 1.5em;
+  }
+
+  p {
+    margin: 15px 0 45px 0;
+    font-size: 0.9em;
+  }
 }
 
 .cardBtn {
@@ -165,20 +180,26 @@ header > h1 {
   background-color: rgb(54, 54, 54);
   padding: 0 100px 50px 0;
   font-size: 0.75em;
-}
-.footer #nav {
-  padding-left: 500px;
-}
-.footer section > #nav {
-  float: left;
-  text-align: left;
-}
-.footer section > #nav > ul {
-  float: left;
-  outline: none;
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
+
+  #nav {
+    padding-left: 500px;
+
+    > #footerNav {
+    }
+  }
+
+  section > #nav {
+    float: left;
+    text-align: left;
+
+    > ul {
+      float: left;
+      outline: none;
+      color: white;
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
 }
 
 li,
@@ -190,19 +211,23 @@ a {
   text-decoration: none;
 }
 
-.footer > #footerNav > ul li a {
-  color: white;
-  text-align: left;
+.footer > {
+  #footerNav > ul li a {
+    color: white;
+    text-align: left;
+  }
+
+  #address {
+    position: absolute;
+    left: 40%;
+    padding: 0 0 5px 70px;
+    padding-bottom: 5px;
+    padding-left: 70px;
+  }
+
+  #socialMedia {
+    position: absolute;
+    left: 60%;
+    padding: 15px 0 30px 0;
+  }
 }
-.footer > #address {
-  position: absolute;
-  left: 40%;
-  padding: 0 0 5px 70px;
-  padding-bottom: 5px;
-  padding-left: 70px;
-}
-.footer > #socialMedia {
-  position: absolute;
-  left: 60%;
-  padding: 15px 0 30px 0;
-}/*# sourceMappingURL=style.css.map */

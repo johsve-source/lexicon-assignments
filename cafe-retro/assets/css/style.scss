@@ -24,24 +24,28 @@ nav {
   background-color: rgba(34, 15, 23, 0.863);
   padding: 0.2rem 0 0.5rem 0;
   width: 66.5%;
-}
-nav a {
-  display: block;
-  float: left;
-  margin: 0 30px;
-  color: rgba(255, 255, 255, 0.719);
-  font-size: 2.6em;
-  font-family: "Spirax", sans-serif;
-  text-decoration: none;
-}
-nav a:visited, nav a:hover, nav a:active {
-  display: block;
-  float: left;
-  margin: 0 30px;
-  color: rgba(255, 255, 255, 0.719);
-  font-size: 2.6em;
-  font-family: "Spirax", sans-serif;
-  text-decoration: none;
+
+  a {
+    display: block;
+    float: left;
+    margin: 0 30px;
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 2.6em;
+    font-family: "Spirax", sans-serif;
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:active {
+      display: block;
+      float: left;
+      margin: 0 30px;
+      color: rgba(255, 255, 255, 0.719);
+      font-size: 2.6em;
+      font-family: "Spirax", sans-serif;
+      text-decoration: none;
+    }
+  }
 }
 
 main {
@@ -88,7 +92,7 @@ section {
   position: relative;
   top: 210px;
   left: 560px;
-  color: rgb(139, 0, 0);
+  color: rgba(139, 0, 0);
   font-weight: bolder;
   font-size: 5.5em;
   font-family: "Spirax", sans-serif;

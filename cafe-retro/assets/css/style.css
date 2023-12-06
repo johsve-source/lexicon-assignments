@@ -1,3 +1,4 @@
+@import url("normalize.css");
 * {
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -135,4 +136,8 @@ section {
 
 span {
   float: right;
+<<<<<<< HEAD
 }
+=======
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> 30989b1830e0786965d5b44c8cf0d2c25aa8efd5

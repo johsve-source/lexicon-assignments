@@ -1,24 +1,24 @@
 body {
   display: grid;
-  grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: auto;
   justify-items: center;
+  margin: 0;
+  background-color: black;
+  padding: 0;
+  min-height: 100vh;
+  color: white;
   font-family: "Lato", sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: black;
-  color: white;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  max-width: 100%;
-  width: 100%;
+  grid-template-columns: 1fr;
   margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* ______ */
@@ -28,22 +28,22 @@ body {
 .main,
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .header {
+  margin-bottom: 30px;
   background-color: rgb(61, 224, 126);
   height: 380px;
-  margin-bottom: 30px;
 }
 
 header > h1 {
-  font-size: 3.9em;
   color: black;
+  font-size: 3.9em;
 }
 
 #ninja {
@@ -51,20 +51,20 @@ header > h1 {
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  height: 100.5px;
   width: auto;
+  height: 100.5px;
 }
 
 .hamburger .menuList {
   display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
   z-index: 1000;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  list-style: none;
 }
 
 .hamburger .menuList.show-menu {
@@ -77,45 +77,45 @@ header > h1 {
 
 .hamburger .menuIcon {
   display: grid;
-  cursor: pointer;
-  justify-content: flex-start;
-  align-items: center;
   position: absolute;
   top: 30px;
   left: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* HEADER */
 /* ______ */
 
 .main {
-  grid-row: 2;
   display: grid;
-  grid-template-columns: repeat(3, 240px);
   grid-template-rows: auto auto auto auto;
-  gap: 33px;
+  grid-template-columns: repeat(3, 240px);
+  grid-row: 2;
   justify-content: center;
+  gap: 33px;
 }
 
 .cardSm img {
-  height: 250px;
   width: auto;
+  height: 250px;
   object-fit: contain;
 }
 
 .cardLg img {
-  height: 370px;
   width: auto;
+  height: 370px;
   object-fit: contain;
 }
 
 .cardLg {
-  width: 370px;
-  background-color: white;
-  color: black;
-  padding-bottom: 10px;
-  margin: 28px 0 60px 0;
   grid-row: span 2;
+  margin: 28px 0 60px 0;
+  background-color: white;
+  padding-bottom: 10px;
+  width: 370px;
+  color: black;
 }
 
 .cardLg:nth-child(10) {
@@ -128,9 +128,9 @@ header > h1 {
 }
 
 .cardTxt {
+  padding-right: 10px;
   font-family: "Raleway", sans-serif;
   text-align: left;
-  padding-right: 10px;
 }
 
 .cardLg > .cardTxt,
@@ -139,29 +139,29 @@ header > h1 {
 }
 
 .cardTxt h4 {
-  font-size: 1.5em;
   margin: 10px 0 10px 0;
+  font-size: 1.5em;
 }
 
 .cardTxt p {
-  font-size: 0.9em;
   margin: 15px 0 45px 0;
+  font-size: 0.9em;
 }
 
 .cardBtn {
+  float: left;
+  cursor: pointer;
   box-shadow: inset 0px 0px 0px 0px #f5978e;
+  border: 1px solid #9e1306;
+  border: 0;
+  border-radius: 6px;
+  border-radius: 5px;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
-  border-radius: 6px;
-  border: 1px solid #9e1306;
   width: 135px;
   height: 26px;
-  float: left;
-  font-size: 0.66em;
-  border: 0;
-  border-radius: 5px;
   color: #ffffff;
-  cursor: pointer;
+  font-size: 0.66em;
   text-decoration: none;
   text-shadow: 0px 1px 0px #810e05;
 }
@@ -191,11 +191,11 @@ header > h1 {
 .footer section > #nav > ul,
 li,
 a {
-  color: white;
   float: left;
-  text-decoration: none;
-  list-style-type: none;
   outline: none;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .footer > #footerNav > ul li a {

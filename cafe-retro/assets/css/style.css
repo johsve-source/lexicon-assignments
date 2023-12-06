@@ -77,7 +77,7 @@ section {
 
 .img-header {
   position: relative;
-  top: 170px;
+  top: 210px;
   left: 560px;
   color: rgba(139, 0, 0);
   font-weight: bolder;
@@ -87,7 +87,7 @@ section {
 
 .redbox-right {
   position: relative;
-  top: 190px;
+  top: 250px;
   left: 310px;
   opacity: 0.9;
   background-color: rgba(139, 0, 0, 0.7);
@@ -100,7 +100,7 @@ section {
 
 .redbox-left {
   position: relative;
-  top: 170px;
+  top: 230px;
   left: 200px;
   opacity: 0.9;
   background-color: rgba(139, 0, 0, 0.7);
@@ -113,7 +113,7 @@ section {
 
 .blackbox {
   position: relative;
-  top: 210px;
+  top: 270px;
   left: 20%;
   float: left;
   opacity: 0.9;

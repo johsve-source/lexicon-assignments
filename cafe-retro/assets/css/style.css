@@ -62,17 +62,17 @@ section {
 }
 
 #hot-bg {
-  background-image: url(/assets/img/hot.jpg);
+  background-image: url(../img/hot.jpg);
 }
 
 #juicy-bg {
   border-top: 0.8rem solid darkred;
-  background-image: url(/assets/img/juicy.jpg);
+  background-image: url(../img/juicy.jpg);
 }
 
 #cosy-bg {
   border-top: 0.8rem solid darkred;
-  background-image: url(/assets/img/cosy.jpg);
+  background-image: url(../img/cosy.jpg);
 }
 
 .img-header {

@@ -140,22 +140,30 @@ header > h1 {
 
 .cardTxt h4 {
   font-size: 1.5em;
+  margin: 10px 0 10px 0;
 }
 
 .cardTxt p {
   font-size: 0.9em;
+  margin: 15px 0 45px 0;
 }
 
 .cardBtn {
-  background-color: rgb(192, 6, 6);
-  width: 150px;
+  box-shadow: inset 0px 0px 0px 0px #f5978e;
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color: #f24537;
+  border-radius: 6px;
+  border: 1px solid #9e1306;
+  width: 135px;
   height: 26px;
   float: left;
-  font-size: 0.76em;
+  font-size: 0.66em;
   border: 0;
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
 }
 
 .cardLg > .cardBtn {

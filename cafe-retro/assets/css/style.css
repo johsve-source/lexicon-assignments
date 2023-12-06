@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0 35vh;
@@ -17,7 +21,7 @@ nav {
   position: fixed;
   justify-content: center;
   z-index: 1100;
-  background-color: rgba(43, 28, 35, 0.863);
+  background-color: rgba(34, 15, 23, 0.863);
   padding: 0.2rem 0 0.5rem 0;
   width: 66.5%;
 }

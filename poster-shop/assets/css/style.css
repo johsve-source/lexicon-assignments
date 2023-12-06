@@ -206,12 +206,13 @@ a {
 .footer > #address {
   position: absolute;
   left: 40%;
-  padding-bottom: 15px;
+  padding: 0 0 5px 70px;
+  padding-bottom: 5px;
   padding-left: 70px;
 }
 
 .footer > #socialMedia {
   position: absolute;
   left: 60%;
-  padding: 10px 0 30px 0;
+  padding: 15px 0 30px 0;
 }

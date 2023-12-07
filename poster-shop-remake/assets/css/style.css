@@ -30,7 +30,7 @@ header h1 {
 }
 header #hamburger {
   justify-self: start;
-  margin: 10px;
+  margin: 20px;
   font-size: 3em;
 }
 header #ninja {

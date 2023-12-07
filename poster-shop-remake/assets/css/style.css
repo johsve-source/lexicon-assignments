@@ -47,8 +47,6 @@ main {
   align-items: center;
   gap: 20px;
   padding: 70px 0;
-  /* CARD SMALL */
-  /* CARD LARGE */
 }
 main .card img {
   width: auto;
@@ -59,29 +57,31 @@ main .cardLg {
   width: 100%;
   height: 100%;
 }
-main .cardSm {
+
+/* CARD SMALL */
+.cardSm {
   margin-bottom: 30px;
 }
-main .cardSm img {
+.cardSm img {
   width: 100%;
   max-height: 220px;
 }
-main .cardSm p {
-  margin: 0 0 30px 0;
+.cardSm p {
+  margin-bottom: 30px;
 }
-main .cardSm h2 {
-  margin: 10px 0;
+.cardSm h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
-main .cardSm h2,
-main .cardSm p {
+.cardSm h2,
+.cardSm p {
   color: white;
   text-align: left;
 }
-main .cardSm button {
+.cardSm button {
   cursor: pointer;
-  box-shadow: inset 0px 0px 0px 0px #f5978e;
-  border: 1px solid #9e1306;
-  border: 0;
+  box-shadow: none;
+  border: none;
   border-radius: 5px;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
@@ -92,32 +92,33 @@ main .cardSm button {
   text-decoration: none;
   text-shadow: 0px 1px 0px #810e05;
 }
-main .cardLg {
+
+/* CARD LARGE */
+.cardLg {
   background-color: white;
   width: 355px;
 }
-main .cardLg img {
+.cardLg img {
   max-height: 355px;
   object-fit: cover;
 }
-main .cardLg p {
+.cardLg p {
   margin: 0 0 30px 0;
 }
-main .cardLg h2 {
+.cardLg h2 {
   margin: 10px 0;
 }
-main .cardLg p,
-main .cardLg h2 {
+.cardLg p,
+.cardLg h2 {
   margin-left: 10px;
   color: black;
 }
-main .cardLg button {
+.cardLg button {
   align-self: flex-end;
   cursor: pointer;
-  margin: 10px 10px;
-  box-shadow: inset 0px 0px 0px 0px #f5978e;
-  border: 1px solid #9e1306;
-  border: 0;
+  margin: 10px;
+  box-shadow: inset 0 0 0 #f5978e;
+  border: none;
   border-radius: 5px;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
@@ -126,9 +127,9 @@ main .cardLg button {
   color: white;
   font-size: 11.5px !important;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #810e05;
+  text-shadow: 0 1px 0 #810e05;
 }
-main .cardLg:nth-child(3n+2) {
+.cardLg:nth-child(3n+2) {
   margin-left: 125px;
 }
 

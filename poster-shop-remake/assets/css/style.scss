@@ -12,8 +12,8 @@ body {
 
 header {
   display: grid;
-  grid-template-rows: auto 1fr auto; /* Divide the header into three rows */
-  align-items: center; /* Center content vertically */
+  grid-template-rows: auto 1fr auto; 
+  align-items: center;
   background-color: #3de07e;
   height: 450px;
 

@@ -47,38 +47,28 @@ main {
   align-items: center;
   gap: 20px;
   padding: 70px 0;
+  /* CARD SMALL */
 }
-main .card img {
-  width: auto;
-}
-main .card,
-main .cardSm,
-main .cardLg {
-  width: 100%;
-  height: 100%;
-}
-
-/* CARD SMALL */
-.cardSm {
+main .cardSm {
   margin-bottom: 30px;
 }
-.cardSm img {
+main .cardSm img {
   width: 100%;
   max-height: 220px;
 }
-.cardSm p {
+main .cardSm p {
   margin-bottom: 30px;
 }
-.cardSm h2 {
+main .cardSm h2 {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.cardSm h2,
-.cardSm p {
+main .cardSm h2,
+main .cardSm p {
   color: white;
   text-align: left;
 }
-.cardSm button {
+main .cardSm button {
   cursor: pointer;
   box-shadow: none;
   border: none;

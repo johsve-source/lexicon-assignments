@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Divide the header into three rows */
+  align-items: center; /* Center content vertically */
+  background-color: #3de07e;
+  height: 450px;
+
+  nav {
+    ul,
+    li {
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4.5em;
+    text-align: center;
+  }
+
+  #hamburger {
+    justify-self: start;
+    margin: 10px;
+    font-size: 3em;
+  }
+
+  #ninja {
+    justify-self: center;
+    margin: 0;
+    width: auto;
+    height: 100px;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+
+  .card {
+    img {
+      width: auto;
+    }
+  }
+
+  .card,
+  .cardSm,
+  .cardLg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CARD SMALL */
+
+  .cardSm {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      max-height: 220px;
+    }
+
+    p {
+      margin: 0 0 30px 0;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    h2,
+    p {
+      color: white;
+      text-align: left;
+    }
+
+    button {
+      cursor: pointer;
+      box-shadow: inset 0px 0px 0px 0px #f5978e;
+      border: 1px solid #9e1306;
+      border: 0;
+      border-radius: 5px;
+      background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+      background-color: #f24537;
+      width: 120px;
+      height: 25px;
+      color: white;
+      font-size: 10.5px !important;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #810e05;
+    }
+  }
+
+  /* CARD LARGE */
+
+  .cardLg {
+    background-color: white;
+    width: 355px;
+
+    img {
+      max-height: 355px;
+      object-fit: cover;
+    }
+
+    p {
+      margin: 0 0 30px 0;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    p,
+    h2 {
+      margin-left: 10px;
+      color: black;
+    }
+
+    button {
+      align-self: flex-end;
+      cursor: pointer;
+      margin: 10px 10px;
+      box-shadow: inset 0px 0px 0px 0px #f5978e;
+      border: 1px solid #9e1306;
+      border: 0;
+      border-radius: 5px;
+      background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+      background-color: #f24537;
+      width: 145px;
+      height: 35px;
+      color: white;
+      font-size: 11.5px !important;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #810e05;
+    }
+    &:nth-child(3n + 2) {
+      margin-left: 125px;
+    }
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  justify-content: center;
+  align-items: start;
+  margin-top: 55px;
+  background-color: #333333;
+  padding-bottom: 70px;
+  color: white;
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 body {
   background-color: black;
@@ -27,6 +27,8 @@ header {
 
   h1 {
     margin: 0;
+    color: #222222;
+    font-weight: 700;
     font-size: 4.5em;
     text-align: center;
   }

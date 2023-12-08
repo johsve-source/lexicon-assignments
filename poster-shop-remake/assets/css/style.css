@@ -13,8 +13,8 @@ header {
   display: grid;
   grid-template-rows: auto 1fr auto;
   align-items: center;
-  background-color: #3de07e;
   height: 450px;
+  background-color: #3de07e;
 }
 header nav ul,
 header nav li {
@@ -35,18 +35,18 @@ header #hamburger {
 }
 header #ninja {
   justify-self: center;
-  margin: 0;
   width: auto;
   height: 100px;
+  margin: 0;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(3, 230px);
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
   padding: 70px 0;
+  gap: 20px;
   /* CARD SMALL */
 }
 main .cardSm {
@@ -69,24 +69,24 @@ main .cardSm p {
   text-align: left;
 }
 main .cardSm button {
-  cursor: pointer;
-  box-shadow: none;
+  width: 120px;
+  height: 25px;
   border: none;
   border-radius: 5px;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
-  width: 120px;
-  height: 25px;
+  box-shadow: none;
   color: white;
   font-size: 10.5px !important;
   text-decoration: none;
   text-shadow: 0px 1px 0px #810e05;
+  cursor: pointer;
 }
 
 /* CARD LARGE */
 .cardLg {
-  background-color: white;
   width: 355px;
+  background-color: white;
 }
 .cardLg img {
   max-height: 355px;
@@ -105,19 +105,19 @@ main .cardSm button {
 }
 .cardLg button {
   align-self: flex-end;
-  cursor: pointer;
+  width: 145px;
+  height: 35px;
   margin: 10px;
-  box-shadow: inset 0 0 0 #f5978e;
   border: none;
   border-radius: 5px;
   background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
   background-color: #f24537;
-  width: 145px;
-  height: 35px;
+  box-shadow: inset 0 0 0 #f5978e;
   color: white;
   font-size: 11.5px !important;
   text-decoration: none;
   text-shadow: 0 1px 0 #810e05;
+  cursor: pointer;
 }
 .cardLg:nth-child(3n+2) {
   margin-left: 125px;
@@ -126,10 +126,10 @@ main .cardSm button {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 240px);
-  justify-content: center;
   align-items: start;
-  background-color: #333333;
+  justify-content: center;
   padding-bottom: 70px;
+  background-color: #333333;
   color: white;
 }
 footer nav {

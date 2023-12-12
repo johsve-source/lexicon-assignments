@@ -11,8 +11,57 @@
     <title>Insurance Project - Contact</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>Oh hello there!</h1>
+      <img src="assets/img/man-baby.png" alt="" />
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Our offer</a></li>
+          <li><a href="">Why us</a></li>
+          <li><a href="contact.html" class="_current">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Whats on your mind?</h2>
+        <form>
+          <div class="emailBox">
+            <label for="emailAddress">Your email address</label><br />
+            <input
+              id="emailAddress"
+              type="email"
+              size="64"
+              maxlength="64"
+              required
+              title="Provide your e-mail for response"
+            />
+          </div>
+
+          <div class="messageBox">
+            <label for="message">Your message</label><br />
+            <textarea
+              id="message"
+              cols="80"
+              rows="8"
+              required
+              placeholder="Dear insurance company..."
+            ></textarea>
+          </div>
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
+      </section>
+
+      <section class="boxLg orange">
+        <h3>Come visit us!</h3>
+        <p>
+          2219 Griffin Street <br />
+          San Francisco
+        </p>
+      </section>
+      <img src="assets/img/map.png" alt="Map with pointer to our address" />
+    </main>
     <footer>
       <p>&copy;</p>
     </footer>

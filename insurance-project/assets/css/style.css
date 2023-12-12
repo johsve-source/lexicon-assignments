@@ -3,6 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+header > nav {
+  display: none;
+}
+
 main {
   display: grid;
 }

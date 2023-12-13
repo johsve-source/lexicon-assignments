@@ -31,6 +31,11 @@ section {
   font-weight: 900;
 }
 
+.two-section h2,
+.three-section h2 {
+  color: white;
+}
+
 .one-section p,
 .two-section p,
 .three-section p,
@@ -115,19 +120,48 @@ section {
 /* =================== */
 /* class="two-section" */
 .two-section {
+  display: flex;
   justify-content: space-between;
   background-color: #a9a19e;
   color: black;
 }
 
-.two-section h2,
-.three-section h2 {
-  color: white;
+.two-section p {
+  padding-bottom: 50px;
 }
 
 .two-section img {
   width: 100px;
   height: auto;
+}
+
+.two-section .box,
+.two-section .imgBox {
+  width: calc(50% + 100px);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.two-section .box {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.two-section .imgBox {
+  background-color: orange;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  top: -25px;
+  z-index: 2;
+}
+
+.two-section .box h3,
+.two-section .box p {
+  padding: 20px;
 }
 /* class="two-section" */
 /* =================== */

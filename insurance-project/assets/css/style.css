@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&display=swap");
+
 * {
   margin: 0;
 }
@@ -8,6 +10,7 @@ main {
   align-items: center;
   text-align: center;
   color: white;
+  font-family: "Fira Sans", sans-serif;
 }
 
 section {
@@ -27,6 +30,7 @@ section {
   font-size: 3rem;
   text-align: left;
   margin: 30px 30px;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .one-section p {
@@ -41,7 +45,18 @@ section {
 
 .one-section button {
   align-self: flex-start;
-  margin: 0 30px 30px 30px;
+  margin: 42px 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0 1px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  color: #333333;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  height: 45px;
+  padding: 0 50px;
 }
 
 .one-section img {
@@ -86,6 +101,7 @@ section {
   text-align: left;
   margin: 30px 30px;
   color: white;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .two-section p {
@@ -108,6 +124,7 @@ section {
   text-align: left;
   margin: 30px 30px;
   color: white;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .three-section p {
@@ -140,6 +157,7 @@ section {
   padding: 50px;
   font-size: 3em;
   color: #282c2f;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .four-section p {

@@ -23,10 +23,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-section.one-section {
-  background-color: #c7ddea;
-  position: relative;
+  background-color: #c7ddea; /* Default background color */
 }
 section.boxLg.orange {
   background-color: #f17949;
@@ -71,6 +68,26 @@ button:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.boxSm:nth-child(odd) {
+  background-color: teal;
+}
+
+.boxSm:nth-child(2) {
+  background-color: gray;
+}
+
+.boxSm:nth-child(3) {
+  background-color: yellow;
+}
+
+.boxSm:nth-child(4) {
+  background-color: orange;
+}
+
+.boxSm:nth-child(5) {
+  background-color: blue;
 }
 
 @media (min-width: 768px) {

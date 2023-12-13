@@ -37,7 +37,7 @@ section {
 .four-section p {
   font-size: 1rem;
   text-align: left;
-  margin: 0 30px 30px 30px;
+  margin: 0 30px;
   color: black;
 }
 
@@ -136,6 +136,7 @@ section {
 /* class="three-section" */
 .three-section {
   background-color: #fab131;
+  padding-bottom: 100px;
 }
 
 .three-section button {

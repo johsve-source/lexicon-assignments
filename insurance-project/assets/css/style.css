@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre:wght@900&display=swap");
 
 * {
   margin: 0;
@@ -20,23 +20,33 @@ section {
   width: 100%;
 }
 
-.one-section {
-  justify-content: space-between;
-  background-color: #c7ddea;
-  color: black;
-}
-
-.one-section h2 {
+.one-section h2,
+.two-section h2,
+.three-section h2,
+.four-section h2 {
   font-size: 3rem;
   text-align: left;
   margin: 30px 30px;
   font-family: "Frank Ruhl Libre", serif;
+  font-weight: 900;
 }
 
-.one-section p {
+.one-section p,
+.two-section p,
+.three-section p,
+.four-section p {
   font-size: 1rem;
   text-align: left;
   margin: 0 30px 30px 30px;
+  color: black;
+}
+
+/* =================== */
+/* class="one-section" */
+.one-section {
+  justify-content: space-between;
+  background-color: #c7ddea;
+  color: black;
 }
 
 .one-section p > span {
@@ -64,6 +74,11 @@ section {
   height: auto;
   align-self: center;
 }
+/* class="one-section" */
+/* =================== */
+
+/* ============= */
+/* class="boxLg" */
 
 .boxLg {
   width: 100%;
@@ -78,64 +93,49 @@ section {
   background-color: #f17949;
 }
 
-.boxLg.orange p {
-  color: #793d25;
-}
-
 .boxLg.yellow {
   background-color: #fab131;
 }
 
-.boxLg.yellow p {
-  color: #793d25;
+.boxLg.orange h3,
+.boxLg.yellow h3 {
+  font-size: 2.3rem;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
+.boxLg.orange p,
+.boxLg.yellow p {
+  color: #793d25;
+  font-size: 0.75rem;
+}
+
+/* class="boxLg" */
+/* ============= */
+
+/* =================== */
+/* class="two-section" */
 .two-section {
   justify-content: space-between;
   background-color: #a9a19e;
   color: black;
 }
 
-.two-section h2 {
-  font-size: 3rem;
-  text-align: left;
-  margin: 30px 30px;
+.two-section h2,
+.three-section h2 {
   color: white;
-  font-family: "Frank Ruhl Libre", serif;
-}
-
-.two-section p {
-  font-size: 1rem;
-  text-align: left;
-  margin: 0 30px 30px 30px;
 }
 
 .two-section img {
   width: 100px;
   height: auto;
 }
+/* class="two-section" */
+/* =================== */
 
+/* ===================== */
+/* class="three-section" */
 .three-section {
   background-color: #fab131;
-}
-
-.three-section h2 {
-  font-size: 3rem;
-  text-align: left;
-  margin: 30px 30px;
-  color: white;
-  font-family: "Frank Ruhl Libre", serif;
-}
-
-.three-section p {
-  font-size: 1rem;
-  text-align: left;
-  margin: 0 30px 30px 30px;
-  color: black;
-}
-
-.three-section p > span {
-  color: white;
 }
 
 .three-section button {
@@ -148,24 +148,27 @@ section {
   height: auto;
   align-self: center;
 }
+/* class="three-section" */
+/* ===================== */
 
+/* ==================== */
+/* class="four-section" */
 .four-section {
   background-color: #c7ddea;
 }
 
 .four-section h2 {
   padding: 50px;
-  font-size: 3em;
   color: #282c2f;
-  font-family: "Frank Ruhl Libre", serif;
 }
 
 .four-section p {
   color: #4d4d4d;
+  text-align: center;
 }
 
 .four-section .boxSm {
-  padding: 50px 0;
+  padding: 70px 0;
   width: 100%;
 }
 
@@ -180,3 +183,5 @@ section {
 .four-section .boxSm.orange {
   background-color: #f17949;
 }
+/* class="four-section" */
+/* ==================== */

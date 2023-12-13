@@ -3,19 +3,26 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  > nav {
-    display: none;
-  }
+header > nav {
+  display: none;
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxImg {
+  margin: 0;
+  padding: 0;
 }
 
 section {
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &.one-section {
     background-color: #c7ddea;
@@ -23,9 +30,6 @@ section {
   }
 
   &.boxLg {
-    width: 100%;
-    display: grid;
-
     &.orange {
       background-color: #f17949;
     }
@@ -77,11 +81,14 @@ img {
 
 @media (min-width: 768px) {
   main {
-    grid-template-rows: repeat(2, 1fr);
   }
 
   section {
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .boxImg {
+    width: 100%;
   }
 }

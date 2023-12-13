@@ -103,6 +103,35 @@ section {
   background-color: #fab131;
 }
 
+.three-section h2 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 30px 30px;
+  color: white;
+}
+
+.three-section p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 30px 30px 30px;
+  color: black;
+}
+
+.three-section p > span {
+  color: white;
+}
+
+.three-section button {
+  align-self: flex-start;
+  margin: 0 30px 30px 30px;
+}
+
+.three-section img {
+  width: 250px;
+  height: auto;
+  align-self: center;
+}
+
 .four-section {
   background-color: #c7ddea;
 }

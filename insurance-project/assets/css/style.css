@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.one-section {
+  justify-content: space-between;
+  background-color: #c7ddea;
+  color: black;
+}
+
+.one-section h2 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 30px 30px;
+}
+
+.one-section p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 30px 30px 30px;
+}
+
+.one-section p > span {
+  color: white;
+}
+
+.one-section button {
+  align-self: flex-start;
+  margin: 0 30px 30px 30px;
+}
+
+.one-section img {
+  width: 250px;
+  height: auto;
+  align-self: center;
+}
+
+.boxLg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxLg.orange {
+  background-color: #f17949;
+}
+
+.boxLg.orange p {
+  color: #793d25;
+}
+
+.boxLg.yellow {
+  background-color: #fab131;
+}
+
+.boxLg.yellow p {
+  color: #793d25;
+}
+
+.two-section {
+  justify-content: space-between;
+  background-color: #a9a19e;
+  color: black;
+}
+
+.two-section h2 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 30px 30px;
+  color: white;
+}
+
+.two-section p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 30px 30px 30px;
+}
+
+.two-section img {
+  width: 100px;
+  height: auto;
+}
+
+.three-section {
+  background-color: #fab131;
+}
+
+.four-section {
+  background-color: #c7ddea;
+}
+
+.four-section .boxSm {
+  padding: 50px 0;
+}

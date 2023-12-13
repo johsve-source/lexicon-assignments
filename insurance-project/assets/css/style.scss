@@ -19,11 +19,18 @@ section {
 
   &.one-section {
     background-color: #c7ddea;
+    position: relative;
+  }
 
-    .boxLg.orange {
+  &.boxLg {
+    width: 100%;
+    display: grid;
+
+    &.orange {
       background-color: #f17949;
     }
-    .boxLg.yellow {
+
+    &.yellow {
       background-color: #fab131;
     }
   }

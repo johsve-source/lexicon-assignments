@@ -17,11 +17,16 @@ section {
 }
 section.one-section {
   background-color: #c7ddea;
+  position: relative;
 }
-section.one-section .boxLg.orange {
+section.boxLg {
+  width: 100%;
+  display: grid;
+}
+section.boxLg.orange {
   background-color: #f17949;
 }
-section.one-section .boxLg.yellow {
+section.boxLg.yellow {
   background-color: #fab131;
 }
 section.two-section {

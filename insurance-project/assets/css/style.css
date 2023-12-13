@@ -109,4 +109,17 @@ section {
 
 .four-section .boxSm {
   padding: 50px 0;
+  width: 100%;
+}
+
+.four-section .boxSm.white {
+  background-color: #ffffff;
+}
+
+.four-section .boxSm.gray {
+  background-color: #ebebeb;
+}
+
+.four-section .boxSm.orange {
+  background-color: #f17949;
 }

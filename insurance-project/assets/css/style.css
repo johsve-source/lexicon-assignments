@@ -37,6 +37,9 @@ section.boxLg.yellow {
 section.two-section {
   background-color: #a9a19e;
 }
+section.two-section .childrenSection .boxImg {
+  margin-left: 73px;
+}
 section.three-section {
   background-color: #fab131;
 }

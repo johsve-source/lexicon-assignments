@@ -41,6 +41,9 @@ section {
 
   &.two-section {
     background-color: #a9a19e;
+    .childrenSection .boxImg {
+      margin-left: 73px;
+    }
   }
 
   &.three-section {

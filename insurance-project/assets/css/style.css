@@ -107,6 +107,16 @@ section {
   background-color: #c7ddea;
 }
 
+.four-section h2 {
+  padding: 50px;
+  font-size: 3em;
+  color: #282c2f;
+}
+
+.four-section p {
+  color: #4d4d4d;
+}
+
 .four-section .boxSm {
   padding: 50px 0;
   width: 100%;

@@ -159,9 +159,22 @@ nav {
   z-index: 2;
 }
 
+.two-section .imgBox.childSection {
+  background-color: #c7ddea;
+}
+
+.two-section .imgBox.adultSection {
+  background-color: #fab131;
+}
+
+.two-section .imgBox.oldSection {
+  background-color: #f17949;
+}
+
 .two-section .imgBox img {
-  width: 100%;
+  width: 35%;
   height: auto;
+  margin-top: 30px;
 }
 
 .two-section .box h3,

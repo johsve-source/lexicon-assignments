@@ -20,6 +20,10 @@ section {
   width: 100%;
 }
 
+nav {
+  display: none;
+}
+
 .one-section h2,
 .two-section h2,
 .three-section h2,
@@ -113,7 +117,6 @@ section {
   color: #793d25;
   font-size: 0.75rem;
 }
-
 /* class="boxLg" */
 /* ============= */
 
@@ -130,14 +133,9 @@ section {
   padding-bottom: 50px;
 }
 
-.two-section img {
-  width: 100px;
-  height: auto;
-}
-
 .two-section .box,
 .two-section .imgBox {
-  width: calc(50% + 100px);
+  width: calc(50% + 150px);
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -146,17 +144,24 @@ section {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 60px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 1;
 }
 
 .two-section .imgBox {
   background-color: orange;
-  height: 150px;
+  height: 200px;
   overflow: hidden;
   position: relative;
-  top: -25px;
+  top: -40px;
   z-index: 2;
+}
+
+.two-section .imgBox img {
+  width: 100%;
+  height: auto;
 }
 
 .two-section .box h3,
@@ -189,6 +194,9 @@ section {
 /* ==================== */
 /* class="four-section" */
 .four-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #c7ddea;
 }
 
@@ -197,14 +205,34 @@ section {
   color: #282c2f;
 }
 
-.four-section p {
-  color: #4d4d4d;
-  text-align: center;
-}
-
 .four-section .boxSm {
   padding: 70px 0;
   width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.four-section .boxSm span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 32px;
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.four-section .boxSm p {
+  flex: 1;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: 900;
 }
 
 .four-section .boxSm.white {
@@ -218,5 +246,14 @@ section {
 .four-section .boxSm.orange {
   background-color: #f17949;
 }
+
+.four-section .boxSm.orange span {
+  color: #91492c;
+}
 /* class="four-section" */
 /* ==================== */
+
+footer {
+  background-color: #777574;
+  height: 200px;
+}

@@ -29,39 +29,6 @@ header .welcomeHeader img {
   margin: 0 20px 0 -120px;
 }
 
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  font-weight: bolder;
-}
-
-header nav ul li {
-  flex: 1 1 50%;
-  padding: 30px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-header nav ul li:hover,
-header nav ul li._current {
-  background-color: rgba(169, 169, 169, 0.2);
-}
-
-header nav ul li a._current {
-  color: black;
-}
-
 main {
   background-color: #a9a19e;
 }

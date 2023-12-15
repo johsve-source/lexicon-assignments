@@ -34,8 +34,6 @@ section {
 
 header nav {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 header nav ul {
@@ -50,8 +48,8 @@ header nav ul {
 }
 
 header nav ul li {
-  flex: 1 1 50%;
-  padding: 30px;
+  flex: 1 0 50%;
+  padding: 30px 30px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -310,4 +308,10 @@ header nav ul li a._current {
 footer {
   background-color: #777574;
   height: 200px;
+}
+
+@media (min-width: 767px) {
+  header nav ul li {
+    flex: 1 1 0;
+  }
 }

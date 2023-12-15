@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 header .welcomeHeader {
   background-color: #c7ddea;
   display: flex;
@@ -20,3 +16,5 @@ header .welcomeHeader img {
   margin: 0 20px 0 -120px;
   position: relative;
 }
+/* welcomeHeader */
+/* ============= */

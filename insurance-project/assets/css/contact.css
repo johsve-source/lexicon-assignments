@@ -14,6 +14,7 @@ header .welcomeHeader {
   background-color: #c7ddea;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 30px;
 }
 
@@ -63,6 +64,14 @@ header nav ul li a._current {
 
 main {
   background-color: #a9a19e;
+}
+
+main section h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3em;
+  padding: 20px 0;
+  margin-inline: 30px;
+  text-align: left;
 }
 
 input,

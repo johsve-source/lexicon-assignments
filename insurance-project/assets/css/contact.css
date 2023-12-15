@@ -22,11 +22,11 @@ header .welcomeHeader h1 {
   font-family: "Frank Ruhl Libre", serif;
   text-align: left;
   font-size: 3rem;
-  margin: 0 20px 60px 20px; /* Adjusted margin values */
+  margin: 0 0 60px 30px;
 }
 
 header .welcomeHeader img {
-  margin: 0 20px 0 -120px;
+  margin: 0 20px 0 0;
 }
 
 main {
@@ -93,10 +93,4 @@ textarea {
   cursor: pointer;
   font: 700 11px/45px "Fira Sans", sans-serif;
   padding: 0 50px;
-}
-
-@media (min-width: 767px) {
-  header nav ul li {
-    flex: 1;
-  }
 }

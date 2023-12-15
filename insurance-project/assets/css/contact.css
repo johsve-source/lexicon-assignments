@@ -106,10 +106,18 @@ hr {
   color: white;
 }
 
+.bottomImgContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bottomImg {
-  z-index: 0;
   width: 100%;
-  position: relative;
+  display: block;
 }
 
 .contactDir h3 {
@@ -118,4 +126,37 @@ hr {
 
 .contactDir p {
   margin: 8px 0;
+}
+
+@media (min-width: 767px) {
+  main .formBox {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 20%;
+  }
+
+  main .formBox h2 {
+    align-self: flex-start;
+  }
+
+  .formBox .contactForm {
+    width: 40%;
+    margin-right: 80px;
+  }
+
+  .contactDir {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 25px;
+    z-index: 1;
+    position: relative;
+    top: 320px;
+    left: -500px;
+    border-radius: 3px;
+  }
+  .bottomImgContainer {
+    max-width: 100%;
+    max-height: 60vh;
+  }
 }

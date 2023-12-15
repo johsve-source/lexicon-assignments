@@ -17,13 +17,24 @@ ul li a:visited {
   color: #999999;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+p,
+a,
+ul li {
+  font-family: "Fira Sans", sans-serif;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: white;
-  font-family: "Fira Sans", sans-serif;
 }
 
 section {
@@ -142,11 +153,11 @@ header nav ul li a._current {
   align-items: center;
 }
 
-.boxLg.orange {
+.orange {
   background-color: #f17949;
 }
 
-.boxLg.yellow {
+.yellow {
   background-color: #fab131;
 }
 

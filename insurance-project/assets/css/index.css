@@ -2,10 +2,18 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 ul {
   list-style: none;
+}
+
+ul li a,
+ul li a:hover,
+ul li a:visited {
+  text-decoration: none;
+  color: #999999;
 }
 
 main {

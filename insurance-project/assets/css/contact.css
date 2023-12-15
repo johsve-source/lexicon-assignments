@@ -1,3 +1,15 @@
+/* Common styles for all screen sizes */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: black;
+}
+
+/* Header styles */
 header .welcomeHeader {
   background-color: #c7ddea;
   display: flex;
@@ -9,12 +21,48 @@ header .welcomeHeader h1 {
   font-family: "Frank Ruhl Libre", serif;
   text-align: left;
   font-size: 3rem;
-  margin: 0 0 50px 20px;
+  margin: 0 20px 60px 20px; /* Adjusted margin values */
 }
 
 header .welcomeHeader img {
   margin: 0 20px 0 -120px;
-  position: relative;
 }
-/* welcomeHeader */
-/* ============= */
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+header nav ul li {
+  flex: 1 1 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header nav ul li:hover,
+header nav ul li._current {
+  background-color: rgba(169, 169, 169, 0.2);
+}
+
+header nav ul li a._current {
+  color: black;
+}
+
+@media (min-width: 767px) {
+  header nav ul li {
+    flex: 1;
+  }
+}

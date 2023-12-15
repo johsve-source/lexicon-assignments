@@ -2,4 +2,21 @@
   margin: 0;
 }
 
-header 
+header .welcomeHeader {
+  background-color: #c7ddea;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+header .welcomeHeader h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: left;
+  font-size: 3rem;
+  margin: 0 0 50px 20px;
+}
+
+header .welcomeHeader img {
+  margin: 0 20px 0 -120px;
+  position: relative;
+}

@@ -101,6 +101,11 @@ textarea {
   border-radius: 3px;
 }
 
+hr {
+  width: 100%;
+  color: white;
+}
+
 .bottomImg {
   z-index: 0;
   width: 100%;

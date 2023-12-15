@@ -305,13 +305,40 @@ header nav ul li a._current {
 /* class="four-section" */
 /* ==================== */
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 footer {
   background-color: #777574;
   height: 200px;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+footer .goUp {
+  height: 60px;
+  background-color: #a9a19e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .goUp a {
+  display: flex;
+  align-items: center;
+}
+
+footer .goUp span.material-symbols-outlined {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+footer a,
+footer a:hover,
+footer a:visited {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 @media (min-width: 767px) {

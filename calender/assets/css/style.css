@@ -1,0 +1,86 @@
+:root {
+  /* COLORS */
+  --white: #ffffff;
+  --offwhite: #f1f1f1;
+  --gray: #cbcbcb;
+  --backgroundColor: #ededed;
+  --red: #fd2c2c;
+
+  /* FONT SETTINGS */
+  --font: "Roboto", "Helvetica", "Arial", sans-serif;
+  --size: 125%;
+  --weight: 400;
+  --lineHeight: 1.4;
+
+  /* ICON SETTINGS */
+  --iconSettings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: var(--iconSettings);
+}
+
+.calender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vh;
+  height: 40vh;
+  font-family: var(--font);
+  font-size: var(--size);
+  font-weight: var(--weight);
+  line-height: var(--lineHeight);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+
+.calender .monthIndicator {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 5px 5px 0 0;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calender .weekDays {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calender .weekDays div {
+  flex: 1;
+  text-align: center;
+}
+
+.calender .daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  width: 100%;
+}
+
+.calender .daysGrid button {
+  width: 100%;
+  text-align: center;
+}
+
+.calender .daysGrid button._disabled {
+  color: var(--gray);
+}

@@ -7,7 +7,7 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
-  animation: myanimationtwo 8s ease forwards;
+  animation: myanimationtwo 8s 1s ease forwards infinite;
 }
 
 .box:nth-child(2) {

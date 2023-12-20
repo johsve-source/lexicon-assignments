@@ -108,12 +108,17 @@ body {
   width: 200px;
   top: 120px;
   opacity: 0.5;
+
+  /* ANIMATION SETTINGS */
+  animation: wind 80s linear infinite reverse;
 }
 
 .cloud:nth-child(2) {
   width: 300px;
   top: 0px;
-  opacity: 0.5;
+
+  /* ANIMATION SETTINGS */
+  animation: wind 50s linear infinite reverse;
 }
 
 /* KEYFRAMES */
@@ -124,5 +129,14 @@ body {
   }
   to {
     transform: translateX(1000px);
+  }
+}
+
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
   }
 }

@@ -78,22 +78,26 @@ body {
   position: absolute;
   top: -40px;
   left: 0px;
+
+  /* ANIMATION SETTINGS */
   animation-name: drive;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-timing-function: linear;
 }
 
 .luigi {
   position: absolute;
   top: 100px;
   left: 0;
+
+  /* ANIMATION SETTINGS */
   animation-name: drive;
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-timing-function: linear;
 }
 
 /* KEYFRAMES */

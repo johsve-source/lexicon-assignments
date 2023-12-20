@@ -71,3 +71,10 @@ body {
   position: absolute;
   top: 45%;
 }
+
+/* ELEMENTS TO ANIMATE  */
+
+.mario {
+  position: absolute;
+  top: -40px;
+}

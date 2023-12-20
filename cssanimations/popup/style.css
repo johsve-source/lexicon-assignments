@@ -157,5 +157,6 @@ header:after {
   }
   100% {
     opacity: 0;
+    right: 40px;
   }
 }

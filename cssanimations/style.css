@@ -80,15 +80,17 @@ body {
   left: 0px;
   animation-name: drive;
   animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
 /* KEYFRAMES */
 
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(200px);
   }
   to {
-    transform: translateX(1080px);
+    transform: translateX(700px);
   }
 }

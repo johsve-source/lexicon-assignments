@@ -10,6 +10,10 @@ body {
   animation: myanimationtwo 8s ease forwards;
 }
 
+.box:nth-child(2) {
+  animation: myanimation 4s ease forwards;
+}
+
 @keyframes myanimation {
   0% {
     background-color: white;

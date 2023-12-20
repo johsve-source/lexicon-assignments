@@ -50,6 +50,18 @@
         <button>Add to Basket</button>
       </li>
     </ul>
-    <script></script>
+    <script>
+      $("button").on("click", function () {
+        $(this)
+          .closest("li")
+          .fint("img")
+          .clone()
+          .addClass("zoom")
+          .appendTo("body");
+        setTimeout(function () {
+          $(".zoom").remove();
+        }, 1000);
+      });
+    </script>
   </body>
 </html>

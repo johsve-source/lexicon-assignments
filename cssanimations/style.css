@@ -1,4 +1,4 @@
-body {
+/* body {
   background: lightblue;
   text-align: center;
 }
@@ -13,7 +13,7 @@ img {
   transform: rotateZ(-90deg) translateY(200px) scale(2);
 }
 
-/* .circle {
+.circle {
   width: 100px;
   padding: 50px 0;
   line-height: 0;

@@ -6,84 +6,81 @@ body {
 
 .box {
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 16%;
+  height: 20%;
   position: absolute;
   animation: myanimationtwo 8s 1s ease forwards infinite;
 }
 
 .box:nth-child(2) {
-  animation: myanimation 4s ease forwards infinite;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes myanimation {
   0% {
     background-color: white;
     border-radius: 0;
-    left: 0.5%;
-    top: 0;
   }
   25% {
     background-color: red;
-    border-radius: 12.5%;
-    left: 50%;
-    top: 0;
+    border-radius: 50% 0 0 0;
   }
   50% {
     background-color: green;
-    border-radius: 25%;
-    left: 50%;
-    top: 0;
+    border-radius: 50% 50% 0 0;
   }
   75% {
     background-color: blue;
-    border-radius: 37.5%;
-    left: 50%;
-    top: 0;
+    border-radius: 50% 50% 0;
   }
   100% {
     background-color: white;
-    border-radius: 50%;
-    left: 50%;
-    top: 0;
+    border-radius: 50% 50% 50% 50%;
   }
 }
 
-@keyframes myanimationtwo {
+/* @keyframes myanimationtwo {
   0% {
     background-color: white;
     border-radius: 0;
   }
-  12.5% {
-    background-color: red;
-    border-radius: 12.5%;
-  }
   25% {
     background-color: green;
     border-radius: 25%;
-  }
-  37.5% {
-    background-color: blue;
-    border-radius: 37.5%;
   }
   50% {
     background-color: white;
     border-radius: 50%;
   }
-  62.5% {
-    background-color: blue;
-    border-radius: 37.5%;
-  }
   75% {
     background-color: green;
     border-radius: 25%;
-  }
-  87.5% {
-    background-color: red;
-    border-radius: 12.5%;
   }
   100% {
     background-color: white;
     border-radius: 0%;
   }
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* CSS styles for mobile devices */
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* CSS styles for tablets */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS styles for laptops */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* CSS styles for desktops */
+}
+
+@media only screen and (min-width: 1201px) {
+  /* CSS styles for large screens */
 }

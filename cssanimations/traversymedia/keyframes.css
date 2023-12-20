@@ -59,15 +59,15 @@ body {
     border-radius: 50%;
   }
   62.5% {
-    background-color: pink;
+    background-color: blue;
     border-radius: 37.5%;
   }
   75% {
-    background-color: purple;
+    background-color: green;
     border-radius: 25%;
   }
   87.5% {
-    background-color: yellow;
+    background-color: red;
     border-radius: 12.5%;
   }
   100% {

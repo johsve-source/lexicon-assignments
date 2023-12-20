@@ -82,7 +82,7 @@ body {
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .luigi {

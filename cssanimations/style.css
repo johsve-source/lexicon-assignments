@@ -84,6 +84,17 @@ body {
   animation-iteration-count: infinite;
 }
 
+.luigi {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 /* KEYFRAMES */
 
 @keyframes drive {

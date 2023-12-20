@@ -57,7 +57,7 @@ h1 {
 }
 
 .panels li:hover div.back {
-  animation: twirl 0.2s ease-in reverse;
+  animation: twirl 0.2s 0.2s ease-out forwards reverse;
 }
 
 @keyframes twirl {

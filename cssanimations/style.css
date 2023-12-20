@@ -22,4 +22,10 @@ img {
   color: white;
   border-radius: 50px;
   cursor: pointer;
+  transition: background 1s 0.3s, transform 1.5s 1s;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
 }

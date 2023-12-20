@@ -7,23 +7,28 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
-  animation: myanimation 4s;
+  animation: myanimation 4s ease-in-out forwards;
 }
 
 @keyframes myanimation {
   0% {
     background-color: white;
+    border-radius: 1px;
   }
   25% {
     background-color: red;
+    border-radius: 5px;
   }
   50% {
     background-color: green;
+    border-radius: 15px;
   }
   75% {
     background-color: blue;
+    border-radius: 25px;
   }
   100% {
     background-color: white;
+    border-radius: 35px;
   }
 }

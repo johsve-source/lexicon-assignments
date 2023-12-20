@@ -72,6 +72,13 @@ body {
   animation-duration: 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+
+  transition: transform;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  transform: rotateY(180deg);
 }
 
 @keyframes btn {

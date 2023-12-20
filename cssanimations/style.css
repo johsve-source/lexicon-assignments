@@ -80,11 +80,13 @@ body {
   left: 0px;
 
   /* ANIMATION SETTINGS */
-  animation-name: drive;
+  animation: drive 3s linear infinite both, jump 0.3s 1.2s ease;
+
+  /*   animation-name: drive;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 .luigi {
@@ -93,11 +95,13 @@ body {
   left: 0;
 
   /* ANIMATION SETTINGS */
-  animation-name: drive;
+  animation: drive 5s linear infinite both;
+
+  /*   animation-name: drive;
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 .cloud {
@@ -142,4 +146,13 @@ body {
 }
 
 @keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
+  }
 }

@@ -69,7 +69,7 @@ button {
 
 #pop-up {
   top: -400px;
-  animation: drop 0.5s ease forwards;
+  animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
 }
 
 @keyframes drop {
@@ -82,6 +82,21 @@ button {
   100% {
     transform: translateY(650px);
     opacity: 1;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: translateY(650px) rotateZ(0deg);
+  }
+  40% {
+    transform: translateY(650px) rotateZ(90deg);
+  }
+  70% {
+    transform: translateY(650px) rotateZ(70deg);
+  }
+  100% {
+    transform: translateY(650px) rotateZ(75deg);
   }
 }
 

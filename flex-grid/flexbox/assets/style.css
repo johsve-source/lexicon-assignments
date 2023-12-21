@@ -19,7 +19,7 @@ body {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 /* .flex-container:after {
@@ -32,25 +32,29 @@ body {
 /* ----------------------------------------------- */
 .box {
   height: 100px;
-  min-width: 200px;
+  flex-basis: 200px;
+  /* min-width: 200px; */
   text-align: center;
   flex-grow: 1;
 }
 
 .one {
   background-color: red;
-  /*   flex-grow: 2;
-  flex-shrink: 1; */
+  flex-grow: 2;
+  /* flex-shrink: 1; */
+  flex-basis: 100px;
 }
 
 .two {
   background-color: blue;
-  /*   flex-grow: 3;
-  flex-shrink: 2; */
+  flex-grow: 3;
+  /* flex-shrink: 2; */
+  flex-basis: 200px;
 }
 
 .three {
   background-color: green;
-  /*   flex-grow: 1;
-  flex-shrink: 3; */
+  flex-grow: 1;
+  /* flex-shrink: 3; */
+  flex-basis: 300px;
 }

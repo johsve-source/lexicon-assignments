@@ -13,10 +13,21 @@ body {
   margin: 0 auto;
 }
 
+/* ----------------------------------------------- */
+/* Difference from vanilla CSS compared to flexbox */
+
 .flex-container {
   display: flex;
 }
 
+/* .flex-container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+/* Difference from vanilla CSS compared to flexbox */
+/* ----------------------------------------------- */
 .box {
   height: 100px;
   min-width: 100px;

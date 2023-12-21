@@ -88,6 +88,17 @@ nav a:hover {
   background-color: #555;
 }
 
+/* social media style */
+a.fb {
+  background: url(./fb.png) no-repeat center;
+  background-size: 80%;
+}
+
+a.tw {
+  background: url(./tw.png) no-repeat center;
+  background-size: 80%;
+}
+
 /* Flex Style */
 
 @media screen and (min-width: 768px) {

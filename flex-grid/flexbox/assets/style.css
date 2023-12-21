@@ -32,29 +32,32 @@ body {
 /* ----------------------------------------------- */
 .box {
   height: 100px;
-  flex-basis: 200px;
   /* min-width: 200px; */
+
+  /* flex-basis: 200px; */ /* Preferred instead of min-width when using flexbox */
+  /* flex-grow: 1; */
+
   text-align: center;
-  flex-grow: 1;
+  flex: 1 0 200px; /* FLEX-GROW, FLEX-SHRINK, FLEX-BASIS */
 }
 
 .one {
   background-color: red;
   flex-grow: 2;
   /* flex-shrink: 1; */
-  flex-basis: 100px;
+  /* flex-basis: 100px; */
 }
 
 .two {
   background-color: blue;
   flex-grow: 3;
   /* flex-shrink: 2; */
-  flex-basis: 200px;
+  /* flex-basis: 200px; */
 }
 
 .three {
   background-color: green;
   flex-grow: 1;
   /* flex-shrink: 3; */
-  flex-basis: 300px;
+  /* flex-basis: 300px; */
 }

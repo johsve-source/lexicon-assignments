@@ -81,6 +81,7 @@ nav a {
   color: #fff;
   display: block;
   padding: 10px;
+  /* background-color: #777; */
 }
 
 nav a:hover {
@@ -92,9 +93,10 @@ nav a:hover {
 @media screen and (min-width: 768px) {
   nav ul {
     display: flex;
+    justify-content: space-around;
   }
 
   nav li {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
   }
 }

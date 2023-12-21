@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #eee;
+  background-color: #eee;
 }
 
 .wrapper {
@@ -14,8 +14,22 @@ body {
 }
 
 .flex-container {
-  /* display: flex; */
+  display: flex;
 }
 
 .box {
+  height: 100px;
+  min-width: 100px;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: green;
 }

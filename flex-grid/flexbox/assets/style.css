@@ -5,6 +5,7 @@
 
 body {
   background-color: #eee;
+  color: #eee;
 }
 
 .wrapper {
@@ -31,16 +32,20 @@ body {
 .box {
   height: 100px;
   min-width: 100px;
+  text-align: center;
 }
 
 .one {
   background-color: red;
+  flex-grow: 2;
 }
 
 .two {
   background-color: blue;
+  flex-grow: 3;
 }
 
 .three {
   background-color: green;
+  flex-grow: 1;
 }

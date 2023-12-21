@@ -99,7 +99,25 @@ a.tw {
   background-size: 80%;
 }
 
+.social {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.social a {
+  text-indent: -10000px;
+}
+
 /* Flex Style */
+
+nav ul.social {
+  flex: 1 1 0;
+  display: flex;
+}
+
+nav ul.social li {
+  flex: 1 1 0;
+}
 
 @media screen and (min-width: 768px) {
   nav ul {

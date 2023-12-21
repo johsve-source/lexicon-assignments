@@ -26,3 +26,5 @@ screens.png
 /flex-grid/netninja/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+flex-grid/grid/index.html
+flex-grid/grid/assets/style.css

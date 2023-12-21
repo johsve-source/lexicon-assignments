@@ -93,10 +93,10 @@ nav a:hover {
 @media screen and (min-width: 768px) {
   nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   nav li {
-    /* flex: 1 1 0; */
+    flex: 1 1 0;
   }
 }

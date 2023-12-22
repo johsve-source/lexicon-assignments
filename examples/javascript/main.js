@@ -26,7 +26,7 @@ const y = undefined;
 let z; // Also undefined when empty
 
 console.log('My name is ' + firstName + ' : ' + typeof firstName);
-console.log(`My name is ${firstName} : ${typeof firstName}`);
+console.log(`My name is ${firstName} : ${typeof firstName}`); // Another way to string interpolation
 console.log('Age: ' + typeof age);
 console.log('isCool: ' + typeof isCool);
 console.log('coolRating: ' + typeof coolRating);

@@ -61,3 +61,13 @@ img {
   background-color: var(--dark);
   color: var(--light);
 }
+
+/* TOP CONTAINER */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}

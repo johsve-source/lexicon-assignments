@@ -45,3 +45,47 @@ function initMessage(message) {
   return console.log(message);
 }
 initMessage('This is my message'); // Running the created function with a message variable above
+
+// JSON.Parse is generally faster than the JS Literal variable above.
+
+// Function to generate a larger dataset
+const generateLargeData = (size) => {
+  const largeData = {};
+  for (let i = 0; i < size; i++) {
+    largeData[`property${i}`] = i;
+  }
+  return largeData;
+};
+
+// Function to measure average parse speed
+function measureAverageParseSpeed(dataJSON, iterations) {
+  let totalDuration = 0;
+
+  for (let i = 0; i < iterations; i++) {
+    const startTime = performance.now();
+    const parsedData = JSON.parse(dataJSON);
+    const endTime = performance.now();
+    const duration = endTime - startTime;
+    totalDuration += duration;
+  }
+
+  const averageDuration = (totalDuration / iterations) * 1000; // Convert milliseconds to microseconds
+  console.log(
+    `Average parsing time over ${iterations} iterations: ${averageDuration} microseconds`
+  );
+}
+
+// Original small dataset
+const smallData = { foo: 42, bar: 1337 };
+const smallDataJSON = JSON.stringify(smallData);
+
+// Test parse speed with small dataset
+measureAverageParseSpeed(smallDataJSON, 1000); // Adjust the number of iterations as needed
+
+// Larger dataset with 100 properties
+const size = 100;
+const largeData = generateLargeData(size);
+const largeDataJSON = JSON.stringify(largeData);
+
+// Test parse speed with larger dataset
+measureAverageParseSpeed(largeDataJSON, 1000); // Adjust the number of iterations as needed

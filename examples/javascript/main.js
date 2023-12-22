@@ -1,6 +1,6 @@
-/* console.log("Hello World");
+console.log("Hello World");
 console.error("This is an error");
-console.warn("This is a warning"); */
+console.warn("This is a warning");
 
 // VAR, LET, CONST. Var is not recommended.
 let lAge = 38;

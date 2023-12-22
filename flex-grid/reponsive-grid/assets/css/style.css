@@ -62,7 +62,7 @@ img {
   color: var(--light);
 }
 
-/* TOP CONTAINER */
+/* TOP CONTAINER (Creating grid template areas.) */
 .top-container {
   display: grid;
   grid-gap: 20px;
@@ -70,4 +70,44 @@ img {
   grid-template-areas:
     "showcase showcase top-box-a"
     "showcase showcase top-box-b";
+}
+
+/* SHOWCASE (Assigning grid areas, created above.) */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+
+  /* One line instead of multiple, example below */
+  background: url(../img/showcase.jpg) no-repeat center / cover;
+  /* background-size: cover;
+  background-position: center; */
+
+  /* FLEXBOX */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/* TOP BOX */
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
 }

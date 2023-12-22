@@ -3,7 +3,6 @@ console.error("This is an error");
 console.warn("This is a warning"); */
 
 // VAR, LET, CONST. Var is not recommended.
-
 let lAge = 38;
 lAge = 39;
 console.log(lAge);
@@ -22,7 +21,7 @@ const isCool = true;
 const coolRating = 4.5;
 const x = null;
 const y = undefined;
-let z; // Also undefined
+let z; // Also undefined when empty
 
 console.log("My name is " + name + " : " + typeof name);
 console.log("Age: " + typeof age);

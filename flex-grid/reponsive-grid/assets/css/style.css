@@ -80,7 +80,8 @@ img {
   box-shadow: var(--shadow);
 
   /* One line instead of multiple, example below */
-  background: url(../img/showcase.jpg) no-repeat center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/showcase.jpg) no-repeat center / cover;
   /* background-size: cover;
   background-position: center; */
 

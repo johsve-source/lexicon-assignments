@@ -105,6 +105,19 @@ img {
 }
 
 /* TOP BOX */
+.top-box {
+  background-color: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
 .top-box-a {
   grid-area: top-box-a;
 }

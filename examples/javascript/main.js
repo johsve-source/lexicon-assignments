@@ -69,7 +69,7 @@ function measureAverageParseSpeed(dataJSON, iterations) {
     totalDuration += duration;
   }
 
-  const averageDuration = totalDuration / iterations; // Convert milliseconds to microseconds
+  const averageDuration = totalDuration / iterations;
   console.log(
     `Average parsing time over ${iterations} iterations: ${averageDuration} milliseconds`
   );

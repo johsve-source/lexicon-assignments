@@ -118,3 +118,8 @@ const { firstName, lastName } = person;
 for (let i = 0; i < 10; i++) {
   console.log(i); // Looping from 0 to 9
 }
+
+let i = 0;
+while (i < 10) {
+  console.log(`While loop number : ${i}`);
+}

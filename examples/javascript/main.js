@@ -114,3 +114,7 @@ const person = {
 console.log(person.address.city);
 
 const { firstName, lastName } = person;
+
+for (let i = 0; i < 10; i++) {
+  console.log(i); // Looping from 0 to 9
+}

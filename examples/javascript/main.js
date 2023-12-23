@@ -147,3 +147,13 @@ const todos = [
 todos.forEach(function (todos) {
   console.log(todos.text);
 });
+
+/* const todoText = todos.map(function (todo) {
+  return todo.text;
+}); */
+
+const todoText = todos.filter(function (todo) {
+  return todo.text;
+});
+
+console.log(todoText);

@@ -152,8 +152,16 @@ todos.forEach(function (todos) {
   return todo.text;
 }); */
 
-const todoText = todos.filter(function (todo) {
+/* const todoText = todos.filter(function (todo) {
   return todo.text;
-});
+}); */
 
-console.log(todoText);
+const todoCompleted = todos
+  .filter(function (todo) {
+    return todo.isCompleted === true;
+  })
+  .map(function (todo) {
+    return todo.text;
+  });
+
+console.log(todoCompleted);

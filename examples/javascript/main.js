@@ -144,9 +144,9 @@ const todos = [
 ];
 
 // Recommended way to loop through array
-todos.forEach(function (todos) {
+/* todos.forEach(function (todos) {
   console.log(todos.text);
-});
+}); */
 
 /* const todoText = todos.map(function (todo) {
   return todo.text;
@@ -156,7 +156,7 @@ todos.forEach(function (todos) {
   return todo.text;
 }); */
 
-const todoCompleted = todos
+/* const todoCompleted = todos
   .filter(function (todo) {
     return todo.isCompleted === true;
   })
@@ -164,4 +164,12 @@ const todoCompleted = todos
     return todo.text;
   });
 
-console.log(todoCompleted);
+console.log(todoCompleted); */
+
+const p = '10';
+
+if (p === 10) {
+  console.log('x is 10');
+} else {
+  console.log('x is not 10');
+}

@@ -16,7 +16,7 @@ console.log(cAge);
 console.log("Const - You CAN'T assign a new value.");
 
 // STRINGS, NUMBERS, BOOLEAN, NULL, UNDEFINED, SYMBOL
-const firstName = 'John';
+/* const firstName = 'John'; */
 const age = 26;
 
 const isCool = true;
@@ -25,8 +25,8 @@ const x = null;
 const y = undefined;
 let z; // Also undefined when empty
 
-console.log('My name is ' + firstName + ' : ' + typeof firstName);
-console.log(`My name is ${firstName} : ${typeof firstName}`); // Another way to string interpolation
+/* console.log('My name is ' + firstName + ' : ' + typeof firstName);
+console.log(`My name is ${firstName} : ${typeof firstName}`); */ // Another way to string interpolation
 console.log('Age: ' + typeof age);
 console.log('isCool: ' + typeof isCool);
 console.log('coolRating: ' + typeof coolRating);
@@ -98,3 +98,19 @@ console.log(fruits[3]);
 
 fruits[5] = 'grapes';
 console.log(`Grapes has been added: ${fruits[5]}`);
+
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  hobbies: ['games', 'music', 'hockey'],
+  address: {
+    street: '50 Main St.',
+    city: 'Boston',
+    state: 'MA',
+  },
+};
+
+console.log(person.address.city);
+
+const { firstName, lastName } = person;

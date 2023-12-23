@@ -122,4 +122,5 @@ for (let i = 0; i < 10; i++) {
 let i = 0;
 while (i < 10) {
   console.log(`While loop number : ${i}`);
+  i++;
 }

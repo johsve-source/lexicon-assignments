@@ -142,3 +142,8 @@ const todos = [
     isCompleted: false,
   },
 ];
+
+// Recommended way to loop through array
+todos.forEach(function (todos) {
+  console.log(todos.text);
+});

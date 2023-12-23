@@ -89,3 +89,11 @@ const largeDataJSON = JSON.stringify(largeData);
 
 // Test parse speed with larger dataset
 measureAverageParseSpeed(largeDataJSON, 1000); // Adjust the number of iterations as needed
+
+/* Arrays */
+const fruits = ['apples', 'oranges', 'pears', 10, true];
+console.log(fruits);
+console.log(fruits[3]);
+
+fruits[5] = 'grapes';
+console.log(`Grapes has been added: ${fruits[5]}`);

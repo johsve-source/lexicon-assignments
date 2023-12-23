@@ -92,6 +92,7 @@ measureAverageParseSpeed(largeDataJSON, 1000); // Adjust the number of iteration
 
 /* Arrays */
 const fruits = ['apples', 'oranges', 'pears', 10, true];
+const objects = [1, 2, 3, 4, 5];
 console.log(fruits);
 console.log(fruits[3]);
 

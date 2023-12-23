@@ -124,3 +124,21 @@ while (i < 10) {
   console.log(`While loop number : ${i}`);
   i++;
 }
+
+const todos = [
+  {
+    id: 1,
+    text: 'ID 1',
+    isCompleted: false,
+  },
+  {
+    id: 2,
+    text: 'ID 2',
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    text: 'ID 3',
+    isCompleted: false,
+  },
+];

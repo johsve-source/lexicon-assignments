@@ -169,7 +169,25 @@ console.log(todoCompleted); */
 const p = '10';
 
 if (p === 10) {
+  // Error since === operator needs to be a string, since it outputs a string below. You could use == operator to bypass this.
   console.log('x is 10');
 } else {
   console.log('x is not 10');
 }
+
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob);
+  this.getBirthYear = function () {
+    return this.dob.getFullYear();
+  };
+  this.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  };
+}
+
+const person1 = new Person('John', 'Doe', '2-27-1997');
+
+console.log(person1.getBirthYear());
+console.log(person1.getFullName());

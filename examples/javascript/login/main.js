@@ -14,3 +14,13 @@ const items = document.querySelectorAll('.item');
 
 items.forEach((item) => console.log(item));
 */
+
+/* DOM Manipulation
+const ul = document.querySelector('.items');
+
+ul.lastElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'Brad';
+ul.firstElementChild.innerHTML = '<h4>Hello</h4>'; */
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';

@@ -1,3 +1,4 @@
+/* 
 // Single element selectors
 console.log(document.getElementById('my-form'));
 console.log(document.querySelector('h1'));
@@ -6,4 +7,10 @@ console.log(document.querySelector('h1'));
 console.log(document.querySelectorAll('.item')); // Recommended, newer.
 
 // Older version of the one above
-/* console.log(document.getElementsByClassName('item')) */
+console.log(document.getElementsByClassName('item')) 
+
+// Select all in .items using forEach
+const items = document.querySelectorAll('.item');
+
+items.forEach((item) => console.log(item));
+*/

@@ -175,7 +175,7 @@ if (p === 10) {
   console.log('x is not 10');
 }
 
-function Person(firstName, lastName, dob) {
+/* function Person(firstName, lastName, dob) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.dob = new Date(dob);
@@ -187,9 +187,27 @@ Person.prototype.getBirthYear = function () {
 
 Person.prototype.getFullName = function () {
   return `${this.firstName} ${this.lastName}`;
-};
+}; */
+
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+
+  getBirthYear() {
+    return this.dob.getFullYear();
+  }
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
 
 const person1 = new Person('John', 'Doe', '2-27-1997');
+const person2 = new Person('Mary', 'Doe', '4-3-1997');
 
 console.log(person1.getBirthYear());
 console.log(person1.getFullName());
+console.log(person2.getBirthYear());
+console.log(person2.getFullName());

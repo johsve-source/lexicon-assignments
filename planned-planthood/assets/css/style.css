@@ -81,7 +81,6 @@ nav {
 /* ========================= */
 
 /* ============= ROUNDED BOX */
-
 .roundedBox {
   display: flex;
   justify-content: center;
@@ -99,7 +98,6 @@ nav {
 /* ========================= */
 
 /* ======== SEASON CONTAINER */
-
 .season {
   display: grid;
   text-align: center;
@@ -143,3 +141,5 @@ nav {
   margin-block: 2rem;
 }
 /* ========================= */
+
+/* ======= PLANNED CONTAINER */

@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #fcf5fc;
   line-height: 1.6;
 }
 
@@ -28,6 +28,7 @@ nav {
 .wrapper {
   display: grid;
   justify-content: center;
+  background-color: white;
 }
 
 .topContainer {

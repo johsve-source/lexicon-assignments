@@ -3,6 +3,7 @@
 
 :root {
   --green: #0a846e;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
 }
 
 * {
@@ -130,7 +131,7 @@ nav {
   color: white;
   font-weight: 600;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+  box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
   padding: 0.5rem;
 }
@@ -138,8 +139,100 @@ nav {
 .season hr {
   color: var(--green);
   width: 11rem;
-  margin-block: 2rem;
+  margin-block: 2.5rem;
 }
 /* ========================= */
 
 /* ======= PLANNED CONTAINER */
+.plannedPlants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plannedPlants h3 {
+  margin-bottom: 1.2rem;
+}
+
+.cardGrid {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'card-1 card-2'
+    'card-3 card-4'
+    'card-5 card-6';
+  grid-gap: 1rem;
+}
+
+.card {
+  position: relative;
+  box-shadow: var(--shadow);
+  height: 16.5rem;
+  width: 12.5rem;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background: url('../img/plant.svg') no-repeat center/cover;
+}
+
+.card-1 {
+  grid-area: card-1;
+}
+
+.card-2 {
+  grid-area: card-2;
+}
+
+.card-3 {
+  grid-area: card-3;
+}
+
+.card-4 {
+  grid-area: card-4;
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card-6 {
+  grid-area: card-6;
+}
+
+.card .plant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .plantName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .plantName,
+.card .plant span {
+  font-size: 0.8rem;
+}
+
+.card .plant,
+.card .plant span {
+  font-weight: 600;
+}
+
+.card .plant,
+.card .plant span,
+.plantName {
+  margin: 0.3rem;
+}
+
+.card i {
+  margin-right: 0.3rem;
+}

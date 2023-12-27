@@ -1,3 +1,4 @@
+/* ========== GLOBAL STYLING */
 :root {
   --green: #0a846e;
 }
@@ -6,3 +7,67 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  display: none;
+}
+
+/* ========================= */
+
+/* ============ MAIN STYLING */
+.wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.topContainer {
+  display: grid;
+  grid-template-areas:
+    'hero hero'
+    'topBox-a topBox-b';
+}
+
+.hero {
+  grid-area: hero;
+  background: url('../img/heroBg.png') no-repeat center/cover;
+  height: 25rem;
+}
+
+.hero img {
+  height: 190px;
+  width: auto;
+}
+
+.hero,
+.topBox-a,
+.topBox-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topBox-a {
+  grid-area: topBox-a;
+  background-color: #9e6d52;
+}
+
+.topBox-b {
+  grid-area: topBox-b;
+  background-color: var(--green);
+}
+
+.topBox-a img,
+.topBox-b img {
+  height: 110px;
+}
+/* ========================= */

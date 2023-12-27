@@ -1,4 +1,6 @@
 /* ========== GLOBAL STYLING */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --green: #0a846e;
 }
@@ -11,6 +13,7 @@
 body {
   background-color: #fcf5fc;
   line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -22,15 +25,14 @@ nav {
   display: none;
 }
 
-/* ========================= */
-
-/* ============ MAIN STYLING */
 .wrapper {
   display: grid;
-  justify-content: center;
   background-color: white;
 }
 
+/* ========================= */
+
+/* =========== TOP CONTAINER */
 .topContainer {
   display: grid;
   grid-template-areas:
@@ -45,7 +47,7 @@ nav {
 }
 
 .hero img {
-  height: 190px;
+  height: 11.8rem;
   width: auto;
 }
 
@@ -55,6 +57,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topBox-a,
+.topBox-b {
+  padding-block: 2rem;
 }
 
 .topBox-a {
@@ -69,6 +76,70 @@ nav {
 
 .topBox-a img,
 .topBox-b img {
-  height: 110px;
+  height: 6.875rem;
+}
+/* ========================= */
+
+/* ============= ROUNDED BOX */
+
+.roundedBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+}
+
+.roundedBox img {
+  height: auto;
+  width: 8rem;
+}
+/* ========================= */
+
+/* ======== SEASON CONTAINER */
+
+.season {
+  display: grid;
+  text-align: center;
+  place-items: center;
+  margin-inline: 1.5rem;
+}
+
+.season h1 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: var(--green);
+}
+
+.season h2 {
+  font-size: 1rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.season p {
+  line-height: 1.2;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.season button {
+  width: 5rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--green);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+
+.season hr {
+  color: var(--green);
+  width: 11rem;
+  margin-block: 2rem;
 }
 /* ========================= */

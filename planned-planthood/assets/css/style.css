@@ -237,3 +237,7 @@ nav {
   margin-right: 0.3rem;
   font-size: 1rem;
 }
+
+.card .plantName {
+  opacity: 0.7;
+}

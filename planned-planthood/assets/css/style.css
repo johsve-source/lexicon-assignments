@@ -370,9 +370,9 @@ footer a {
 }
 /* ========================= */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 968px) {
   .wrapper {
-    width: 960px;
+    width: 968px;
     box-shadow: var(--shadow);
   }
 
@@ -397,21 +397,28 @@ footer a {
     padding: 0;
   }
 
-  .navigation li {
+  .navigation ul li {
     flex: 1;
     text-align: center;
     margin: 0;
-    padding-block: 15px;
     font-weight: 900;
     font-size: 0.85rem;
   }
 
-  .navigation li:hover {
+  .navigation ul li:hover {
     background-color: rgba(233, 233, 233, 0.5);
   }
 
-  .navigation a {
+  .navigation ul li a {
+    display: block;
+    padding-block: 15px;
     text-decoration: none;
     color: var(--green);
+  }
+
+  .cardGrid {
+    grid-template-areas:
+      'card-1 card-2 card-3'
+      'card-4 card-5 card-6';
   }
 }

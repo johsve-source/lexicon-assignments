@@ -376,6 +376,12 @@ footer a {
     box-shadow: var(--shadow);
   }
 
+  .topContainer {
+    grid-template-areas:
+      'hero topBox-a'
+      'hero topBox-b';
+  }
+
   .navigation {
     display: flex;
     flex-direction: column;
@@ -407,11 +413,5 @@ footer a {
   .navigation a {
     text-decoration: none;
     color: var(--green);
-  }
-
-  .topContainer {
-    grid-template-areas:
-      'hero topBox-a'
-      'hero topBox-b';
   }
 }

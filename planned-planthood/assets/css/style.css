@@ -111,11 +111,13 @@ nav {
   color: var(--green);
 }
 
+.plantedPlants h2,
 .season h2 {
   font-size: 1rem;
   margin: 2rem 0 0.5rem 0;
 }
 
+.plantedPlants p,
 .season p {
   line-height: 1.2;
   font-size: 0.9rem;
@@ -123,7 +125,8 @@ nav {
 }
 
 .season button,
-.plannedPlants button {
+.plannedPlants button,
+.plantedPlants button {
   width: 5rem;
   border: none;
   cursor: pointer;
@@ -246,3 +249,18 @@ nav {
 .card .plantName {
   opacity: 0.7;
 }
+/* ========================= */
+
+/* ======= PLANTED CONTAINER */
+.plantedPlants {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-inline: 1.5rem;
+}
+
+.plantedPlants button {
+  width: 9.5rem;
+}
+/* ========================= */

@@ -182,8 +182,8 @@ img {
 .card {
   position: relative;
   box-shadow: var(--shadow);
-  height: 16.5rem;
-  width: 12.5rem;
+  height: 15.5rem;
+  width: 11.5rem;
 }
 
 .card::before {

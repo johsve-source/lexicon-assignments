@@ -204,16 +204,12 @@ img {
   width: 50%;
   height: 50%;
   background: url('../img/plant.svg') no-repeat center/cover;
+
+  transition: opacity 0.8s;
 }
 
-.card img {
-  transition: transform 0.2s;
-}
-
-.card img:hover {
-  transform: scale(1.03);
-  border-radius: 2px;
-  cursor: pointer;
+.card:hover::before {
+  opacity: 0.2;
 }
 
 .card-1 {

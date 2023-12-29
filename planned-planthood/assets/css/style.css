@@ -205,11 +205,11 @@ img {
   height: 50%;
   background: url('../img/plant.svg') no-repeat center/cover;
 
-  transition: opacity 0.8s;
+  transition: opacity 1s;
 }
 
 .card:hover::before {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .card-1 {

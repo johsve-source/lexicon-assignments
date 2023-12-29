@@ -449,6 +449,12 @@ footer a:hover {
     padding-block: 15px;
     text-decoration: none;
     color: var(--green);
+
+    transition: transform 0.5s;
+  }
+
+  .navigation ul li a:hover {
+    transform: scale(1.1);
   }
 
   .cardGrid {

@@ -274,6 +274,7 @@ img {
 .card i:hover {
   transform: scale(1.1);
   cursor: pointer;
+  color: #b90202;
 }
 
 .card .plantName {

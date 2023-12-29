@@ -4,6 +4,7 @@
 :root {
   --green: #0a846e;
   --shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+  --darkShadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;
 }
 
 * {
@@ -144,6 +145,14 @@ img {
   box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
   padding: 0.5rem;
+
+  transition: box-shadow 0.7s;
+}
+
+.season button:hover,
+.plannedPlants button:hover,
+.plantedPlants button:hover {
+  box-shadow: var(--darkShadow);
 }
 
 .season hr {
@@ -376,6 +385,11 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
+  transition: transform 0.2s;
+}
+
+footer a:hover {
+  transform: scale(1.2);
 }
 /* ========================= */
 

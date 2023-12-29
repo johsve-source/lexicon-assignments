@@ -213,6 +213,7 @@ img {
 .card img:hover {
   transform: scale(1.03);
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .card-1 {

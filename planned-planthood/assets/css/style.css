@@ -379,6 +379,21 @@ img {
   color: white;
   z-index: 2;
 }
+
+.bottomCards .contact .phone p,
+.bottomCards .contact .mail p,
+.bottomCards .contact .phone i,
+.bottomCards .contact .mail i {
+  transition: transform 0.5s;
+}
+
+.bottomCards .contact .phone p:hover,
+.bottomCards .contact .mail p:hover,
+.bottomCards .contact .phone i:hover,
+.bottomCards .contact .mail i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /* ========================= */
 
 /* ======== FOOTER CONTAINER */
@@ -392,6 +407,7 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
+
   transition: transform 0.2s;
 }
 

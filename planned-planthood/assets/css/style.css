@@ -370,6 +370,18 @@ footer a {
 }
 /* ========================= */
 
+@media only screen and (max-width: 392px) {
+  .cardGrid {
+    grid-template-areas:
+      'card-1'
+      'card-2'
+      'card-3'
+      'card-4'
+      'card-5'
+      'card-6';
+  }
+}
+
 @media only screen and (min-width: 968px) {
   .wrapper {
     width: 968px;

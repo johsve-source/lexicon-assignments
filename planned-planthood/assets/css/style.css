@@ -213,6 +213,10 @@ img {
   opacity: 0;
 }
 
+.card img:hover {
+  cursor: pointer;
+}
+
 .card-1 {
   grid-area: card-1;
 }

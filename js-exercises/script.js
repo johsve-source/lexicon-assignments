@@ -31,3 +31,16 @@ let result3 = number1 / number2;
 console.log(`Subtraction ${result1}`);
 console.log(`Multiplication ${result2}`);
 console.log(`Division ${result3}`);
+
+let a = 31;
+console.log(a);
+
+a + 5;
+console.log(`Reassigned variable a and added 5, ${a}`);
+
+let a = 10;
+a = a - 4;
+a = 7;
+a = a + 2;
+
+console.log(a);

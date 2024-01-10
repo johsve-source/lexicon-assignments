@@ -12,3 +12,4 @@ console.log(cVar);
 
 const firstName = 'Johan';
 console.log(firstName);
+firstName = 'David'; // Error, you can't reassign const

@@ -9,3 +9,6 @@ const cVar = 'Variable used: const';
 console.log(kVar);
 console.log(lVar);
 console.log(cVar);
+
+const firstName = 'Johan';
+console.log(firstName);

@@ -23,3 +23,11 @@ if (firstName === 'David') {
 number1 = 23;
 number2 = 22;
 console.log(number1 + number2);
+
+let result1 = number1 - number2;
+let result2 = number1 * number2;
+let result3 = number1 / number2;
+
+console.log(`Subtraction ${result1}`);
+console.log(`Multiplication ${result2}`);
+console.log(`Division ${result3}`);

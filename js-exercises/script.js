@@ -49,7 +49,6 @@ let uName = prompt('Vad är ditt namn?');
 console.log(`Hej ${uName}! `);
 
 let uYear = prompt(`Vilket år är du född, ${uName}?`);
-console.log(uYear);
 
 const uDate = new Date().getFullYear();
 const uAge = uDate - uYear;

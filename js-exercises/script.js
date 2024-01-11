@@ -69,26 +69,27 @@ for (let i = 0; i < strNumber.length; i++) {
 }
 
 let uSum;
+let operatorMessage;
 
 switch (uCount) {
   case '+':
     uSum = intNumber[0] + intNumber[1];
-    alert(`När du adderar dessa två nummer så blir summan: ${uSum}`);
+    operatorMessage = 'adderar';
     break;
 
   case '-':
     uSum = intNumber[0] - intNumber[1];
-    alert(`När du subtraherar dessa två nummer så blir summan: ${uSum}`);
+    operatorMessage = 'subtraherar';
     break;
 
   case '*':
     uSum = intNumber[0] * intNumber[1];
-    alert(`När du multiplicerar dessa två nummer så blir summan: ${uSum}`);
+    operatorMessage = 'multiplicerar';
     break;
 
   case '/':
     uSum = intNumber[0] / intNumber[1];
-    alert(`När du dividerar dessa två nummer så blir summan: ${uSum}`);
+    operatorMessage = 'dividerar';
     break;
 
   default:
@@ -96,4 +97,8 @@ switch (uCount) {
       'Oriktig operator, använd följande: Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/"'
     );
     break;
+}
+
+if (uSum !== undefined) {
+  alert(`När du ${operatorMessage} dessa två nummer så blir summan: ${uSum}`);
 }

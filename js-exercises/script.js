@@ -56,34 +56,37 @@ const uAge = uDate - uYear;
 
 console.log(`${uName} är ${uAge} år gammal.`);
 
-let strNumber1 = prompt(`${uName}, ge mig ett nummer.`);
-let strNumber2 = prompt('Ge mig ett andra nummer.');
+let strNumber = [];
+let intNumber = [];
+
+strNumber[0] = prompt(`${uName}, ge mig ett nummer.`);
+strNumber[1] = prompt('Ge mig ett andra nummer.');
 let uCount = prompt(
   'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/")'
 );
 
-let intNumber1 = parseInt(strNumber1);
-let intNumber2 = parseInt(strNumber2);
+intNumber[0] = parseInt(strNumber1);
+intNumber[1] = parseInt(strNumber2);
 let uSum;
 
 switch (uCount) {
   case '+':
-    uSum = intNumber1 + intNumber2;
+    uSum = intNumber[0] + intNumber[1];
     alert(`When you add these two numbers, the sum will be: ${uSum}`);
     break;
 
   case '-':
-    uSum = intNumber1 - intNumber2;
+    uSum = intNumber[0] - intNumber[1];
     alert(`When you subtract these two numbers, the sum will be: ${uSum}`);
     break;
 
   case '*':
-    uSum = intNumber1 * intNumber2;
+    uSum = intNumber[0] * intNumber[1];
     alert(`When you multiply these two numbers, the sum will be: ${uSum}`);
     break;
 
   case '/':
-    uSum = intNumber1 / intNumber2;
+    uSum = intNumber[0] / intNumber[1];
     alert(`When you divide these two numbers, the sum will be: ${uSum}`);
     break;
 

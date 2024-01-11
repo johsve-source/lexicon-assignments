@@ -62,16 +62,30 @@ let uCount = prompt(
   'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/"'
 );
 
-if (uCount === '+') {
-  let uSum = uNumber1 + uNumber2;
-  alert(`When you add these two numbers, the sum will be: ${uSum}`);
-} else if (uCount === '-') {
-  let uSum = uNumber1 - uNumber2;
-  alert(`When you subtract these two numbers, the sum will be: ${uSum}`);
-} else if (uCount === '*') {
-  let uSum = uNumber1 * uNumber2;
-  alert(`When you multiply these two numbers, the sum will be: ${uSum}`);
-} else if (uCount === '/') {
-  let uSum = uNumber1 / uNumber2;
-  alert(`When you divide these two numbers, the sum will be: ${uSum}`);
+let uSum;
+
+switch (uCount) {
+  case '+':
+    uSum = uNumber1 + uNumber2;
+    alert(`When you add these two numbers, the sum will be: ${uSum}`);
+    break;
+
+  case '-':
+    uSum = uNumber1 - uNumber2;
+    alert(`When you subtract these two numbers, the sum will be: ${uSum}`);
+    break;
+
+  case '*':
+    uSum = uNumber1 * uNumber2;
+    alert(`When you multiply these two numbers, the sum will be: ${uSum}`);
+    break;
+
+  case '/':
+    uSum = uNumber1 / uNumber2;
+    alert(`When you divide these two numbers, the sum will be: ${uSum}`);
+    break;
+
+  default:
+    alert('Invalid operator');
+    break;
 }

@@ -55,3 +55,23 @@ const uDate = new Date().getFullYear();
 const uAge = uDate - uYear;
 
 console.log(`${uName} är ${uAge} år gammal.`);
+
+let uNumber1 = prompt(`${uName}, ge mig ett nummer.`);
+let uNumber2 = prompt('Ge mig ett andra nummer.');
+let uCount = prompt(
+  'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/"'
+);
+
+if (uCount === '+') {
+  let uSum = uNumber1 + uNumber2;
+  alert(`When you add these two numbers, the sum will be: ${uSum}`);
+} else if (uCount === '-') {
+  let uSum = uNumber1 - uNumber2;
+  alert(`When you subtract these two numbers, the sum will be: ${uSum}`);
+} else if (uCount === '*') {
+  let uSum = uNumber1 * uNumber2;
+  alert(`When you multiply these two numbers, the sum will be: ${uSum}`);
+} else if (uCount === '/') {
+  let uSum = uNumber1 / uNumber2;
+  alert(`When you divide these two numbers, the sum will be: ${uSum}`);
+}

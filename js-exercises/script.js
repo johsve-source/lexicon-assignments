@@ -73,22 +73,22 @@ let uSum;
 switch (uCount) {
   case '+':
     uSum = intNumber[0] + intNumber[1];
-    alert(`When you add these two numbers, the sum will be: ${uSum}`);
+    alert(`När du adderar dessa två nummer så blir summan: ${uSum}`);
     break;
 
   case '-':
     uSum = intNumber[0] - intNumber[1];
-    alert(`When you subtract these two numbers, the sum will be: ${uSum}`);
+    alert(`När du subtraherar dessa två nummer så blir summan: ${uSum}`);
     break;
 
   case '*':
     uSum = intNumber[0] * intNumber[1];
-    alert(`When you multiply these two numbers, the sum will be: ${uSum}`);
+    alert(`När du multiplicerar dessa två nummer så blir summan: ${uSum}`);
     break;
 
   case '/':
     uSum = intNumber[0] / intNumber[1];
-    alert(`When you divide these two numbers, the sum will be: ${uSum}`);
+    alert(`När du dividerar dessa två nummer så blir summan: ${uSum}`);
     break;
 
   default:

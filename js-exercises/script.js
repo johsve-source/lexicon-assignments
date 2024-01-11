@@ -65,8 +65,10 @@ let uCount = prompt(
   'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/")'
 );
 
-intNumber[0] = parseInt(strNumber[0]);
-intNumber[1] = parseInt(strNumber[1]);
+for (let i = 0; i < strNumber.length; i++) {
+  intNumber[i] = parseInt(strNumber[i]);
+}
+
 let uSum;
 
 switch (uCount) {

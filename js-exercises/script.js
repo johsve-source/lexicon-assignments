@@ -59,7 +59,7 @@ console.log(`${uName} är ${uAge} år gammal.`);
 let uNumber1 = prompt(`${uName}, ge mig ett nummer.`);
 let uNumber2 = prompt('Ge mig ett andra nummer.');
 let uCount = prompt(
-  'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/"'
+  'Vad vill du göra med dessa nummer? (Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/")'
 );
 
 let uSum;
@@ -86,6 +86,8 @@ switch (uCount) {
     break;
 
   default:
-    alert('Invalid operator');
+    alert(
+      'Oriktig operator, använd följande: Addition: "+", Subtraktion: "-", Multiplikation: "*" eller Division: "/"'
+    );
     break;
 }

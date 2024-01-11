@@ -1,4 +1,4 @@
-let age = 26;
+/* let age = 26;
 
 console.log(`This is my age ${age}`);
 
@@ -43,4 +43,4 @@ a = a - 4;
 a = 7;
 a = a + 2;
 
-console.log(a);
+console.log(a); */

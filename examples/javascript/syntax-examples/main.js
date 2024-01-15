@@ -219,3 +219,14 @@ const calculateMean = (...numbers) => {
 };
 
 calculateMean(1, 2, 3, 4, 5, 6, 7, 8);
+
+const addNumbers = (...numbers) => {
+  if (numbers.length < 10 || numbers.length > 10) {
+    return console.log('You can only pass in 10 numbers.');
+  }
+
+  const totalSum = numbers.reduce((sum, num) => sum + num, 0);
+  return console.log(`${totalSum}`);
+};
+
+addNumbers(1, 1, 1, 1, 1, 1, 1, 1, 1, 1);

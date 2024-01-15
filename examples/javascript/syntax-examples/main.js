@@ -211,3 +211,11 @@ console.log(person1.getBirthYear());
 console.log(person1.getFullName());
 console.log(person2.getBirthYear());
 console.log(person2.getFullName());
+
+const calculateMean = (...numbers) => {
+  const totalSum = numbers.reduce((sum, num) => sum + num, 0);
+  const mean = totalSum / numbers.length;
+  console.log(`${mean}`);
+};
+
+calculateMean(1, 2, 3, 4, 5, 6, 7, 8);

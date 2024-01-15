@@ -233,3 +233,23 @@ const addNumbers = (...numbers) => {
 };
 
 addNumbers(1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+const persontwo = {
+  firstName: 'Johan',
+  lastName: 'Svensson',
+  age: 26,
+  address: {
+    street: 'Brunnsgatan 5B',
+    city: 'Huskvarna',
+    state: 'Jönköping',
+    zip: '561 41',
+  },
+  skills: ['games', 'music', 'hockey', 'Ninja', 'Jump High'],
+};
+
+const listSkills = (person) => {
+  const skills = person.skills;
+  return console.log(skills);
+};
+
+listSkills(persontwo);

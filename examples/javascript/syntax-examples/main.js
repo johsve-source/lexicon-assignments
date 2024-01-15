@@ -213,12 +213,15 @@ console.log(person2.getBirthYear());
 console.log(person2.getFullName());
 
 const calculateMean = (...numbers) => {
+  if (numbers.length <= 1) {
+    return console.log('You need to put in atleast 2 numbers');
+  }
   const totalSum = numbers.reduce((sum, num) => sum + num, 0);
   const mean = totalSum / numbers.length;
   console.log(`${mean}`);
 };
 
-calculateMean(1, 2, 3, 4, 5, 6, 7, 8);
+calculateMean(1, 2, 3);
 
 const addNumbers = (...numbers) => {
   if (numbers.length < 10 || numbers.length > 10) {

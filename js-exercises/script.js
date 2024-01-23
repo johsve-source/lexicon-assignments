@@ -46,7 +46,7 @@ a = a + 2;
 console.log(a); */
 
 let uName = prompt('Vad är ditt namn?');
-console.log(`Hej ${uName}! `);
+console.log(`Hej ${uName}!`);
 
 let uYear = prompt(`Vilket år är du född, ${uName}?`);
 

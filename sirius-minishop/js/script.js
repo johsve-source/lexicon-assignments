@@ -14,3 +14,6 @@ secondChild.innerText = 'Mail Us';
 
 const art2 = document.querySelector('article.art-2 p');
 art2.innerText = "Lorem Ipsum changed";
+
+const art3 = document.querySelector('.art-3 button');
+art3.innerText = "Changed";

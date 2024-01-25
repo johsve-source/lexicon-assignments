@@ -20,3 +20,6 @@ art3.innerText = "Changed";
 
 const artBg = document.querySelector('article.art-1 figure');
 artBg.style.backgroundColor = 'red';
+
+const adress = document.querySelector('footer article:nth-child(2) p');
+adress.innerText = "Test";

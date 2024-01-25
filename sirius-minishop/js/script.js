@@ -8,3 +8,4 @@ h3.innerText = "Potato";
 const menu = document.querySelector('nav');
 const firstChild = menu.querySelector('a');
 firstChild.innerText = 'Start';
+

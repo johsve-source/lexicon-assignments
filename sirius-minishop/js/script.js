@@ -64,3 +64,10 @@ logoClick.addEventListener('click', () => {
     console.log('found you!');
 });
 
+const articleClick = document.querySelectorAll('main article');
+articleClick.forEach(article => {
+    article.addEventListener('click', () => {
+        console.log("Hi, I'm article Fire/Ash/Water");
+    });
+})
+

@@ -28,3 +28,8 @@ const allParagraphs = document.querySelectorAll('p');
 allParagraphs.forEach(paragraphs => {
     paragraphs.style.color = 'blue';
 });
+
+const allButtons = document.querySelectorAll('button');
+allButtons.forEach(button => {
+    button.innerText = 'add to cart';
+});

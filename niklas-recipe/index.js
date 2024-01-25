@@ -1,3 +1,4 @@
-const getSize = document.querySelector('.description');
-const fontSize = window.getComputedStyle(getSize).fontSize;
-console.log(fontSize);
+const secondsToMinutes = (minutes) => {
+    const sec = (minutes * 60);
+    return sec;
+}

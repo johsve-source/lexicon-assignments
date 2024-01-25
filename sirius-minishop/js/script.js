@@ -33,3 +33,6 @@ const allButtons = document.querySelectorAll('button');
 allButtons.forEach(button => {
     button.innerText = 'add to cart';
 });
+
+const firstMenu = document.querySelector('nav :nth-child(1)');
+firstMenu.classList.add('.active');

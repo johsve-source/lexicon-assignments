@@ -40,3 +40,22 @@ firstMenu.classList.add('.active');
 const logo = document.querySelector('header img');
 logo.classList.remove('.logo');
 
+const newNavItem = document.createElement('a');
+newNavItem.href = '#';
+newNavItem.textContent = 'New Item';
+
+menu.appendChild(newNavItem);
+
+const newItem = document.createElement('article');
+newItem.className = 'art-4';
+newItem.innerHTML = `
+    <figure><img src="img/hoodie-fire.png" alt="hoodie"></figure>
+    <h2>New Hoodie</h2>
+    <h3>Color</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. New description.</p>
+    <button>buy</button>
+`;
+
+const main = document.querySelector('main');
+main.appendChild(newItem);
+

@@ -36,3 +36,7 @@ allButtons.forEach(button => {
 
 const firstMenu = document.querySelector('nav :nth-child(1)');
 firstMenu.classList.add('.active');
+
+const logo = document.querySelector('header img');
+logo.classList.remove('.logo');
+

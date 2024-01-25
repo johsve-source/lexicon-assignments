@@ -17,3 +17,6 @@ art2.innerText = "Lorem Ipsum changed";
 
 const art3 = document.querySelector('.art-3 button');
 art3.innerText = "Changed";
+
+const artBg = document.querySelector('article.art-1 figure');
+artBg.style.backgroundColor = 'red';

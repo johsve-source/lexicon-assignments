@@ -23,3 +23,8 @@ artBg.style.backgroundColor = 'red';
 
 const adress = document.querySelector('footer article:nth-child(2) p');
 adress.innerText = "Test";
+
+const allParagraphs = document.querySelectorAll('p');
+allParagraphs.forEach(paragraphs => {
+    paragraphs.style.color = 'blue';
+});

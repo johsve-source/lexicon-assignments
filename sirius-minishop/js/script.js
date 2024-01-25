@@ -6,8 +6,11 @@ const h3 = art1.querySelector('h3');
 h3.innerText = "Potato";
 
 const menu = document.querySelector('nav');
-const firstChild = menu.querySelector('a');
+const firstChild = menu.querySelector(':nth-child(1)');
 firstChild.innerText = 'Start';
+
+const secondChild = menu.querySelector(':nth-child(3)');
+secondChild.innerText = 'Mail Us';
 
 const art2 = document.querySelector('article.art-2 p');
 art2.innerText = "Lorem Ipsum changed";

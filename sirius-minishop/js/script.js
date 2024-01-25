@@ -59,3 +59,8 @@ newItem.innerHTML = `
 const main = document.querySelector('main');
 main.appendChild(newItem);
 
+const logoClick = document.querySelector('header img');
+logoClick.addEventListener('click', () => {
+    console.log('found you!');
+});
+

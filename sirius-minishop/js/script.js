@@ -9,3 +9,5 @@ const menu = document.querySelector('nav');
 const firstChild = menu.querySelector('a');
 firstChild.innerText = 'Start';
 
+const art2 = document.querySelector('article.art-2 p');
+art2.innerText = "Lorem Ipsum changed";

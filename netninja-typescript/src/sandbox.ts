@@ -1,15 +1,4 @@
-let character: string = 'mario';
-let age: number = 30;
-let isBlackBelt: boolean = false;
+let names = ['luigi', 'mario', 'yoshi'];
 
-// Since you've declared the type to specific types, you can't reassign the variables to any other type than the one specified.
-// character = 20; -> Error
-character = 'luigi'; // This works since it's a string.
-age = 40;
-isBlackBelt = false;
-
-const circ = (diameter: number) => {
-  return Math.floor(diameter * Math.PI);
-};
-
-console.log(circ(30));
+names.push('toad');
+console.log(names);

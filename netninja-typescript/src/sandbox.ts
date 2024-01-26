@@ -9,7 +9,7 @@ age = 40;
 isBlackBelt = false;
 
 const circ = (diameter: number) => {
-  return diameter * Math.PI;
+  return Math.floor(diameter * Math.PI);
 };
 
 console.log(circ(30));

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 let character = 'mario';
 let age = 30;
 let isBlackBelt = false;
@@ -8,6 +8,7 @@ character = 'luigi'; // This works since it's a string.
 age = 40;
 isBlackBelt = false;
 const circ = (diameter) => {
-    return diameter * Math.PI;
+  return diameter * Math.PI;
 };
 console.log(circ(30));
+

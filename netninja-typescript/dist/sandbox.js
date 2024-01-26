@@ -1,7 +1,13 @@
 "use strict";
-const character = 'mario';
-console.log(character);
-const inputs = document.querySelectorAll('input');
-inputs.forEach((input) => {
-    console.log(input);
-});
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
+// Since you've declared the type to specific types, you can't reassign the variables to any other type than the one specified.
+// character = 20; -> Error
+character = 'luigi'; // This works since it's a string.
+age = 40;
+isBlackBelt = false;
+const circ = (diameter) => {
+    return diameter * Math.PI;
+};
+console.log(circ(30));

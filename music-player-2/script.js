@@ -6,6 +6,7 @@ const audio = document.getElementById('audio');
 const progress = document.querySelector('.progress');
 const title = document.getElementById('title');
 const imgContainer = document.getElementById('img-container');
+const playlist = document.getElementById('playlist');
 const songs = [
   {
     name: 'hey',
@@ -82,3 +83,23 @@ prevBtn.addEventListener('click', loadPrevSong);
 nextBtn.addEventListener('click', loadNextSong);
 
 loadSong(songs[songIndex]);
+
+function createPlaylistItem(song) {
+  const li = document.createElement('li');
+
+  li.innerText = song.displayName;
+
+  li.addEventListener('click', () => {
+    songIndex = songs.findIndex((s) => s.name === song.name);
+
+    loadSong(song);
+
+    playSong();
+  });
+
+  return li;
+}
+
+songs.forEach((song) => {
+  playlist.appendChild(createPlaylistItem(song));
+});

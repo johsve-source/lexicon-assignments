@@ -23,3 +23,18 @@ const songs = [
     cover: 'ukulele',
   },
 ];
+
+let songIndex = 0;
+
+function loadSong(song) {
+  title.innerText = song.displayName;
+  audio.src = `music/${song.name}.mp3`;
+  document.getElementById('cover').src = `./images/${song.cover}.jpg`;
+}
+
+function playSong() {
+  musicContainer.classList.add('play');
+  playBtn.querySelector('i.fas').classList.add('fa-pause');
+  playBtn.querySelector('i.fas').classList.remove('fa-play');
+  audio.play();
+}

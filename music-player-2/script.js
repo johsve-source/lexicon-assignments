@@ -45,3 +45,12 @@ function pauseSong() {
   playBtn.querySelector('i.fas').classList.remove('fa-pause');
   audio.pause();
 }
+
+function loadNextSong() {
+  songIndex++;
+  if (songIndex >= songs.length) {
+    songIndex = 0;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}

@@ -81,9 +81,23 @@ playBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', loadPrevSong);
 nextBtn.addEventListener('click', loadNextSong);
-progress.addEventListener('click', setAudioTimeFromProgress);
 
 loadSong(songs[songIndex]);
+
+function createPlaylistItem(song) {
+  const li = document.createElement('li');
+  li.innerText = song.displayName;
+  li.addEventListener('click', () => {
+    songIndex = songs.findIndex((s) => s.name === song.name);
+    loadSong(song);
+    playSong();
+  });
+  return li;
+}
+
+songs.forEach((song) => {
+  playlist.appendChild(createPlaylistItem(song));
+});
 
 function createPlaylistItem(song) {
   const li = document.createElement('li');
@@ -97,16 +111,4 @@ function createPlaylistItem(song) {
     playSong();
   });
   return li;
-}
-
-songs.forEach((song) => {
-  playlist.appendChild(createPlaylistItem(song));
-});
-
-function setAudioTimeFromProgress(e) {
-  const progressWidth = this.clientWidth;
-  const clickX = e.clientX - this.offsetLeft;
-  const percent = (clickX / progressWidth) * 100;
-  const newTime = (audio.duration / 100) * percent;
-  audio.currentTime = newTime;
 }

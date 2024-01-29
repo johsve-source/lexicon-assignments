@@ -63,3 +63,22 @@ function loadPrevSong() {
   loadSong(songs[songIndex]);
   playSong();
 }
+
+audio.addEventListener('timeupdate', (e) => {
+  const progressPercent = (audio.currentTime / audio.duration) * 100;
+  progress.style.width = `${progressPercent}%`;
+});
+
+playBtn.addEventListener('click', () => {
+  const isPlaying = musicContainer.classList.contains('play');
+  if (isPlaying) {
+    pauseSong();
+  } else {
+    playSong();
+  }
+});
+
+prevBtn.addEventListener('click', loadPrevSong);
+nextBtn.addEventListener('click', loadNextSong);
+
+loadSong(songs[songIndex]);

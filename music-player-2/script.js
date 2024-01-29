@@ -103,3 +103,17 @@ function createPlaylistItem(song) {
 songs.forEach((song) => {
   playlist.appendChild(createPlaylistItem(song));
 });
+
+function createPlaylistItem(song) {
+  const li = document.createElement('li');
+  li.innerHTML = `
+  <img src="./images/${song.cover}.jpg" alt="${song.displayName}"width="30" height="30" />
+  <span>${song.displayName}</span>
+  `;
+  li.addEventListener('click', () => {
+    songIndex = songs.findIndex((s) => s.name === song.name);
+    loadSong(song);
+    playSong();
+  });
+  return li;
+}

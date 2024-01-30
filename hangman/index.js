@@ -8,3 +8,9 @@ const chooseRandomWord = () => {
   const randomIndex = Math.floor(Math.random() * wordArray.length);
   return wordArray[randomIndex];
 };
+
+const initalizeGame = () => {
+  correctWord = chooseRandomWord();
+  guessedLetters = [];
+  incorrectGuesses = 0;
+};

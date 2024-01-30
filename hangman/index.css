@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
   background-color: #f2f2f2;
 }
@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .letters-container {
@@ -21,13 +20,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
 .letters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 

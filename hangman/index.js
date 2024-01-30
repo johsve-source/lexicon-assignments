@@ -14,3 +14,11 @@ const initalizeGame = () => {
   guessedLetters = [];
   incorrectGuesses = 0;
 };
+
+const renderInitialDisplay = () => {
+  const display = document.querySelector('.word');
+  display.textContent = '';
+  for (let i = 0; i < correctWord.length; i++) {
+    display.textContent += '_ ';
+  }
+};

@@ -36,3 +36,8 @@ const updateDisplay = () => {
     }
   }
 };
+
+const updateIncorrectGuesses = () => {
+  const incorrectGuessesDisplay = document.querySelector('.incorrect-guesses');
+  incorrectGuessesDisplay.textContent = `Incorrect Guesses: ${incorrectGuesses}`;
+};

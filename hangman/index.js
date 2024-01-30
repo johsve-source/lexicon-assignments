@@ -9,16 +9,30 @@ const chooseRandomWord = () => {
   return wordArray[randomIndex];
 };
 
+const renderInitialDisplay = () => {
+  const display = document.querySelector('.word');
+  display.textContent = '';
+  for (let i = 0; i < correctWord.length; i++) {
+    display.textContent += '_ ';
+  }
+  initilizeGame();
+  updateDisplay();
+};
+
 const initalizeGame = () => {
   correctWord = chooseRandomWord();
   guessedLetters = [];
   incorrectGuesses = 0;
 };
 
-const renderInitialDisplay = () => {
-  const display = document.querySelector('.word');
-  display.textContent = '';
+const updateDisplay = () => {
+  const wordDisplay = document.querySelector('.word');
+  wordDisplay.textContent = '';
   for (let i = 0; i < correctWord.length; i++) {
-    display.textContent += '_ ';
+    if (guessedLetters.includes(correctWord[i])) {
+      wordDisplay.textContent += correctWord[i] + ' ';
+    } else {
+      wordDisplay.textContent += '_ ';
+    }
   }
 };

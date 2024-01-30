@@ -1,43 +1,16 @@
-import wordArray from './words';
+import wordArray from './words.js';
+import { Hangman } from './hangman.js';
 
-let correctWord = '';
-let guessedLetters = [];
-let incorrectGuesses = 0;
+const hangman = new Hangman(wordArray);
+hangman.play();
 
-const chooseRandomWord = () => {
-  const randomIndex = Math.floor(Math.random() * wordArray.length);
-  return wordArray[randomIndex];
+window.reset = () => {
+  hangman.reset();
+  hangman.play();
 };
 
-const renderInitialDisplay = () => {
-  const display = document.querySelector('.word');
-  display.textContent = '';
-  for (let i = 0; i < correctWord.length; i++) {
-    display.textContent += '_ ';
-  }
-  initilizeGame();
-  updateDisplay();
+window.playAgain = () => {
+  hangman.play();
 };
 
-const initalizeGame = () => {
-  correctWord = chooseRandomWord();
-  guessedLetters = [];
-  incorrectGuesses = 0;
-};
-
-const updateDisplay = () => {
-  const wordDisplay = document.querySelector('.word');
-  wordDisplay.textContent = '';
-  for (let i = 0; i < correctWord.length; i++) {
-    if (guessedLetters.includes(correctWord[i])) {
-      wordDisplay.textContent += correctWord[i] + ' ';
-    } else {
-      wordDisplay.textContent += '_ ';
-    }
-  }
-};
-
-const updateIncorrectGuesses = () => {
-  const incorrectGuessesDisplay = document.querySelector('.incorrect-guesses');
-  incorrectGuessesDisplay.textContent = `Incorrect Guesses: ${incorrectGuesses}`;
-};
+window.hangman = hangman;

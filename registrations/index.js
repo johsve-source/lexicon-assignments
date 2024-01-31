@@ -33,37 +33,52 @@ const isPasswordComplex = (password) => {
     complexity++;
   }
 
-  if (complexity >= prevComplexity) {
+  if (complexity > prevComplexity) {
     prevComplexity = complexity;
+    handlePasswordComplexity(complexity);
+  } else if (complexity < prevComplexity) {
+    prevComplexity = complexity;
+    handlePasswordComplexity(complexity);
+  }
+};
 
-    if (complexity === 4) {
-      console.log('Very Strong: Your password is secure!');
-      password.style.boxShadow = '0 0 0 1.85px hsla(118, 100%, 51%, 0.5)';
-    } else if (complexity === 3) {
-      console.log(
-        'Strong: Good job, but a bit more complexity is recommended.'
-      );
-    } else if (complexity === 2) {
-      console.log('Moderate: Consider adding more complexity.');
-    } else if (complexity === 1) {
-      console.log('Weak: Password needs improvement.');
-    } else {
-      console.log('Password does not meet complexity requirements.');
-    }
-  } else {
-    console.log('Removing required characters. Please add them back.');
+const handlePasswordComplexity = (complexity) => {
+  if (complexity === 4) {
+    password.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
+    console.log('Very Strong: Your password is secure!');
+  } else if (complexity === 3) {
     password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
-    prevComplexity--;
-    isPasswordComplex(password);
+    console.log('Strong: Good job, but a bit more complexity is recommended.');
+  } else if (complexity === 2) {
+    password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+    console.log('Moderate: Consider adding more complexity.');
+  } else if (complexity === 1) {
+    password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+    console.log('Weak: Password needs improvement.');
+  } else {
+    password.style.boxShadow = 'none';
   }
 };
 
 const validatePassword = () => {
   if (password.value === confirmPassword.value) {
-    confirmPassword.style.boxShadow = '0 0 0 1.85px hsla(118, 100%, 51%, 0.5)';
+    confirmPassword.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
+    return true;
   } else {
     confirmPassword.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+    return false;
   }
+};
+
+const isEmailValid = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
+const emptySensitiveFields = () => {
+  password.value = '';
+  cpassword.value = '';
+  email.value = '';
 };
 
 password.addEventListener('input', (e) => {
@@ -86,6 +101,15 @@ button.addEventListener('click', (e) => {
     !confirmPassword.value
   ) {
     return alert('Please fill in all fields.');
+  }
+
+  if (!validatePassword()) {
+    emptySensitiveFields();
+    return alert('Your password does not match.');
+  }
+  if (!isEmailValid(email.value.trim())) {
+    emptySensitiveFields();
+    return alert('Please provide a correct email.');
   }
 
   registrationData.name = name.value;

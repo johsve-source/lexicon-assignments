@@ -9,9 +9,6 @@ const isPasswordComplex = (password) => {
   if (/[A-Z]/.test(password.value)) {
     complexity++;
   }
-  if (/\d/.test(password.value)) {
-    complexity++;
-  }
   if (/[a-z]/.test(password.value)) {
     complexity++;
   }

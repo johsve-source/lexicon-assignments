@@ -48,6 +48,10 @@ function updateWordDisplay() {
 }
 
 function handleUserInput(letter) {
+  if (remainingGuesses === 0 || messageDisplay.textContent.includes('won')) {
+    return;
+  }
+
   guessedLetters.push(letter);
   updateWordDisplay();
   checkLetter(letter);

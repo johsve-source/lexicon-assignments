@@ -6,10 +6,10 @@ const confirmPassword = document.querySelector('#cpassword');
 const button = document.querySelector('#button');
 
 const registrationData = {
-  name: '',
-  username: '',
-  email: '',
-  password: '',
+  name: 'undefined',
+  username: 'undefined',
+  email: 'undefined',
+  password: 'undefined',
 };
 
 let prevComplexity = -1;

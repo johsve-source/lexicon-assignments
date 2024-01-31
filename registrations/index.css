@@ -29,6 +29,13 @@
 
 .registration input {
   border-radius: 5px;
+  padding-left: 5px;
+  margin-top: 2px;
+}
+
+.registration input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.85px hsla(226, 100%, 64%, 0.5);
 }
 
 .registration label {

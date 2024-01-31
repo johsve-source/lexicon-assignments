@@ -77,6 +77,17 @@ confirmPassword.addEventListener('input', (e) => {
 
 button.addEventListener('click', (e) => {
   e.preventDefault();
+
+  if (
+    !name.value ||
+    !username.value ||
+    !email.value ||
+    !password.value ||
+    !confirmPassword.value
+  ) {
+    return alert('Please fill in all fields.');
+  }
+
   registrationData.name = name.value;
   registrationData.username = username.value;
   registrationData.email = email.value;

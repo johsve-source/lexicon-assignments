@@ -75,7 +75,9 @@ const emptySensitiveFields = () => {
 };
 
 email.addEventListener('input', (e) => {
-  if (isEmailValid(email.value)) {
+  if (!isEmailValid(email.value)) {
+    email.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+  } else {
     email.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
   }
 });

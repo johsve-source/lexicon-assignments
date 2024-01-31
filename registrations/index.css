@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #aaaaaa2a;
+  background-color: rgba(0, 0, 0, 0.05);
   width: 300px;
   height: 500px;
   border-radius: 5px;

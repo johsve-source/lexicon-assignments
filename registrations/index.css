@@ -46,6 +46,11 @@
   box-shadow: 0 0 0 1.85px hsla(226, 100%, 64%, 0.5);
 }
 
+.registration input[type=password]:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.85px hsla(0, 100%, 64%, 0.5);
+}
+
 .registration label {
   display: flex;
   flex-direction: column;

@@ -11,7 +11,8 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background-color: #fffdd0a8;
+  background-image: radial-gradient(circle at 31.7% -18.3%, #586065 0, #3e525f 25%, #1f4459 50%, #003653 75%, #00294e 100%);
+  color: #fff;
 }
 
 .container h2 {
@@ -22,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 300px;
   height: 500px;
   border-radius: 5px;

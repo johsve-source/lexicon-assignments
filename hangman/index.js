@@ -106,7 +106,6 @@ function showPlayButtons() {
   playAgainButton.style.display = 'block';
 }
 
-// Event listeners for buttons
 playAgainButton.addEventListener('click', playAgain);
 
 document.addEventListener('keydown', (event) => {

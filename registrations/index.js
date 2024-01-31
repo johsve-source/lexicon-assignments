@@ -1,5 +1,16 @@
+const name = document.querySelector('#name');
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const confirmPassword = document.querySelector('#cpassword');
+const button = document.querySelector('#button');
+
+const registrationData = {
+  name: '',
+  username: '',
+  email: '',
+  password: '',
+};
 
 let prevComplexity = -1;
 
@@ -62,4 +73,14 @@ password.addEventListener('input', (e) => {
 
 confirmPassword.addEventListener('input', (e) => {
   validatePassword();
+});
+
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+  registrationData.name = name.value;
+  registrationData.username = username.value;
+  registrationData.email = email.value;
+  registrationData.password = password.value;
+
+  console.log(registrationData);
 });

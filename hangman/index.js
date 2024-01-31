@@ -57,7 +57,7 @@ function checkLetter(letter) {
   if (!selectedWord.includes(letter)) {
     messageDisplay.textContent = 'Incorrect!';
     remainingGuesses--;
-    updateHangmanImage(); // Update hangman image separately
+    updateHangmanImage();
   } else {
     messageDisplay.textContent = 'Correct!';
   }
@@ -66,12 +66,15 @@ function checkLetter(letter) {
     messageDisplay.textContent =
       'Game over! You lost. The word was: ' + selectedWord;
     showPlayButtons();
-  } else if (
-    !selectedWord.split('').some((char) => !guessedLetters.includes(char))
-  ) {
-    // Check if all letters in the word have been guessed
-    messageDisplay.textContent = 'Congratulations! You won!';
-    showPlayButtons();
+  } else {
+    const wordIsGuessed = selectedWord
+      .split('')
+      .every((char) => guessedLetters.includes(char));
+
+    if (wordIsGuessed) {
+      messageDisplay.textContent = 'Congratulations! You won!';
+      showPlayButtons();
+    }
   }
 }
 

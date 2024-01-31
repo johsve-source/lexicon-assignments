@@ -1,4 +1,5 @@
 const password = document.querySelector('#password');
+let prevComplexity = -1;
 
 const isPasswordComplex = (password) => {
   let complexity = -1;
@@ -19,21 +20,31 @@ const isPasswordComplex = (password) => {
     complexity++;
   }
 
-  if (complexity >= 4) {
-    console.log('Very Strong: Your password is secure!');
-    password.style.boxShadow = '0 0 0 1.85px hsla(226, 100%, 64%, 0.5)';
-  } else if (complexity === 3) {
-    console.log('Strong: Good job, but a bit more complexity is recommended.');
-  } else if (complexity === 2) {
-    console.log('Moderate: Consider adding more complexity.');
-  } else if (complexity === 1) {
-    console.log('Weak: Password needs improvement.');
+  if (complexity >= prevComplexity) {
+    prevComplexity = complexity;
+
+    if (complexity === 4) {
+      console.log('Very Strong: Your password is secure!');
+      password.style.boxShadow = '0 0 0 1.85px hsla(226, 100%, 64%, 0.5)';
+    } else if (complexity === 3) {
+      console.log(
+        'Strong: Good job, but a bit more complexity is recommended.'
+      );
+    } else if (complexity === 2) {
+      console.log('Moderate: Consider adding more complexity.');
+    } else if (complexity === 1) {
+      console.log('Weak: Password needs improvement.');
+    } else {
+      console.log('Password does not meet complexity requirements.');
+    }
   } else {
-    console.log('Password does not meet complexity requirements.');
+    console.log('Removing required characters. Please add them back.');
+    password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+    prevComplexity--;
+    isPasswordComplex(password);
   }
 };
 
 password.addEventListener('input', (e) => {
-  const result = isPasswordComplex(e.target);
-  console.log(result);
+  isPasswordComplex(e.target);
 });

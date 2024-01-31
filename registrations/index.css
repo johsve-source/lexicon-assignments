@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -6,4 +12,22 @@
   height: 100vh;
 }
 
-.registration {}
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaaaaa7a;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.registration input {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.registration label {
+  display: flex;
+  flex-direction: column;
+}

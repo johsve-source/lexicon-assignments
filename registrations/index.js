@@ -1,4 +1,6 @@
 const password = document.querySelector('#password');
+const confirmPassword = document.querySelector('#cpassword');
+
 let prevComplexity = -1;
 
 const isPasswordComplex = (password) => {
@@ -25,7 +27,7 @@ const isPasswordComplex = (password) => {
 
     if (complexity === 4) {
       console.log('Very Strong: Your password is secure!');
-      password.style.boxShadow = '0 0 0 1.85px hsla(226, 100%, 64%, 0.5)';
+      password.style.boxShadow = '0 0 0 1.85px hsla(118, 100%, 51%, 0.5)';
     } else if (complexity === 3) {
       console.log(
         'Strong: Good job, but a bit more complexity is recommended.'
@@ -45,6 +47,19 @@ const isPasswordComplex = (password) => {
   }
 };
 
+const validatePassword = () => {
+  if (password.value === confirmPassword.value) {
+    confirmPassword.style.boxShadow = '0 0 0 1.85px hsla(118, 100%, 51%, 0.5)';
+  } else {
+    confirmPassword.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
+  }
+};
+
 password.addEventListener('input', (e) => {
   isPasswordComplex(e.target);
+  validatePassword();
+});
+
+confirmPassword.addEventListener('input', (e) => {
+  validatePassword();
 });

@@ -23,7 +23,7 @@
   justify-content: center;
   background-color: #aaaaaa2a;
   width: 300px;
-  height: 400px;
+  height: 500px;
   border-radius: 5px;
 }
 
@@ -36,6 +36,12 @@
 .registration input:focus {
   outline: none;
   box-shadow: 0 0 0 1.85px hsla(226, 100%, 64%, 0.5);
+}
+
+.registration input[type=text] {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 .registration label {

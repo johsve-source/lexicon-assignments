@@ -48,7 +48,6 @@
 .registration input[type=email]:focus {
   outline: none;
   box-shadow: 0 0 0 1.85px hsla(226, 100%, 64%, 0.5);
-  box-shadow: 0 0 0 1.85px hsla(103, 100%, 64%, 0.5);
 }
 
 .registration #cpassword:focus,

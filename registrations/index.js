@@ -1,7 +1,7 @@
 const password = document.querySelector('#password');
 
 const isPasswordComplex = (password) => {
-  let complexity = 0;
+  let complexity = -1;
 
   if (password.value.length >= 8) {
     complexity++;

@@ -74,6 +74,12 @@ const emptySensitiveFields = () => {
   email.value = '';
 };
 
+email.addEventListener('input', (e) => {
+  if (isEmailValid(email.value)) {
+    email.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
+  }
+});
+
 password.addEventListener('input', (e) => {
   isPasswordComplex(e.target);
   validatePassword();
@@ -81,12 +87,6 @@ password.addEventListener('input', (e) => {
 
 confirmPassword.addEventListener('input', (e) => {
   validatePassword();
-});
-
-email.addEventListener('input', (e) => {
-  if (isEmailValid(email.value)) {
-    email.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
-  }
 });
 
 button.addEventListener('click', (e) => {

@@ -12,10 +12,9 @@ const registrationData = {
   password: 'undefined',
 };
 
-let prevComplexity = -1;
-
 const isPasswordComplex = (password) => {
   let complexity = -1;
+  let prevComplexity = -1;
 
   if (password.value.length >= 8) {
     complexity++;

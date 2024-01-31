@@ -61,8 +61,7 @@
   display: none;
 }
 
-#play-again,
-#reset {
+#play-again {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #333;
@@ -80,27 +79,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-#reset {
-  display: none;
-}
-
 #play-again {
   display: none;
 }
 
-#reset:hover,
 #play-again:hover {
   cursor: pointer;
   background-color: #e6e6e6;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#reset:active,
 #play-again:active {
   transform: scale(0.9);
 }
 
-#reset:focus,
 #play-again:focus {
   outline: none;
 }

@@ -5,11 +5,9 @@ const wordDisplay = document.querySelector('.word');
 const messageDisplay = document.querySelector('.message');
 const lettersContainer = document.querySelector('.letters');
 const playAgainButton = document.getElementById('play-again');
-const resetButton = document.getElementById('reset');
 const hangmanSVG = document.getElementById('hangman-svg');
 
 playAgainButton.style.display = 'none';
-resetButton.style.display = 'none';
 
 const words = [
   'house',
@@ -106,12 +104,10 @@ function playAgain() {
 
 function showPlayButtons() {
   playAgainButton.style.display = 'block';
-  resetButton.style.display = 'block';
 }
 
 // Event listeners for buttons
 playAgainButton.addEventListener('click', playAgain);
-resetButton.addEventListener('click', resetGame);
 
 document.addEventListener('keydown', (event) => {
   const letter = event.key.toLowerCase();

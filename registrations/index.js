@@ -44,18 +44,12 @@ const isPasswordComplex = (password) => {
 const handlePasswordComplexity = (complexity) => {
   if (complexity === 4) {
     password.style.boxShadow = '0 0 0 1.85px hsla(103, 100%, 64%, 0.5)';
-    console.log('Very Strong: Your password is secure!');
   } else if (complexity === 3) {
     password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
-    console.log('Strong: Good job, but a bit more complexity is recommended.');
   } else if (complexity === 2) {
     password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
-    console.log('Moderate: Consider adding more complexity.');
   } else if (complexity === 1) {
     password.style.boxShadow = '0 0 0 1.85px hsla(0, 100%, 64%, 0.5)';
-    console.log('Weak: Password needs improvement.');
-  } else {
-    password.style.boxShadow = 'none';
   }
 };
 

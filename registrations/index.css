@@ -43,7 +43,8 @@
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-.registration input[type=text]:focus {
+.registration input[type=text]:focus,
+.registration input[type=email]:focus {
   outline: none;
   box-shadow: 0 0 0 1.85px hsla(226, 100%, 64%, 0.5);
 }

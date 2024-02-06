@@ -43,33 +43,46 @@ async function getData(url = '') {
 
 /* ====================================== */
 
-const displayDogs = async () => {
+// const displayDogs = async () => {
+//   try {
+//     const dogsData = await getData(
+//       'https://majazocom.github.io/Data/dogs.json'
+//     );
+//     outDogslist(dogsData);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
+
+// const outDogslist = (dogsData) => {
+//   const listDogs = document.querySelector('#dogslist');
+
+//   for (const dogsName in dogsData) {
+//     if (dogsData.hasOwnProperty(dogsName)) {
+//       const listItem = document.createElement('p');
+//       const dogs = dogsData[dogsName];
+
+//       const dogsNameString = dogs.name || 'Unknown Name';
+
+//       listItem.textContent = `${dogsNameString}`;
+//       listDogs.appendChild(listItem);
+
+//       console.log(`${dogsName}: ${dogsNameString}`);
+//     }
+//   }
+// };
+
+// displayDogs();
+
+/* ====================================== */
+
+const displayBooks = async () => {
   try {
-    const dogsData = await getData(
-      'https://majazocom.github.io/Data/dogs.json'
+    const booksData = await getData(
+      'https://majazocom.github.io/Data/books.json'
     );
-    outDogslist(dogsData);
-  } catch (error) {
+    outBooksList(booksData);
+  } catch {
     console.error(error);
   }
 };
-
-const outDogslist = (dogsData) => {
-  const listDogs = document.querySelector('#dogslist');
-
-  for (const dogsName in dogsData) {
-    if (dogsData.hasOwnProperty(dogsName)) {
-      const listItem = document.createElement('p');
-      const dogs = dogsData[dogsName];
-
-      const dogsNameString = dogs.name || 'Unknown Name';
-
-      listItem.textContent = `${dogsNameString}`;
-      listDogs.appendChild(listItem);
-
-      console.log(`${dogsName}: ${dogsNameString}`);
-    }
-  }
-};
-
-displayDogs();

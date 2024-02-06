@@ -82,7 +82,31 @@ const displayBooks = async () => {
       'https://majazocom.github.io/Data/books.json'
     );
     outBooksList(booksData);
-  } catch {
+  } catch (error) {
     console.error(error);
   }
 };
+
+const outBooksList = (booksData) => {
+  const listBooks = document.querySelector('#bookslist');
+
+  for (const booksName in booksData) {
+    if (booksData.hasOwnProperty(booksName)) {
+      if (booksData[booksName].pages <= 500) {
+        const listItem = document.createElement('p');
+        const books = booksData[booksName];
+
+        const booksNameString = books.title || 'Unknown Name';
+
+        listItem.textContent = `${booksNameString}`;
+        listBooks.appendChild(listItem);
+
+        console.log(`${booksName}: pages: ${books.pages}`);
+      } else {
+        continue;
+      }
+    }
+  }
+};
+
+displayBooks();

@@ -10,6 +10,31 @@ async function getData(url = '') {
   }
 }
 
-getData('https://majazocom.github.io/Data/pokemons.json').then((data) => {
-  console.log(data);
-});
+const displayPokemons = async () => {
+  try {
+    const pokemonData = await getData(
+      'https://majazocom.github.io/Data/pokemons.json'
+    );
+    outPokelist(pokemonData);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+const outPokelist = (pokemonData) => {
+  const listPokemon = document.querySelector('#pokelist');
+
+  for (const pokemonName in pokemonData) {
+    if (pokemonData.hasOwnProperty(pokemonName)) {
+      const listItem = document.createElement('p');
+      const pokemon = pokemonData[pokemonName];
+
+      const pokemonNameString = pokemon.name || 'Unknown Name';
+
+      listItem.textContent = `${pokemonName}: ${pokemonNameString}`;
+      listPokemon.appendChild(listItem);
+    }
+  }
+};
+
+displayPokemons();

@@ -10,33 +10,66 @@ async function getData(url = '') {
   }
 }
 
-const displayPokemons = async () => {
+// const displayPokemons = async () => {
+//   try {
+//     const pokemonData = await getData(
+//       'https://majazocom.github.io/Data/pokemons.json'
+//     );
+//     outPokelist(pokemonData);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
+
+// const outPokelist = (pokemonData) => {
+//   const listPokemon = document.querySelector('#pokelist');
+
+//   for (const pokemonName in pokemonData) {
+//     if (pokemonData.hasOwnProperty(pokemonName)) {
+//       const listItem = document.createElement('p');
+//       const pokemon = pokemonData[pokemonName];
+
+//       const pokemonNameString = pokemon.name || 'Unknown Name';
+
+//       listItem.textContent = `${pokemonNameString}`;
+//       listPokemon.appendChild(listItem);
+
+//       console.log(`${pokemonName}: ${pokemonNameString}`);
+//     }
+//   }
+// };
+
+// displayPokemons();
+
+/* ====================================== */
+
+const displayDogs = async () => {
   try {
-    const pokemonData = await getData(
-      'https://majazocom.github.io/Data/pokemons.json'
+    const dogsData = await getData(
+      'https://majazocom.github.io/Data/dogs.json'
     );
-    outPokelist(pokemonData);
+    outDogslist(dogsData);
   } catch (error) {
     console.error(error);
   }
 };
 
-const outPokelist = (pokemonData) => {
-  const listPokemon = document.querySelector('#pokelist');
+const outDogslist = (dogsData) => {
+  const listDogs = document.querySelector('#dogslist');
 
-  for (const pokemonName in pokemonData) {
-    if (pokemonData.hasOwnProperty(pokemonName)) {
+  for (const dogsName in dogsData) {
+    if (dogsData.hasOwnProperty(dogsName)) {
       const listItem = document.createElement('p');
-      const pokemon = pokemonData[pokemonName];
+      const dogs = dogsData[dogsName];
 
-      const pokemonNameString = pokemon.name || 'Unknown Name';
+      const dogsNameString = dogs.name || 'Unknown Name';
 
-      listItem.textContent = `${pokemonNameString}`;
-      listPokemon.appendChild(listItem);
+      listItem.textContent = `${dogsNameString}`;
+      listDogs.appendChild(listItem);
 
-      console.log(`${pokemonName}: ${pokemonNameString}`);
+      console.log(`${dogsName}: ${dogsNameString}`);
     }
   }
 };
 
-displayPokemons();
+displayDogs();

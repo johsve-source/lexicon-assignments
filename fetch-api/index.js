@@ -31,8 +31,10 @@ const outPokelist = (pokemonData) => {
 
       const pokemonNameString = pokemon.name || 'Unknown Name';
 
-      listItem.textContent = `${pokemonName}: ${pokemonNameString}`;
+      listItem.textContent = `${pokemonNameString}`;
       listPokemon.appendChild(listItem);
+
+      console.log(`${pokemonName}: ${pokemonNameString}`);
     }
   }
 };

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", serif;
+  text-rendering: geometricPrecision;
+  color: #767676;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  display: block;
+  border-bottom: 1px solid #767676;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+
+}
+
+header nav img {
+  display: inline-block;
+}

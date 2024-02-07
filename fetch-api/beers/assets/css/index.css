@@ -22,7 +22,10 @@ body {
 
 header {
   display: block;
-  border-bottom: 1px solid #767676;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 header nav {
@@ -32,13 +35,26 @@ header nav {
 
 header nav ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-header nav ul li a {
+header nav ul a {
   text-decoration: none;
+  color: #000;
+  padding: 30px;
+}
 
+header nav ul a:hover {
+  background-color: rgba(163, 163, 163, 0.25);
 }
 
 header nav img {
-  display: inline-block;
+  width: 180px;
+  height: auto;
+}
+
+#HOME {
+  border-left: rgba(0, 0, 0, 0.1) 1px solid;
 }

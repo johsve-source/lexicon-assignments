@@ -55,6 +55,15 @@ header nav img {
   height: auto;
 }
 
+.align-right {
+  display: flex;
+  margin-left: auto;
+}
+
 #HOME {
+  border-left: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+#SEARCH {
   border-left: rgba(0, 0, 0, 0.1) 1px solid;
 }

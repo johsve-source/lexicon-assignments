@@ -15,6 +15,19 @@ body {
   text-align: left;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -44,7 +57,6 @@ header nav ul {
 }
 
 header nav ul a {
-  text-decoration: none;
   color: #000;
   padding: 31px;
   position: relative;
@@ -166,9 +178,23 @@ header nav img {
   justify-content: center;
   align-items: center;
 
+  color: #000;
+
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   width: 100%;
   height: 100px;
   background: #fff;
+}
+
+.beer-container .beer-info>p {
+  margin: 7px 0 0 7px;
+  font-size: 1.2rem;
+}
+
+.beer-container .beer-info>a {
+  align-self: flex-start;
+  margin: 7px 0 0 7px;
+  font-size: 0.9rem;
+  margin-top: auto;
 }

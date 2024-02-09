@@ -101,8 +101,8 @@ header nav img {
 }
 
 .main-container button {
-  background-color: #fff;
-  border: 0 solid #e2e8f0;
+  background-color: rgba(165, 171, 255, 0.15);
+  border: 0 solid rgba(165, 171, 255, 1);
   border-radius: 1.5rem;
   box-sizing: border-box;
   color: #0d172a;
@@ -133,4 +133,20 @@ header nav img {
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
+}
+
+.beer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 300px;
+  margin-inline: 75px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.beer-container .beer-img img {
+  width: auto;
+  height: 320px;
 }

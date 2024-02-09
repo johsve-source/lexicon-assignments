@@ -22,7 +22,7 @@ fetch(apiUrl)
     console.log('Image URL:', imageUrl);
 
     // If you want to update HTML elements with this information, you can do something like this:
-    const beerNameElement = document.querySelector('.beer-info');
+    const beerNameElement = document.querySelector('.beer-info #beer-name');
     const beerImgElement = document.querySelector('.beer-img img');
 
     beerNameElement.textContent = beerName;

@@ -162,6 +162,7 @@ header nav img {
 
 .beer-container .beer-info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 

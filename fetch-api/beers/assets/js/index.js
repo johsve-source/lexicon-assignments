@@ -107,17 +107,17 @@ function fetchBeerDetails() {
 
 function openModal(beer) {
   const modal = document.querySelector('#beer-modal');
-  const modalBeerName = document.getElementById('modal-beer-name');
-  const modalBeerDescription = document.getElementById(
-    'modal-beer-description'
+  const modalBeerName = document.querySelector('#modal-beer-name');
+  const modalBeerDescription = document.querySelector(
+    '#modal-beer-description'
   );
-  const modalBeerABV = document.getElementById('modal-beer-abv');
-  const modalBeerVolume = document.getElementById('modal-beer-volume');
-  const modalBeerMalt = document.getElementById('modal-beer-malt');
-  const modalBeerHops = document.getElementById('modal-beer-hops');
-  const modalBeerFoodPair = document.getElementById('modal-beer-foodpair');
-  const modalBeerBrewers = document.getElementById('modal-beer-brewers');
-  const modalBeerImage = document.getElementById('modal-beer-image');
+  const modalBeerABV = document.querySelector('#modal-beer-abv');
+  const modalBeerVolume = document.querySelector('#modal-beer-volume');
+  const modalBeerMalt = document.querySelector('#modal-beer-malt');
+  const modalBeerHops = document.querySelector('#modal-beer-hops');
+  const modalBeerFoodPair = document.querySelector('#modal-beer-foodpair');
+  const modalBeerBrewers = document.querySelector('#modal-beer-brewers');
+  const modalBeerImage = document.querySelector('#modal-beer-image');
 
   modalBeerName.textContent = beer.name;
   modalBeerDescription.textContent = beer.description;
@@ -127,7 +127,7 @@ function openModal(beer) {
   modalBeerHops.textContent = `Hops: ${beer.hops}`;
   modalBeerFoodPair.textContent = `Food Pairing: ${beer.foodPairing}`;
   modalBeerBrewers.textContent = `Brewers: ${beer.brewers}`;
-  modalBeerImage.src = beer.imageUrl;
+  modalBeerImage.style.src = beer.imageUrl;
 
   modal.style.display = 'block';
 }

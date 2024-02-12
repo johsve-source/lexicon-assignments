@@ -35,10 +35,16 @@
         </nav>
       </header>
       <main class="main-container">
-        <div class="modal" id="beer-modal"></div>
-        <div class="beer-more-info">
-          <div class="close">&times;</div>
-          <p>Test</p>
+        <div class="modal" id="beer-modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="beer-details">
+              <h2>Beer Details</h2>
+              <p id="modal-beer-name"></p>
+              <p id="modal-beer-description"></p>
+              <!-- Add more details as needed -->
+            </div>
+          </div>
         </div>
 
         <button class="previous">
@@ -50,12 +56,18 @@
           </div>
           <div class="beer-info">
             <p id="beer-name">Beer not found</p>
-            <a href="#" class="pop-modal"><p>Read more</p></a>
+            <a
+              href="#"
+              class="pop-modal"
+              id="open-modal"
+              onclick="fetchBeerDetails()"
+              ><p>Read more</p></a
+            >
           </div>
         </div>
         <button class="next"><i class="fa-solid fa-angles-right"></i></button>
       </main>
     </div>
-    <script src="./assets/js/index.js" type="module"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

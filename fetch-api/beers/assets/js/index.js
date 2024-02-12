@@ -74,12 +74,9 @@
           console.warn('Image URL is not available for this beer.');
           beerImgElement.alt = ''; // Clear alt text if image is not available
         }
-        if (currentBeerIndex === 1) {
-          previousButton.style.display = 'none';
-        }
+
         if (direction === 'next') {
           currentBeerIndex += 1;
-          previousButton.style.display = 'block';
         } else if (direction === 'previous') {
           currentBeerIndex -= 1;
           if (currentBeerIndex < 1) {

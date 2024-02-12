@@ -36,6 +36,8 @@ function fetchBeer(direction) {
           malt: [],
           hops: [],
         },
+        foodPairing: beer.food_pairing,
+        brewers: beer.brewers,
       };
 
       for (const malt of beer.ingredients.malt) {
@@ -63,10 +65,13 @@ function fetchBeer(direction) {
       beerNameElement.textContent = beerDetails.name;
 
       if (beerDetails.imageUrl) {
+        beerImgElement.onload = () => {
+          beerImgElement.alt = beerDetails.name;
+        };
         beerImgElement.src = beerDetails.imageUrl;
-        beerImgElement.alt = beerDetails.name;
       } else {
         console.warn('Image URL is not available for this beer.');
+        beerImgElement.alt = ''; // Clear alt text if image is not available
       }
 
       if (direction === 'next') {
@@ -83,15 +88,21 @@ function fetchBeer(direction) {
     });
 }
 
-fetchBeer();
-
 function fetchBeerDetails() {
-  const mockBeerDetails = {
+  const modalBeerDetails = {
     name: beerDetails.name,
     description: beerDetails.description,
+    abv: beerDetails.abv,
+    volume: `${beerDetails.volume.value} ${beerDetails.volume.unit}`,
+    malt: formatIngredients(beerDetails.ingredients.malt),
+    hops: formatIngredients(beerDetails.ingredients.hops),
+    foodPairing: beerDetails.foodPairing.join(', '),
+    brewers: beerDetails.brewers
+      ? beerDetails.brewers.join(', ')
+      : 'Not specified',
   };
 
-  openModal(mockBeerDetails);
+  openModal(modalBeerDetails);
 }
 
 function openModal(beer) {
@@ -100,11 +111,34 @@ function openModal(beer) {
   const modalBeerDescription = document.getElementById(
     'modal-beer-description'
   );
+  const modalBeerABV = document.getElementById('modal-beer-abv');
+  const modalBeerVolume = document.getElementById('modal-beer-volume');
+  const modalBeerMalt = document.getElementById('modal-beer-malt');
+  const modalBeerHops = document.getElementById('modal-beer-hops');
+  const modalBeerFoodPair = document.getElementById('modal-beer-foodpair');
+  const modalBeerBrewers = document.getElementById('modal-beer-brewers');
+  const modalBeerImage = document.getElementById('modal-beer-image');
 
   modalBeerName.textContent = beer.name;
   modalBeerDescription.textContent = beer.description;
+  modalBeerABV.textContent = `ABV: ${beer.abv}`;
+  modalBeerVolume.textContent = `Volume: ${beer.volume}`;
+  modalBeerMalt.textContent = `Malt: ${beer.malt}`;
+  modalBeerHops.textContent = `Hops: ${beer.hops}`;
+  modalBeerFoodPair.textContent = `Food Pairing: ${beer.foodPairing}`;
+  modalBeerBrewers.textContent = `Brewers: ${beer.brewers}`;
+  modalBeerImage.src = beer.imageUrl;
 
   modal.style.display = 'block';
+}
+
+function formatIngredients(ingredients) {
+  return ingredients
+    .map(
+      (ingredient) =>
+        `${ingredient.name} - ${ingredient.amount.value} ${ingredient.amount.unit}`
+    )
+    .join(', ');
 }
 
 function closeModal() {
@@ -121,6 +155,11 @@ window.addEventListener('click', function (event) {
     closeModal();
   }
 });
+
+function initializeBeerDetails() {
+  fetchBeer();
+}
+initializeBeerDetails();
 
 function openModalDetails() {
   fetchBeerDetails();

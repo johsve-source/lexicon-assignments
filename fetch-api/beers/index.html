@@ -40,8 +40,15 @@
             <span class="close">&times;</span>
             <div class="beer-details">
               <h2>Beer Details</h2>
+              <img id="modal-beer-image" src="#" alt="Beer Image" />
               <p id="modal-beer-name"></p>
               <p id="modal-beer-description"></p>
+              <p id="modal-beer-abv"></p>
+              <p id="modal-beer-volume"></p>
+              <p id="modal-beer-malt"></p>
+              <p id="modal-beer-hops"></p>
+              <p id="modal-beer-foodpair"></p>
+              <p id="modal-beer-brewers"></p>
               <!-- Add more details as needed -->
             </div>
           </div>
@@ -60,7 +67,7 @@
               href="#"
               class="pop-modal"
               id="open-modal"
-              onclick="fetchBeerDetails()"
+              onclick="openModalDetails()"
               ><p>Read more</p></a
             >
           </div>

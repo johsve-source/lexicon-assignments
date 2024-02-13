@@ -30,7 +30,11 @@
           </div>
         </div>
         <button id="playButton">Play Audio</button>
-        <audio id="backgroundAudio" autoplay>
+        <audio
+          id="backgroundAudio"
+          data-src="./assets/sound/background.mp3"
+          autoplay
+        >
           <source src="./assets/sound/background.mp3" type="audio/mp3" />
         </audio>
         <button id="muteButton">
@@ -39,6 +43,7 @@
       </main>
     </div>
     <script type="module" src="./assets/js/audio.js"></script>
+    <script type="module" src="./assets/js/modal.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

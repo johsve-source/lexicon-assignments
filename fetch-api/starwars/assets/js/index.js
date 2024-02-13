@@ -3,7 +3,12 @@
   const muteButton = document.getElementById('muteButton');
   const playButton = document.getElementById('playButton');
 
+  muteButton.addEventListener('click', () => toggleMute);
+  playButton.addEventListener('click', () => togglePlay);
+
   let isPlaying = true;
+
+  audio.volume = 0.4;
 
   function toggleMute() {
     if (audio.muted) {
@@ -15,10 +20,7 @@
     }
   }
 
-  audio.volume = 0.4;
-
-  muteButton.addEventListener('click', toggleMute);
-  playButton.addEventListener('click', function () {
+  function togglePlay() {
     if (!isPlaying) {
       audio.play().then(() => {
         isPlaying = true;
@@ -27,5 +29,5 @@
       audio.pause();
       isPlaying = false;
     }
-  });
+  }
 })();

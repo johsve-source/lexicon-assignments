@@ -1,5 +1,4 @@
 export const audio = document.getElementById('backgroundAudio');
-export const muteButton = document.getElementById('muteButton');
 export const playButton = document.getElementById('playButton');
 
 export let isPlaying = true;
@@ -32,7 +31,6 @@ export function togglePlay() {
     audio.pause();
     isPlaying = false;
   }
-  toggleMute();
 }
 
 export function setVolume(source, volume) {

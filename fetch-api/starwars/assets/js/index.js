@@ -12,10 +12,18 @@
       muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
   }
+
   audio.volume = 0.4;
 
   muteButton.addEventListener('click', toggleMute);
   playButton.addEventListener('click', function () {
-    audio.play();
+    let isPlaying;
+    if (!isPlaying) {
+      audio.play();
+      isPlaying = true;
+    } else {
+      audio.pause();
+      isPlaying = false;
+    }
   });
 })();

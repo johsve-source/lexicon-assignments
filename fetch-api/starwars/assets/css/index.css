@@ -33,11 +33,6 @@ header h1 {
   font-size: 68px;
 }
 
-header .playButton {
-  position: absolute;
-  top: 600px;
-}
-
 /* ====== AUDIO ====== */
 .audio-container {
   position: relative;
@@ -59,7 +54,7 @@ header .playButton {
 
 /* ====== PLAY BUTTON ====== */
 header .playButton {
-  padding: 0.6em 2em;
+  padding: 0.6em 1em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -76,15 +71,15 @@ header .playButton {
 header .playButton:before {
   content: "";
   background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
+      #ffee00,
+      #fc8f00,
       #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
+      #ffae00,
+      #fc8f00,
+      #bbff00,
+      #ff9100,
+      #c8ff00,
+      #ff8800);
   position: absolute;
   top: -2px;
   left: -2px;

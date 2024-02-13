@@ -41,5 +41,4 @@ export function setVolume(source, volume) {
 
 setVolume(audio, 0.2);
 
-muteButton.addEventListener('click', () => toggleMute());
 playButton.addEventListener('click', () => togglePlay());

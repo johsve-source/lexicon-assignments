@@ -17,7 +17,7 @@
 
   muteButton.addEventListener('click', toggleMute);
   playButton.addEventListener('click', function () {
-    let isPlaying;
+    let isPlaying = false;
     if (!isPlaying) {
       audio.play();
       isPlaying = true;

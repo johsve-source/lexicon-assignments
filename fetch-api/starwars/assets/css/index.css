@@ -33,6 +33,11 @@ header h1 {
   font-size: 68px;
 }
 
+header .playButton {
+  position: absolute;
+  top: 600px;
+}
+
 /* ====== AUDIO ====== */
 .audio-container {
   position: relative;

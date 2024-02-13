@@ -1,6 +1,7 @@
 (function () {
   const audio = document.getElementById('backgroundAudio');
   const muteButton = document.getElementById('muteButton');
+  const playButton = document.getElementById('playButton');
 
   function toggleMute() {
     if (audio.muted) {
@@ -11,7 +12,10 @@
       muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
   }
+  audio.volume = 0.4;
 
   muteButton.addEventListener('click', toggleMute);
-  audio.volume = 0.4;
+  playButton.addEventListener('click', function () {
+    audio.play();
+  });
 })();

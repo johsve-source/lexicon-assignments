@@ -13,4 +13,5 @@
   }
 
   muteButton.addEventListener('click', toggleMute);
+  audio.volume = 0.4;
 })();

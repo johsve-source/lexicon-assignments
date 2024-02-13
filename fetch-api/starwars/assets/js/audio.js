@@ -4,6 +4,25 @@ export const playButton = document.getElementById('playButton');
 
 export let isPlaying = true;
 
+// LAZY LOADING
+let observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const audio = entry.target;
+        audio.src = audio.getAttribute('data-src');
+        observer.unobserve(audio);
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+observer.observe(audio);
+// LAZY LOADING
+
 export function toggleMute() {
   if (audio.muted) {
     audio.muted = false;

@@ -23,16 +23,6 @@ let observer = new IntersectionObserver(
 observer.observe(audio);
 // LAZY LOADING
 
-export function toggleMute() {
-  if (audio.muted) {
-    audio.muted = false;
-    muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
-  } else {
-    audio.muted = true;
-    muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
-  }
-}
-
 export function togglePlay() {
   if (!isPlaying) {
     audio.play().then(() => {

@@ -6,8 +6,19 @@
   const beerImgElement = document.querySelector('.beer-img img');
   const nextButton = document.querySelector('.next');
   const previousButton = document.querySelector('.previous');
+  const openModalButton = document.getElementById('open-modal');
+  const closeButton = document.querySelector('.close');
   nextButton.addEventListener('click', () => fetchBeer('next'));
   previousButton.addEventListener('click', () => fetchBeer('previous'));
+  openModalButton.addEventListener('click', () => openModalDetails);
+  closeButton.addEventListener('click', () => closeModal);
+
+  window.addEventListener('click', (event) => {
+    const modal = document.querySelector('#beer-modal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
 
   function fetchBeer(direction) {
     const apiUrl = `https://api.punkapi.com/v2/beers/${currentBeerIndex}`;
@@ -89,6 +100,15 @@
       });
   }
 
+  function formatIngredients(ingredients) {
+    return ingredients
+      .map(
+        (ingredient) =>
+          `${ingredient.name} - ${ingredient.amount.value} ${ingredient.amount.unit}`
+      )
+      .join(', ');
+  }
+
   function fetchBeerDetails() {
     const modalBeerDetails = {
       name: beerDetails.name,
@@ -133,13 +153,12 @@
     modal.style.display = 'block';
   }
 
-  function formatIngredients(ingredients) {
-    return ingredients
-      .map(
-        (ingredient) =>
-          `${ingredient.name} - ${ingredient.amount.value} ${ingredient.amount.unit}`
-      )
-      .join(', ');
+  function initializeBeerDetails() {
+    fetchBeer();
+  }
+
+  function openModalDetails() {
+    fetchBeerDetails();
   }
 
   function closeModal() {
@@ -147,25 +166,5 @@
     modal.style.display = 'none';
   }
 
-  const closeButton = document.querySelector('.close');
-  closeButton.addEventListener('click', closeModal);
-
-  window.addEventListener('click', function (event) {
-    const modal = document.querySelector('#beer-modal');
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
-
-  function initializeBeerDetails() {
-    fetchBeer();
-  }
   initializeBeerDetails();
-
-  const openModalButton = document.getElementById('open-modal');
-  openModalButton.addEventListener('click', openModalDetails);
-
-  function openModalDetails() {
-    fetchBeerDetails();
-  }
 })();

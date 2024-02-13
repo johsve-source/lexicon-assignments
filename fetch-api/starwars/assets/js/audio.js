@@ -26,11 +26,14 @@ export function togglePlay() {
   if (!isPlaying) {
     audio.play().then(() => {
       isPlaying = true;
+      playButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
     });
   } else {
     audio.pause();
     isPlaying = false;
+    playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
   }
+  toggleMute();
 }
 
 export function setVolume(source, volume) {

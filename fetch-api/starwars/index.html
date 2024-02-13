@@ -31,7 +31,11 @@
             <button id="close-modal">Okay!</button>
           </div>
         </div>
-        <button id="playButton" class="button-85">Play Audio</button>
+        <div class="playButton-container">
+          <button id="playButton" class="playButton">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
         <audio
           id="backgroundAudio"
           data-src="./assets/sound/background.mp3"
@@ -39,9 +43,6 @@
         >
           <source src="./assets/sound/background.mp3" type="audio/mp3" />
         </audio>
-        <button id="muteButton">
-          <i class="fas fa-volume-up"></i>
-        </button>
       </main>
     </div>
     <script type="module" src="./assets/js/audio.js"></script>

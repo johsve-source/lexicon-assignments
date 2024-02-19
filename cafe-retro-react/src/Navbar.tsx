@@ -1,3 +1,5 @@
+import './styles/Navbar.css';
+
 interface Navlinks {
   id: number;
   name: string;

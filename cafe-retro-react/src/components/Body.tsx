@@ -4,10 +4,10 @@ import { Cosy } from './sections/Cosy';
 
 export function Body() {
   return (
-    <>
+    <main>
       <Hot />
       <Juicy />
       <Cosy />
-    </>
+    </main>
   );
 }

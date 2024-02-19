@@ -1,0 +1,78 @@
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.img-header {
+    position: relative;
+    top: 210px;
+    left: 560px;
+    color: rgb(139, 0, 0);
+    font-weight: bolder;
+    font-size: 5.5em;
+    font-family: "Spirax", sans-serif;
+}
+
+.redbox-right {
+    position: relative;
+    top: 250px;
+    left: 310px;
+    opacity: 0.9;
+    background-color: rgba(139, 0, 0, 0.7);
+    padding: 10px 0;
+    width: 750px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.redbox-left {
+    position: relative;
+    top: 230px;
+    left: 200px;
+    opacity: 0.9;
+    background-color: rgba(139, 0, 0, 0.7);
+    padding: 10px 0;
+    width: 750px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.blackbox {
+    position: relative;
+    top: 270px;
+    left: 20%;
+    float: left;
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 30px;
+    width: 750px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+span {
+    float: right;
+}

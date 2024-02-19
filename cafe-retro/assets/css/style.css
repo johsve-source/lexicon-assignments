@@ -1,4 +1,5 @@
 @import url("normalize.css");
+
 * {
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -26,6 +27,7 @@ nav {
   padding: 0.2rem 0 0.5rem 0;
   width: 66.5%;
 }
+
 nav a {
   display: block;
   float: left;
@@ -35,7 +37,10 @@ nav a {
   font-family: "Spirax", sans-serif;
   text-decoration: none;
 }
-nav a:visited, nav a:hover, nav a:active {
+
+nav a:visited,
+nav a:hover,
+nav a:active {
   display: block;
   float: left;
   margin: 0 30px;
@@ -55,7 +60,7 @@ main {
   overflow: hidden;
 }
 
-section {
+article {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -136,8 +141,4 @@ section {
 
 span {
   float: right;
-<<<<<<< HEAD
 }
-=======
-}/*# sourceMappingURL=style.css.map */
->>>>>>> 30989b1830e0786965d5b44c8cf0d2c25aa8efd5

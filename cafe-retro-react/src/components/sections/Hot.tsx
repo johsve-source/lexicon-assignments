@@ -1,16 +1,16 @@
 export function Hot() {
   return (
-    <article>
+    <div id="hot">
       <p className="img-header" id="hot-header">
         Hot
       </p>
-      <section className="redbox-left">
+      <div className="redbox-left">
         <p>Hot freshly ground black coffee or a cup of exquisite tea?</p>
-      </section>
-      <section className="redbox-right">
+      </div>
+      <div className="redbox-right">
         <p>We give you that perfect cup every time.</p>
-      </section>
-      <section className="blackbox">
+      </div>
+      <div className="blackbox">
         <p>
           Mocha Latte<span>€ 7.50</span>
         </p>
@@ -23,7 +23,7 @@ export function Hot() {
         <p>
           Chai Verde Latte<span>€ 5.50</span>
         </p>
-      </section>
-    </article>
+      </div>
+    </div>
   );
 }

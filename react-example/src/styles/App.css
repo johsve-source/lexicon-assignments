@@ -13,6 +13,6 @@ body {
     background: linear-gradient(0deg, rgba(107, 34, 195, 1) 0%, rgba(253, 45, 241, 1) 100%);
 }
 
-main p {
-    padding: 10px;
+main .posts {
+    padding: 30px;
 }

@@ -1,11 +1,13 @@
-const names: string[] = ['Johan', 'Jonas'];
+interface PostProps {
+  author: string;
+  body: string;
+}
 
-export function Post() {
-  const chosenName = Math.random() > 0.5 ? names[0] : names[1];
-
+export function Post(props: PostProps) {
   return (
     <div>
-      <p>{chosenName}</p>
+      <p>{props.author}</p>
+      <p>{props.body}</p>
     </div>
   );
 }

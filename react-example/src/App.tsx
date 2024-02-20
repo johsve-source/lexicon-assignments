@@ -4,7 +4,8 @@ import { Post } from './components/Post';
 export function App() {
   return (
     <main>
-      <Post />
+      <Post author="Johan" body="React JS is awesome!" />
+      <Post author="Jonas" body="React JS is awesome!" />
     </main>
   );
 }

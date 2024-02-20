@@ -1,6 +1,3 @@
-// components/Post.tsx
-import React from 'react';
-
 interface PostProps {
   image: string;
   author: string;

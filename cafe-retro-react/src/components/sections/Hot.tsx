@@ -1,6 +1,6 @@
 export function Hot() {
   return (
-    <div id="hot">
+    <div id="hot hot-bg">
       <p className="img-header" id="hot-header">
         Hot
       </p>

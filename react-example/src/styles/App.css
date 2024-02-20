@@ -1,9 +1,16 @@
-main {
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #aaaaaa;
+    background: rgb(107, 34, 195);
+    background: linear-gradient(0deg, rgba(107, 34, 195, 1) 0%, rgba(253, 45, 241, 1) 100%);
 }
 
 main p {

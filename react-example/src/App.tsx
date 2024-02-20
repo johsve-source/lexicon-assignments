@@ -16,6 +16,12 @@ export function App() {
         body="React JS is awesome!"
         date={Date.now()}
       />
+      <Post
+        image="henrik.jpg"
+        author="Henrik"
+        body="React JS is awesome!"
+        date={Date.now()}
+      />
     </main>
   );
 }

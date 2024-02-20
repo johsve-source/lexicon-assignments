@@ -16,3 +16,8 @@ body {
 main .posts {
     padding: 30px;
 }
+
+main img {
+    height: 100px;
+    width: auto;
+}

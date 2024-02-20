@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useEffect } from 'react';
+import PlayerDetails from './components/PlayerDetails';
+import PlayerControls from './components/PlayerControls';
 import './App.css';
 
 const App = () => {

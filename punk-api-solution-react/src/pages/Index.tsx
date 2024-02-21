@@ -1,13 +1,14 @@
-import React from 'react';
+import { MouseEventHandler, useState } from 'react';
 
 export function Index(): JSX.Element {
-  const generateRandomBeer: React.MouseEventHandler<
-    HTMLButtonElement
-  > = async () => {
+  const [beer, setBeer] = useState<null | string>('undefined');
+
+  const generateRandomBeer: MouseEventHandler<HTMLButtonElement> = async () => {
     const response = await fetch('https://api.punkapi.com/v2/beers/random');
     const beer = await response.json();
 
-    console.log(beer);
+    /* console.log(beer); */
+    setBeer(beer[0].name);
   };
 
   return (
@@ -16,6 +17,7 @@ export function Index(): JSX.Element {
         <h2>Your random beer of the day!</h2>
         <article className="random-beer">
           <div className="loader"></div>
+          <h1>{beer}</h1>
         </article>
       </section>
       <footer>

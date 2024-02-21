@@ -23,7 +23,9 @@ export function Header() {
       <h1>Welcome to Punk API</h1>
       <nav className="navBar">
         {routes.map((route) => (
-          <a href={route.path}>{route.name}</a>
+          <a className="link" href={route.path}>
+            {route.name}
+          </a>
         ))}
       </nav>
     </header>

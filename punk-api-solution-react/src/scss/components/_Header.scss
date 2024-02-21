@@ -2,4 +2,21 @@
 
 .header {
   background-color: $blue;
+  padding-block: 0.5rem;
+
+  h1 {
+    color: $black;
+  }
+
+  .navBar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .link {
+      color: $white;
+      cursor: pointer;
+    }
+  }
 }

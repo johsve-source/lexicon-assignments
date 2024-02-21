@@ -9,13 +9,13 @@ import {
 interface IPlayerControls {
   isPlaying: boolean;
   setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>;
-  SkipSong: (forward?: boolean) => void;
+  skipSong: (forward?: boolean) => void;
 }
 
 export function PlayerControls(props: IPlayerControls) {
   return (
     <div className="music-player--controls">
-      <button className="skip-btn" onClick={() => props.SkipSong(false)}>
+      <button className="skip-btn" onClick={() => props.skipSong(false)}>
         <FontAwesomeIcon icon={faBackward} />
       </button>
       <button
@@ -24,7 +24,7 @@ export function PlayerControls(props: IPlayerControls) {
       >
         <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
       </button>
-      <button className="skip-btn" onClick={() => props.SkipSong()}>
+      <button className="skip-btn" onClick={() => props.skipSong()}>
         <FontAwesomeIcon icon={faForward} />
       </button>
     </div>

@@ -4,7 +4,7 @@ interface IRoute {
   path: string;
 }
 
-export function Header() {
+export function Header(): JSX.Element {
   const routes: IRoute[] = [
     {
       id: 1,

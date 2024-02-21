@@ -1,3 +1,6 @@
-body {
-  background-color: darkgreen;
-}
+// Base
+@use './base/global';
+@use './base/utilities';
+
+// Components
+@use './components/Header';

@@ -1,4 +1,15 @@
+import React from 'react';
+
 export function Index(): JSX.Element {
+  const generateRandomBeer: React.MouseEventHandler<
+    HTMLButtonElement
+  > = async () => {
+    const response = await fetch('https://api.punkapi.com/v2/beers/random');
+    const beer = await response.json();
+
+    console.log(beer);
+  };
+
   return (
     <>
       <section>
@@ -8,7 +19,7 @@ export function Index(): JSX.Element {
         </article>
       </section>
       <footer>
-        <button>Generate new random beer</button>
+        <button onClick={generateRandomBeer}>Generate new random beer</button>
       </footer>
     </>
   );

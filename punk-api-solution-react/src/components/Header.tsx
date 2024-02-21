@@ -10,7 +10,7 @@ export function Header(props: IHeaderProps): JSX.Element {
       <h1>Welcome to Punk API</h1>
       <nav className="navBar">
         {props.links.map((link) => (
-          <a className="link" href={link.path}>
+          <a key={link.id} className="link" href={link.path}>
             {link.name}
           </a>
         ))}

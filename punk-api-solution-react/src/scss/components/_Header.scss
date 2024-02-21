@@ -1,3 +1,5 @@
+@use '../abstracts/colors' as *;
+
 .header {
-  background-color: var(--blue);
+  background-color: $blue;
 }

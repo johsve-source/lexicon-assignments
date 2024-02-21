@@ -24,7 +24,7 @@ export function PlayerControls(props: IPlayerControls) {
       >
         <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
       </button>
-      <button className="skip-btn" onClick={() => props.skipSong()}>
+      <button className="skip-btn" onClick={() => props.skipSong(true)}>
         <FontAwesomeIcon icon={faForward} />
       </button>
     </div>

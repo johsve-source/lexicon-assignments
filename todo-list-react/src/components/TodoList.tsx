@@ -1,26 +1,17 @@
-interface ITodo {
-  id: number;
-  title: string;
-  body: string;
-  author: string;
-}
+import React from 'react';
+import { TodoListProps } from '../interfaces';
 
-interface TodoListProps {
-  todos: ITodo[];
-  title: string;
-  body?: string;
-  author?: string;
-}
-
-export const TodoList = (props: TodoListProps) => {
+/* Destructuring using this way, instead of "props.title" for example */
+export const TodoList = ({ todos, title, handleDelete }: TodoListProps) => {
   return (
     <div className="Todo-list">
-      <h2>{props.title}</h2>
-      {props.todos.map((todo) => {
+      <h2>{title}</h2>
+      {todos.map((todo) => {
         return (
           <div className="todo-preview" key={todo.id}>
             <h2>{todo.title}</h2>
             <p>Author: {todo.author}</p>
+            <button onClick={() => handleDelete(todo.id)}></button>
           </div>
         );
       })}

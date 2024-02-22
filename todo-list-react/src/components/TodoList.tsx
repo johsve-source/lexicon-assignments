@@ -10,7 +10,7 @@ export const TodoList = ({ todos, title, handleDelete }: TodoListProps) => {
           <div className="todo-preview" key={todo.id}>
             <h2>{todo.title}</h2>
             <p>Author: {todo.author}</p>
-            <button onClick={() => handleDelete(todo.id)}></button>
+            <button onClick={() => handleDelete(todo.id)}>Delete</button>
           </div>
         );
       })}

@@ -25,7 +25,7 @@ export const Home = () => {
   return (
     <div className="home">
       <TodoList todos={todos} title={'All Todos'} />
-      {isPending && !error && <div>Loading...</div>}
+      {isPending && !error && <div className="loader"></div>}
       {error && (
         <div className="error-box">
           <p className="error-text">{`Error fetching data: ${error}`}</p>

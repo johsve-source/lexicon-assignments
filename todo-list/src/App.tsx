@@ -3,9 +3,11 @@ import { TodoList } from './pages/TodoList';
 
 export function App() {
   return (
-    <>
-      <Header />
-      <TodoList />
-    </>
+    <div className="App">
+      <div className="content">
+        <Header />
+        <TodoList />
+      </div>
+    </div>
   );
 }

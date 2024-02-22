@@ -1,5 +1,5 @@
 {
-  "name": "todo-list",
+  "name": "dojo-blog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.71.1",
-    "the-new-css-reset": "^1.11.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

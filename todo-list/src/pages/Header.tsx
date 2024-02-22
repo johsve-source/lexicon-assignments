@@ -3,7 +3,7 @@ export function Header() {
     <header>
       <div className="header-title">
         <a href="/">
-          <p>Todo List</p>
+          <h1>Todo List</h1>
         </a>
       </div>
     </header>

@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Get dog food",
+      "body": "lorem ipsum...",
+      "author": "johan",
+      "id": 1
+    },
+    {
+      "title": "Do dishes",
+      "body": "lorem ipsum...",
+      "author": "johnny",
+      "id": 2
+    },
+    {
+      "title": "Clean the house",
+      "body": "lorem ipsum...",
+      "author": "kalle",
+      "id": 3
+    }
+  ]
+}

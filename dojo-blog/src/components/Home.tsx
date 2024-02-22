@@ -10,7 +10,6 @@ export const Home = () => {
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title={'All Blogs'} />
       <BlogList blogs={blogs} title={'All Todos'} />
     </div>
   );

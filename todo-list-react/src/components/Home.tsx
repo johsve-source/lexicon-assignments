@@ -12,16 +12,18 @@ export const Home = () => {
       .then((data) => {
         console.log(data);
         setTodos(data);
+        setIsPending(false);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
+        setIsPending(false);
       });
   }, []);
 
   return (
     <div className="home">
-      {isPending && <div>Loading...</div>}
       <TodoList todos={todos} title={'All Todos'} />
+      {isPending && <div>Loading...</div>}
     </div>
   );
 };

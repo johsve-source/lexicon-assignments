@@ -17,14 +17,17 @@
 
   .links {
     margin-left: auto;
-  }
 
-  a {
-    margin-left: 16px;
-    text-decoration: none;
-    padding: 6px;
-    &:hover {
-      color: #f1356d;
+    a {
+      margin-left: 16px;
+      text-decoration: none;
+      padding: 6px;
+      &:hover {
+        color: #f1356d;
+      }
+    }
+    #create:hover {
+      color: blue;
     }
   }
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import { TodoListProps } from '../interfaces';
 
 /* Destructuring using this way, instead of "props.title" for example */

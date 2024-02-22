@@ -1,6 +1,15 @@
 import { TodoListProps } from '../interfaces';
 
-export const TodoList = ({ todos, title }: TodoListProps) => {
+const capitalizeFirstLetter = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+export const TodoList = ({
+  todos,
+  title,
+  body,
+  handleAddItem,
+}: TodoListProps) => {
   return (
     <div className="todo-list">
       <h2 className="todo-title">{title}</h2>
@@ -8,7 +17,9 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
         return (
           <div className="todo-preview" key={todo.id}>
             <h2>{todo.title}</h2>
-            <p className="author">{todo.author}</p>
+            <p className="author">{capitalizeFirstLetter(todo.author)}</p>
+            <p>{todo.body}</p>
+            <button onClick={handleAddItem}>Add Item</button>
           </div>
         );
       })}

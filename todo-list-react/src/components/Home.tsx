@@ -22,9 +22,24 @@ export const Home = () => {
       });
   }, []);
 
+  const handleAddItem = () => {
+    const newItem = {
+      id: todos.length + 1,
+      title: 'Test',
+      body: 'lorem ipsum...',
+      author: 'Henke',
+    };
+    const updatedTodos = [...todos, newItem];
+    setTodos(updatedTodos);
+  };
+
   return (
     <div className="home">
-      <TodoList todos={todos} title={'All Todos'} />
+      <TodoList
+        todos={todos}
+        title={'All Todos'}
+        handleAddItem={handleAddItem}
+      />
       {isPending && !error && <div className="loader"></div>}
       {error && (
         <div className="error-box">

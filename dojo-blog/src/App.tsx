@@ -1,4 +1,4 @@
-import './App.scss';
+import './scss/main.scss';
 
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';

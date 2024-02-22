@@ -4,18 +4,13 @@ const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-export const TodoList = ({
-  todos,
-  title,
-  body,
-  handleAddItem,
-}: TodoListProps) => {
+export const TodoList = ({ todos, title, handleAddItem }: TodoListProps) => {
   return (
-    <div className="todo-list">
-      <h2 className="todo-title">{title}</h2>
+    <>
+      <h2 className="todo-title center">{title}</h2>
       {todos.map((todo) => {
         return (
-          <div className="todo-preview" key={todo.id}>
+          <div className="todo-preview center" key={todo.id}>
             <h2>{todo.title}</h2>
             <p className="author">{capitalizeFirstLetter(todo.author)}</p>
             <p>{todo.body}</p>
@@ -23,6 +18,6 @@ export const TodoList = ({
           </div>
         );
       })}
-    </div>
+    </>
   );
 };

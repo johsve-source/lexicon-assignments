@@ -40,10 +40,12 @@ export const Home = () => {
         title={'All Todos'}
         handleAddItem={handleAddItem}
       />
-      {isPending && !error && <div className="loader"></div>}
+      <div className="center">
+        {isPending && !error && <div className="loader"></div>}
+      </div>
       {error && (
-        <div className="error-box">
-          <p className="error-text">{`Error fetching data: ${error}`}</p>
+        <div className="error-box center">
+          <p className="error-text center">{`Error fetching data: ${error}`}</p>
         </div>
       )}
     </div>

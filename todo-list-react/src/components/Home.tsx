@@ -19,8 +19,9 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    console.log(`Deleted ${}`);
-  }, []); // Empty dependency array for initial render
+    console.log('useEffect ran on todo');
+  }, []);
+  /* This second dependency is used to specify which state you want the useEffect to run on, so if I put "todos", the useEffect will only run when the todos state change, for example when I delete a todo item. */
 
   return (
     <div className="home">

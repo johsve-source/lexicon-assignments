@@ -1,7 +1,6 @@
 import { TodoListProps } from '../interfaces';
 
-/* Destructuring using this way, instead of "props.title" for example */
-export const TodoList = ({ todos, title, handleDelete }: TodoListProps) => {
+export const TodoList = ({ todos, title }: TodoListProps) => {
   return (
     <div className="Todo-list">
       <h2>{title}</h2>
@@ -10,7 +9,6 @@ export const TodoList = ({ todos, title, handleDelete }: TodoListProps) => {
           <div className="todo-preview" key={todo.id}>
             <h2>{todo.title}</h2>
             <p>Author: {todo.author}</p>
-            <button onClick={() => handleDelete(todo.id)}>Delete</button>
           </div>
         );
       })}

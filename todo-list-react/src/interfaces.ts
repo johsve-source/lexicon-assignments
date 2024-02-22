@@ -1,4 +1,4 @@
-interface ITodo {
+export interface ITodo {
   id: number;
   title: string;
   body: string;
@@ -10,6 +10,4 @@ export interface TodoListProps {
   title: string;
   body?: string;
   author?: string;
-
-  handleDelete: (id: number) => void;
 }

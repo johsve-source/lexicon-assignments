@@ -16,7 +16,7 @@ export const Home = () => {
 
   return (
     <div className="home">
-      <TodoList todos={todos} title={'All Todos'} />
+      <TodoList todos={todos} title={'All Todos'} handleDelete={handleDelete} />
     </div>
   );
 };

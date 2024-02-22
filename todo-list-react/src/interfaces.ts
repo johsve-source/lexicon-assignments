@@ -11,5 +11,5 @@ export interface TodoListProps {
   body?: string;
   author?: string;
 
-  handleDelete?: (id: number) => void;
+  handleDelete: (id: number) => void;
 }

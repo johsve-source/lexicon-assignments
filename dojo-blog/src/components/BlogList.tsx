@@ -1,20 +1,22 @@
 interface IBlogs {
   id: number;
-  author: string;
   title: string;
   body: string;
+  author: string;
 }
 
 interface BlogListProps {
   blogs: IBlogs[];
+  title: string;
+  body?: string;
+  author?: string;
 }
 
 export const BlogList = (props: BlogListProps) => {
-  const blogs = props.blogs;
-
   return (
     <div className="blog-list">
-      {blogs.map((blog) => {
+      <h2>{props.title}</h2>
+      {props.blogs.map((blog) => {
         return (
           <div className="blog-preview" key={blog.id}>
             <h2>{blog.title}</h2>

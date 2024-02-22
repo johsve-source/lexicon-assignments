@@ -1,0 +1,38 @@
+@use '../abstracts/colors' as *;
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+
+  .todo-title {
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .todo-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid $white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 1px 3px 5px $black-transparent;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: $pink;
+      margin-bottom: 8px;
+    }
+
+    .author {
+      justify-self: flex-end;
+      align-self: flex-start;
+    }
+  }
+}

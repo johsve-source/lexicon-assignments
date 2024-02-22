@@ -26,8 +26,18 @@
         color: #f1356d;
       }
     }
-    #create:hover {
-      color: blue;
+    #create {
+      color: white;
+      background-color: #f1356d;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:hover {
+        color: darkgray;
+      }
     }
   }
 }

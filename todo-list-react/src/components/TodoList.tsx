@@ -8,7 +8,7 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
         return (
           <div className="todo-preview" key={todo.id}>
             <h2>{todo.title}</h2>
-            <p className="author">Author: {todo.author}</p>
+            <p className="author">{todo.author}</p>
           </div>
         );
       })}

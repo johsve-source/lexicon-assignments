@@ -10,10 +10,14 @@ export const Player = () => {
   const [audio] = useState(new Audio(songs[currentSongIndex].src));
 
   const skipSong = (forward = true) => {
-    const newIndex = forward
-      ? (currentSongIndex + 1) % songs.length
-      : (currentSongIndex - 1 + songs.length) % songs.length;
-    setCurrentSongIndex(newIndex);
+    if (forward) {
+      const newIndex = (currentSongIndex + 1) % songs.length;
+      setCurrentSongIndex(newIndex);
+    } else {
+      const newIndex =
+        currentSongIndex === 0 ? songs.length - 1 : currentSongIndex - 1;
+      setCurrentSongIndex(newIndex);
+    }
   };
 
   useEffect(() => {
@@ -32,7 +36,7 @@ export const Player = () => {
       <PlayerControls
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
-        skipSong={skipSong}
+        skipSong={() => skipSong(true)} // Forward
       />
     </div>
   );

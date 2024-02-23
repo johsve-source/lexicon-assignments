@@ -3,24 +3,16 @@ import { TodoFormProps } from '../interfaces';
 
 export const TodoForm: React.FC<TodoFormProps> = ({ handleAddItem }) => {
   const [itemTitle, setItemTitle] = useState('');
-  const [itemBody, setItemBody] = useState('');
   const [itemAuthor, setItemAuthor] = useState('');
 
   return (
     <form onSubmit={(e) => e.preventDefault()} className="todo-form center">
-      <label>Title:</label>
+      <label>To-Do:</label>
       <input
         value={itemTitle}
         onChange={(e) => setItemTitle(e.target.value)}
         type="text"
         className="todo-input-title"
-      />
-      <label>To-Do:</label>
-      <input
-        value={itemBody}
-        onChange={(e) => setItemBody(e.target.value)}
-        type="text"
-        className="todo-input-body"
       />
       <label>Author:</label>
       <input
@@ -30,7 +22,7 @@ export const TodoForm: React.FC<TodoFormProps> = ({ handleAddItem }) => {
         className="todo-input-author"
       />
       <button
-        onClick={() => handleAddItem(itemTitle, itemBody, itemAuthor)}
+        onClick={() => handleAddItem(itemTitle, itemAuthor)}
         className="todo-add-button"
       >
         Add Item

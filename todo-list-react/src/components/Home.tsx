@@ -26,11 +26,10 @@ export const Home = () => {
       });
   }, []);
 
-  const handleAddItem = (title: string, body: string, author: string) => {
+  const handleAddItem = (title: string, author: string) => {
     const newItem = {
       id: todos.length + 1,
       title,
-      body,
       author,
     };
     const updatedTodos = [...todos, newItem];

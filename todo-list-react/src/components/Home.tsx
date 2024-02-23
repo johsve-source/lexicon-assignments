@@ -4,7 +4,7 @@ import { TodoForm } from './TodoForm';
 import { ITodo } from '../interfaces';
 
 const apiURL_default = 'http://localhost:3000/blogs';
-const apiURL_secondary = 'http://localhost:3000/blogs';
+const apiURL_secondary = 'http://localhost:8000/blogs';
 
 export const Home = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);

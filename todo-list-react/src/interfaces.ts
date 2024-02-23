@@ -10,6 +10,8 @@ export interface TodoListProps {
   title: string;
   body?: string;
   author?: string;
+}
 
-  handleAddItem: () => void;
+export interface TodoFormProps {
+  handleAddItem: (title: string, body: string, author: string) => void;
 }

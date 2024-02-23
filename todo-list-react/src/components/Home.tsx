@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TodoList } from './TodoList';
+import { TodoForm } from './TodoForm';
 import { ITodo } from '../interfaces';
 
 const apiURL_default = 'http://localhost:3000/blogs';
 const apiURL_secondary = 'http://localhost:3000/blogs';
 
-export const Home = () => {
+export const Home: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -25,12 +26,12 @@ export const Home = () => {
       });
   }, []);
 
-  const handleAddItem = () => {
+  const handleAddItem = (title: string, body: string, author: string) => {
     const newItem = {
       id: todos.length + 1,
-      title: 'Test',
-      body: 'lorem ipsum...',
-      author: 'Henke',
+      title,
+      body,
+      author,
     };
     const updatedTodos = [...todos, newItem];
     setTodos(updatedTodos);
@@ -38,13 +39,8 @@ export const Home = () => {
 
   return (
     <div className="home">
-      {todos && (
-        <TodoList
-          todos={todos}
-          title={'All Todos'}
-          handleAddItem={handleAddItem}
-        />
-      )}
+      <TodoForm handleAddItem={handleAddItem} />
+      {todos && <TodoList todos={todos} title={'All Todos'} />}
       <div className="center">
         {isPending && !error && <div className="loader"></div>}
       </div>

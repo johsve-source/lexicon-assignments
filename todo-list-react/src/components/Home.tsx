@@ -38,7 +38,7 @@ export const Home = () => {
 
   return (
     <div className="home">
-      {!error && <TodoForm handleAddItem={handleAddItem} />}
+      {!isPending && !error && <TodoForm handleAddItem={handleAddItem} />}
       {todos && !error && <TodoList todos={todos} title={'All Todos'} />}
       <div className="center">
         {isPending && !error && <div className="loader"></div>}

@@ -4,9 +4,6 @@ export const Navbar = () => {
       <h1>Todo</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a id="create" href="/create">
-          New Item
-        </a>
       </div>
     </nav>
   );

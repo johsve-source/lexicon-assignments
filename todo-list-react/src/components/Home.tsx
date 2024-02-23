@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { TodoList } from './TodoList';
 import { TodoForm } from './TodoForm';
 import { ITodo } from '../interfaces';

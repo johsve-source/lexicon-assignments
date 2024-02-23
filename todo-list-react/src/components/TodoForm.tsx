@@ -6,13 +6,6 @@ export const TodoForm: React.FC<TodoFormProps> = ({ handleAddItem }) => {
   const [itemBody, setItemBody] = useState('');
   const [itemAuthor, setItemAuthor] = useState('');
 
-  const handleAddItemLocal = () => {
-    handleAddItem(itemTitle, itemBody, itemAuthor);
-    setItemTitle('');
-    setItemBody('');
-    setItemAuthor('');
-  };
-
   return (
     <form onSubmit={(e) => e.preventDefault()} className="todo-form center">
       <label>Title:</label>
@@ -36,7 +29,10 @@ export const TodoForm: React.FC<TodoFormProps> = ({ handleAddItem }) => {
         type="text"
         className="todo-input-author"
       />
-      <button onClick={handleAddItemLocal} className="todo-add-button">
+      <button
+        onClick={() => handleAddItem(itemTitle, itemBody, itemAuthor)}
+        className="todo-add-button"
+      >
         Add Item
       </button>
     </form>

@@ -35,11 +35,13 @@ export const Home = () => {
 
   return (
     <div className="home">
-      <TodoList
-        todos={todos}
-        title={'All Todos'}
-        handleAddItem={handleAddItem}
-      />
+      {todos && (
+        <TodoList
+          todos={todos}
+          title={'All Todos'}
+          handleAddItem={handleAddItem}
+        />
+      )}
       <div className="center">
         {isPending && !error && <div className="loader"></div>}
       </div>

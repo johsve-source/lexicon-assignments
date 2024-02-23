@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { TodoList } from './TodoList';
 import { TodoForm } from './TodoForm';
 import { ITodo } from '../interfaces';
@@ -6,7 +7,7 @@ import { ITodo } from '../interfaces';
 const apiURL_default = 'http://localhost:3000/blogs';
 const apiURL_secondary = 'http://localhost:3000/blogs';
 
-export const Home: React.FC = () => {
+export const Home = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState<string | null>(null);

@@ -39,8 +39,8 @@ export const Home: React.FC = () => {
 
   return (
     <div className="home">
-      <TodoForm handleAddItem={handleAddItem} />
-      {todos && <TodoList todos={todos} title={'All Todos'} />}
+      {!error && <TodoForm handleAddItem={handleAddItem} />}
+      {todos && !error && <TodoList todos={todos} title={'All Todos'} />}
       <div className="center">
         {isPending && !error && <div className="loader"></div>}
       </div>

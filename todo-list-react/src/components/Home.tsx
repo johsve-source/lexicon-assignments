@@ -18,7 +18,7 @@ export const Home = () => {
       .catch((error) => {
         console.error('Error fetching data:', error);
         setIsPending(false);
-        setError('Failed to fetch data. Please try again localStorage.');
+        setError('Failed to fetch data. Please try again.');
       });
   }, []);
 

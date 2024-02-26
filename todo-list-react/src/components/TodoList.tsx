@@ -13,7 +13,6 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
           <div className="todo-preview center" key={todo.id}>
             <h2>{todo.title}</h2>
             <p className="author">{capitalizeFirstLetter(todo.author)}</p>
-            <p>{todo.body}</p>
           </div>
         );
       })}

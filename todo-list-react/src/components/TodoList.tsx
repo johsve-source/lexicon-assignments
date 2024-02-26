@@ -22,7 +22,8 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
             <p className="author">{capitalizeFirstLetter(todo.author)}</p>
             <div>
               {isEditing ? (
-                /* This needs to change to your NEW todo */ <input
+                /* This needs to change to your NEW todo
+                And also a form element around it so you can click ENTER */ <input
                   type="text"
                   onChange={(e) => setTodo(e.target.value)}
                 />

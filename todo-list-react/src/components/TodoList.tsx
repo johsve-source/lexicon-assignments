@@ -20,9 +20,17 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
           <div className="todo-preview center" key={todo.id}>
             <h2>{todo.title}</h2>
             <p className="author">{capitalizeFirstLetter(todo.author)}</p>
-            <button onClick={handleOnClick}>
-              {isEditing ? 'Cancel' : 'Edit'}
-            </button>
+            <div>
+              {isEditing ? (
+                /* This needs to change to your NEW todo */ <input
+                  type="text"
+                  onChange={(e) => setTodo(e.target.value)}
+                />
+              ) : (
+                /* This needs to change to your CURRENT todo */ <p>Test</p>
+              )}
+            </div>
+            <button onClick={handleOnClick}>{isEditing ? 'OK' : 'Edit'}</button>
           </div>
         );
       })}

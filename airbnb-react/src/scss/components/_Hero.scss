@@ -1,0 +1,27 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.2rem;
+
+  .hero--image {
+    display: flex;
+    align-self: center;
+  }
+
+  .hero--title {
+    display: flex;
+    justify-content: flex-start;
+
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  .hero--body {
+    font-size: 1.2rem;
+  }
+
+  .hero--title,
+  .hero--body {
+    margin-left: 3rem;
+  }
+}

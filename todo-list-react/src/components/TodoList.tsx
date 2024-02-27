@@ -6,12 +6,21 @@ const capitalizeFirstLetter = (str: string) => {
 };
 
 export const TodoList = ({ todos, title }: TodoListProps) => {
-  const [isEditing, setIsEditing] = useState(false);
   const [editedContentID, setEditedContentID] = useState<number | null>(null);
   const [editedContent, setEditedContent] = useState<string>('');
 
-  const handleOnClick = () => {
-    setIsEditing((preVal) => !preVal);
+  const handleEditClick = (todoId: number, currentContent: string) => {
+    setEditedContentID(todoId);
+    setEditedContent(currentContent);
+  };
+
+  const handleSaveEdit = (todoId: number) => {
+    console.log(`Saved changes to {${todoId}}: {${editedContent}}`);
+    setEditedContentID(null);
+  };
+
+  const handleCancelEdit = () => {
+    setEditedContentID(null);
   };
 
   return (

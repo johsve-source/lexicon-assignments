@@ -1,10 +1,12 @@
+import Home from './pages/Home';
+
 import 'the-new-css-reset';
-import Navbar from './components/Navbar';
+import './scss/main.scss';
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <Home />
+    </>
   );
 }

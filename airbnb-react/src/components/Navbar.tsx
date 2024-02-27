@@ -1,3 +1,5 @@
+import '../scss/Navbar.scss';
+
 export default function Navbar() {
   return (
     <nav>

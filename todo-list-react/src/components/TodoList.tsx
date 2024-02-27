@@ -23,10 +23,13 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
             <div>
               {isEditing ? (
                 /* This needs to change to your NEW todo
-                And also a form element around it so you can click ENTER */ <input
-                  type="text"
-                  onChange={(e) => setTodo(e.target.value)}
-                />
+                And also a form element around it so you can click ENTER */
+                <form>
+                  <input
+                    type="text"
+                    onChange={(e) => setTodo(e.target.value)}
+                  />
+                </form>
               ) : (
                 /* This needs to change to your CURRENT todo */ <p>Test</p>
               )}

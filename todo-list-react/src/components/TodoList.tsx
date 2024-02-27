@@ -15,7 +15,8 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
   };
 
   const handleSaveEdit = (todoId: number) => {
-    console.log(`Saved changes to {${todoId}}: {${editedContent}}`);
+    console.log(`Saved changes to ID: ${todoId}: ${editedContent}`);
+    setEditedContent(editedContent);
     setEditedContentID(null);
   };
 
@@ -32,20 +33,23 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
             <h2>{todo.title}</h2>
             <p className="author">{capitalizeFirstLetter(todo.author)}</p>
             <div>
-              {isEditing ? (
-                /* This needs to change to your NEW todo
-                And also a form element around it so you can click ENTER */
+              {editedContentID === todo.id ? (
                 <form>
                   <input
                     type="text"
-                    onChange={(e) => setTodo(e.target.value)}
+                    value={editedContent}
+                    onChange={(e) => setEditedContent(e.target.value)}
                   />
+                  <button onClick={() => handleSaveEdit(todo.id)}>OK</button>
+                  <button onClick={handleCancelEdit}>Cancel</button>
                 </form>
               ) : (
-                /* This needs to change to your CURRENT todo */ <p>Test</p>
+                <p>{todo.title}</p>
               )}
             </div>
-            <button onClick={handleOnClick}>{isEditing ? 'OK' : 'Edit'}</button>
+            <button onClick={() => handleEditClick(todo.id, todo.title)}>
+              {editedContentID === todo.id ? null : 'Edit'}
+            </button>
           </div>
         );
       })}

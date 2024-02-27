@@ -3,7 +3,7 @@ import './scss/main.scss';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Navbar />
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

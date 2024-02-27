@@ -44,7 +44,7 @@ export const TodoList = ({ todos, title }: TodoListProps) => {
                   <button onClick={handleCancelEdit}>Cancel</button>
                 </form>
               ) : (
-                <p>{todo.title}</p>
+                <p></p>
               )}
             </div>
             <button onClick={() => handleEditClick(todo.id, todo.title)}>

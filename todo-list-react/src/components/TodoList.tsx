@@ -7,6 +7,8 @@ const capitalizeFirstLetter = (str: string) => {
 
 export const TodoList = ({ todos, title }: TodoListProps) => {
   const [isEditing, setIsEditing] = useState(false);
+  const [editedContentID, setEditedContentID] = useState<number | null>(null);
+  const [editedContent, setEditedContent] = useState(false);
 
   const handleOnClick = () => {
     setIsEditing((preVal) => !preVal);

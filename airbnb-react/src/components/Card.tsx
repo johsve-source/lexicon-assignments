@@ -10,7 +10,7 @@ export default function Card() {
             className="card--image"
             src="/katie-zaferes.png"
             alt="Image of Katie Zaferes"
-          ></img>
+          />
         </section>
         <section className="card--info-container">
           <p className="card--review-text">
@@ -18,7 +18,7 @@ export default function Card() {
               className="card--star"
               src="/star.png"
               alt="Image of a review star"
-            ></img>
+            />
             5.0 <span className="card--review-location">(6) - USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>
@@ -34,7 +34,7 @@ export default function Card() {
             className="card--image"
             src="/katie-zaferes.png"
             alt="Image of Katie Zaferes"
-          ></img>
+          />
         </section>
         <section className="card--info-container">
           <p className="card--review-text">
@@ -42,7 +42,7 @@ export default function Card() {
               className="card--star"
               src="/star.png"
               alt="Image of a review star"
-            ></img>
+            />
             5.0 <span className="card--review-location">(6) - USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>
@@ -61,7 +61,7 @@ export default function Card() {
             className="card--image"
             src="/katie-zaferes.png"
             alt="Image of Katie Zaferes"
-          ></img>
+          />
         </section>
         <section className="card--info-container">
           <p className="card--review-text">
@@ -69,7 +69,7 @@ export default function Card() {
               className="card--star"
               src="/star.png"
               alt="Image of a review star"
-            ></img>
+            />
             5.0 <span className="card--review-location">(6) - USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>

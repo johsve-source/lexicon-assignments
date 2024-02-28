@@ -12,12 +12,32 @@
 
     .card--image-container {
       margin-block: 5px;
+      position: relative;
+      .card--image-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding: 0.1rem;
+        width: 80px;
+        position: absolute;
+        top: 2%;
+        left: 3%;
+
+        border-radius: 3.5px;
+        -webkit-border-radius: 3.5px;
+        -moz-border-radius: 3.5px;
+        -ms-border-radius: 3.5px;
+        -o-border-radius: 3.5px;
+        background-color: rgba(255, 255, 255, 1);
+      }
       .card--image {
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        width: 100%;
       }
     }
 

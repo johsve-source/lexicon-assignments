@@ -8,7 +8,7 @@ export default function Card() {
           alt="Image of Katie Zaferes"
         ></img>
       </section>
-      <section className="card--review-container">
+      <section className="card--info-container">
         <img
           className="card--star"
           src="/star.png"
@@ -17,11 +17,9 @@ export default function Card() {
         <p className="card--review-text">
           5.0 <span className="card--review-location">(6) - USA</span>
         </p>
-      </section>
-      <section className="card--price-container">
         <p className="card--desc">Life lessons with Katie Zaferes</p>
         <p className="card--price">
-          <span className="bold">From $136</span> / person
+          <span className=".card--price-bold">From $136</span> / person
         </p>
       </section>
     </div>

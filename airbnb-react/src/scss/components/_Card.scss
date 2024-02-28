@@ -10,6 +10,10 @@
     margin: 1.5rem 1rem;
     font-size: 0.85rem;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .card--image-container {
       margin-block: 5px;
       position: relative;

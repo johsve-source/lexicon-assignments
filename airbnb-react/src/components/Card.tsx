@@ -13,69 +13,18 @@ export default function Card() {
           />
         </section>
         <section className="card--info-container">
-          <p className="card--review-text">
+          <h3 className="card--review-text">
             <img
               className="card--star"
               src="/star.png"
               alt="Image of a review star"
             />
             5.0 <span className="card--review-location">(6) • USA</span>
-          </p>
-          <p className="card--desc">Life lessons with Katie Zaferes</p>
-          <p className="card--price">
+          </h3>
+          <h2 className="card--desc">Life lessons with Katie Zaferes</h2>
+          <h4 className="card--price">
             <span className="card--price-bold">From $136</span> / person
-          </p>
-        </section>
-      </article>
-
-      <article className="card-container poppins-regular">
-        <section className="card--image-container">
-          <img
-            className="card--image"
-            src="/katie-zaferes.png"
-            alt="Image of Katie Zaferes"
-          />
-        </section>
-        <section className="card--info-container">
-          <p className="card--review-text">
-            <img
-              className="card--star"
-              src="/star.png"
-              alt="Image of a review star"
-            />
-            5.0 <span className="card--review-location">(6) • USA</span>
-          </p>
-          <p className="card--desc">Life lessons with Katie Zaferes</p>
-          <p className="card--price">
-            <span className="card--price-bold">From $136</span> / person
-          </p>
-        </section>
-      </article>
-
-      <article className="card-container poppins-regular">
-        <section className="card--image-container">
-          <div className="card--image-banner">
-            <p>ONLINE</p>
-          </div>
-          <img
-            className="card--image"
-            src="/katie-zaferes.png"
-            alt="Image of Katie Zaferes"
-          />
-        </section>
-        <section className="card--info-container">
-          <p className="card--review-text">
-            <img
-              className="card--star"
-              src="/star.png"
-              alt="Image of a review star"
-            />
-            5.0 <span className="card--review-location">(6) • USA</span>
-          </p>
-          <p className="card--desc">Life lessons with Katie Zaferes</p>
-          <p className="card--price">
-            <span className="card--price-bold">From $136</span> / person
-          </p>
+          </h4>
         </section>
       </article>
     </section>

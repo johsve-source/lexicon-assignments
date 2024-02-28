@@ -1,12 +1,10 @@
-import HeroImg from '../components/hero/HeroImg';
-import HeroTxt from '../components/hero/HeroTxt';
+import Hero from '../components/Hero';
 import Activities from '../components/Activities';
 
 export default function Main() {
   return (
     <main>
-      <HeroImg />
-      <HeroTxt />
+      <Hero />
       <Activities />
     </main>
   );

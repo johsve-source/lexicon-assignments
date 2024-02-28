@@ -1,18 +1,41 @@
 .card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 2rem;
+  font-size: 0.85rem;
+
   .card--image-container {
-    .card--star {
+    margin-block: 5px;
+    .card--image {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
     }
   }
 
   .card--info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .card--review-text {
+      color: rgba(0, 0, 0, 0.7);
+      .card--star {
+        width: 15px;
+        height: auto;
+        margin-right: 0.5rem;
+      }
       .card--review-location {
+        color: rgba(0, 0, 0, 0.5);
       }
     }
     .card--desc {
+      margin-block: 8px;
     }
     .card--price {
       .card--price-bold {
+        font-weight: 600;
       }
     }
   }

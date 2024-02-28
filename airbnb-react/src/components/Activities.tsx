@@ -1,7 +1,9 @@
+import Card from './Card';
+
 export default function Activities() {
   return (
-    <div>
-      <p>Activities Component</p>
-    </div>
+    <section className="activities-container">
+      <Card />
+    </section>
   );
 }

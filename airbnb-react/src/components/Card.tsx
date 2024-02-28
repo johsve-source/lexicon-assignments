@@ -19,7 +19,7 @@ export default function Card() {
               src="/star.png"
               alt="Image of a review star"
             />
-            5.0 <span className="card--review-location">(6) - USA</span>
+            5.0 <span className="card--review-location">(6) • USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>
           <p className="card--price">
@@ -43,7 +43,7 @@ export default function Card() {
               src="/star.png"
               alt="Image of a review star"
             />
-            5.0 <span className="card--review-location">(6) - USA</span>
+            5.0 <span className="card--review-location">(6) • USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>
           <p className="card--price">
@@ -70,7 +70,7 @@ export default function Card() {
               src="/star.png"
               alt="Image of a review star"
             />
-            5.0 <span className="card--review-location">(6) - USA</span>
+            5.0 <span className="card--review-location">(6) • USA</span>
           </p>
           <p className="card--desc">Life lessons with Katie Zaferes</p>
           <p className="card--price">

@@ -3,6 +3,9 @@ export default function Card() {
     <section className="cards-container">
       <article className="card-container poppins-regular">
         <section className="card--image-container">
+          <div className="card--image-banner">
+            <p>SOLD OUT</p>
+          </div>
           <img
             className="card--image"
             src="/katie-zaferes.png"
@@ -24,6 +27,7 @@ export default function Card() {
           </p>
         </section>
       </article>
+
       <article className="card-container poppins-regular">
         <section className="card--image-container">
           <img
@@ -47,8 +51,12 @@ export default function Card() {
           </p>
         </section>
       </article>
+
       <article className="card-container poppins-regular">
         <section className="card--image-container">
+          <div className="card--image-banner">
+            <p>ONLINE</p>
+          </div>
           <img
             className="card--image"
             src="/katie-zaferes.png"

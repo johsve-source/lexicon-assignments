@@ -19,7 +19,7 @@ export default function Card() {
         </p>
         <p className="card--desc">Life lessons with Katie Zaferes</p>
         <p className="card--price">
-          <span className=".card--price-bold">From $136</span> / person
+          <span className="card--price-bold">From $136</span> / person
         </p>
       </section>
     </div>

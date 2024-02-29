@@ -11,7 +11,13 @@ export default function Card({ card }: ICardsProps) {
     banner: '',
   });
 
+  const [isOnline, setIsOnline] = useState(false);
+  const [isSoldOut, setIsSoldOut] = useState(false);
+
   useEffect(() => {
+    setIsOnline(true);
+    setIsSoldOut(false);
+
     setCards({
       review: card.review,
       description: card.description,
@@ -33,7 +39,18 @@ export default function Card({ card }: ICardsProps) {
     <article className="card-container poppins-regular">
       <section className="card--image-container">
         {card.banner && (
-          <div className="card--image-banner">
+          <div
+            className={
+              'card--image-banner' +
+              (card.banner.toLowerCase().includes('online') && isOnline === true
+                ? ' card--online'
+                : '') +
+              (card.banner.toLowerCase().includes('sold out') &&
+              isSoldOut === true
+                ? ' card--sold-out'
+                : '')
+            }
+          >
             <p>{card.banner}</p>
           </div>
         )}

@@ -36,6 +36,17 @@
         -o-border-radius: 3.5px;
         background-color: rgba(255, 255, 255, 1);
       }
+
+      .card--online {
+        background-color: green;
+        color: white;
+      }
+
+      .card--sold-out {
+        background-color: red;
+        color: white;
+      }
+
       .card--image {
         border-radius: 10px;
         -webkit-border-radius: 10px;

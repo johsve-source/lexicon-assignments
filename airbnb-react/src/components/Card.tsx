@@ -3,6 +3,7 @@ import ICardsProps from '../interfaces';
 
 export default function Card({ card }: ICardsProps) {
   const [, setCards] = useState({
+    id: -1,
     review: 0,
     description: '',
     location: '',
@@ -19,6 +20,7 @@ export default function Card({ card }: ICardsProps) {
     setIsSoldOut(false);
 
     setCards({
+      id: card.id,
       review: card.review,
       description: card.description,
       location: card.location,
@@ -27,6 +29,7 @@ export default function Card({ card }: ICardsProps) {
       banner: card.banner ?? '',
     });
   }, [
+    card.id,
     card.description,
     card.location,
     card.price,

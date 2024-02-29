@@ -1,8 +1,9 @@
 import Card from './Card';
 
 export default function Activities() {
-  const mockCard = [
+  const mockCards = [
     {
+      id: 1,
       review: 6,
       description: 'Life lessons with Katie Zaferes',
       location: 'USA',
@@ -11,6 +12,7 @@ export default function Activities() {
       banner: 'Online',
     },
     {
+      id: 2,
       review: 3,
       description: 'Fly with John Wheeler',
       location: 'Sweden',
@@ -18,6 +20,7 @@ export default function Activities() {
       image: '/public/katie-zaferes.png',
     },
     {
+      id: 3,
       review: 388,
       description: 'Photograph Lessons with John Travolta',
       location: 'USA',
@@ -29,9 +32,9 @@ export default function Activities() {
 
   return (
     <section className="cards-container">
-      <Card card={mockCard[0]} />
-      <Card card={mockCard[1]} />
-      <Card card={mockCard[2]} />
+      {mockCards.map((card) => (
+        <Card key={card.id} card={card} />
+      ))}
     </section>
   );
 }

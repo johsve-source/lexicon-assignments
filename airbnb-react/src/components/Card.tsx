@@ -1,38 +1,43 @@
 import { useEffect, useState } from 'react';
 import ICardsProps from '../interfaces';
-('../interfaces');
 
 export default function Card({ card }: ICardsProps) {
-  const [review, setReview] = useState<number>(0);
-  const [description, setDescription] = useState<string>('');
-  const [location, setLocation] = useState<string>('');
-  const [price, setPrice] = useState<number>(0);
+  const [, setCards] = useState({
+    review: 0,
+    description: '',
+    location: '',
+    price: 0,
+    image: '',
+  });
 
   useEffect(() => {
-    setReview(card.review);
-    setDescription(card.description);
-    setLocation(card.location);
-    setPrice(card.price);
+    setCards({
+      review: card.review,
+      description: card.description,
+      location: card.location,
+      price: card.price,
+      image: card.image,
+    });
 
     const setInitialValues = () => {
-      setReview(0);
-      setDescription('Not set');
-      setLocation('Not set');
-      setPrice(0);
+      setCards({
+        review: 0,
+        description: '',
+        location: '',
+        price: 0,
+        image: '',
+      });
     };
-    if (!review && !description && !location && !price) {
+    if (
+      !card.review &&
+      !card.description &&
+      !card.location &&
+      !card.price &&
+      !card.image
+    ) {
       setInitialValues();
     }
-  }, [
-    card.description,
-    card.location,
-    card.price,
-    card.review,
-    description,
-    location,
-    price,
-    review,
-  ]);
+  }, [card.description, card.location, card.price, card.review, card.image]);
 
   return (
     <article className="card-container poppins-regular">
@@ -42,7 +47,7 @@ export default function Card({ card }: ICardsProps) {
         </div>
         <img
           className="card--image"
-          src="/katie-zaferes.png"
+          src={card.image}
           alt="Image of Katie Zaferes"
         />
       </section>

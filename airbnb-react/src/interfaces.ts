@@ -4,6 +4,7 @@ interface ICards {
   location: string;
   description: string;
   price: number;
+  banner?: string;
 }
 
 export default interface ICardsProps {

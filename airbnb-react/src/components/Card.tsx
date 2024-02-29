@@ -13,11 +13,9 @@ export default function Card({ card }: ICardsProps) {
   });
 
   const [isOnline, setIsOnline] = useState(false);
-  const [isSoldOut, setIsSoldOut] = useState(false);
 
   useEffect(() => {
     setIsOnline(true);
-    setIsSoldOut(false);
 
     setCards({
       id: card.id,
@@ -47,10 +45,6 @@ export default function Card({ card }: ICardsProps) {
               'card--image-banner' +
               (card.banner.toLowerCase().includes('online') && isOnline === true
                 ? ' card--online'
-                : '') +
-              (card.banner.toLowerCase().includes('sold out') &&
-              isSoldOut === true
-                ? ' card--sold-out'
                 : '')
             }
           >

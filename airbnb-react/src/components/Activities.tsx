@@ -8,6 +8,7 @@ export default function Activities() {
       location: 'USA',
       price: 136,
       image: '/public/katie-zaferes.png',
+      banner: 'Online',
     },
     {
       review: 3,
@@ -22,6 +23,7 @@ export default function Activities() {
       location: 'USA',
       price: 923,
       image: '/public/katie-zaferes.png',
+      banner: 'SOLD OUT',
     },
   ];
 

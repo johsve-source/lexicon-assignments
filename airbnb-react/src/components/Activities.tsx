@@ -23,7 +23,7 @@ export default function Activities() {
   ];
 
   return (
-    <section className="activities-container">
+    <section className="cards-container">
       <Card card={mockCard[0]} />
       <Card card={mockCard[1]} />
       <Card card={mockCard[2]} />

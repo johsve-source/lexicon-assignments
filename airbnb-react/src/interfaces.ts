@@ -1,4 +1,5 @@
 interface ICards {
+  image: string;
   review: number;
   location: string;
   description: string;

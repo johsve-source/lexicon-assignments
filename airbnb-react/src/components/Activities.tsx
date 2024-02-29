@@ -8,7 +8,7 @@ export default function Activities() {
       description: 'Life lessons with Katie Zaferes',
       location: 'USA',
       price: 136,
-      image: '/public/katie-zaferes.png',
+      image: '/katie-zaferes.png',
       banner: 'Online',
     },
     {
@@ -17,7 +17,7 @@ export default function Activities() {
       description: 'Fly with John Wheeler',
       location: 'Sweden',
       price: 655,
-      image: '/public/katie-zaferes.png',
+      image: '/katie-zaferes.png',
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export default function Activities() {
       description: 'Photograph Lessons with John Travolta',
       location: 'USA',
       price: 923,
-      image: '/public/katie-zaferes.png',
+      image: '/katie-zaferes.png',
       banner: 'SOLD OUT',
     },
   ];

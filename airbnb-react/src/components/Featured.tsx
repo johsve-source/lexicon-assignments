@@ -1,6 +1,6 @@
 import Card from './Card';
 
-export default function Activities() {
+export default function Featured() {
   const mockCards = [
     {
       id: 1,

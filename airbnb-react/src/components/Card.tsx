@@ -8,6 +8,7 @@ export default function Card({ card }: ICardsProps) {
     location: '',
     price: 0,
     image: '',
+    banner: '',
   });
 
   useEffect(() => {
@@ -17,34 +18,25 @@ export default function Card({ card }: ICardsProps) {
       location: card.location,
       price: card.price,
       image: card.image,
+      banner: card.banner ?? '',
     });
-
-    const setInitialValues = () => {
-      setCards({
-        review: 0,
-        description: '',
-        location: '',
-        price: 0,
-        image: '',
-      });
-    };
-    if (
-      !card.review &&
-      !card.description &&
-      !card.location &&
-      !card.price &&
-      !card.image
-    ) {
-      setInitialValues();
-    }
-  }, [card.description, card.location, card.price, card.review, card.image]);
+  }, [
+    card.description,
+    card.location,
+    card.price,
+    card.review,
+    card.image,
+    card.banner,
+  ]);
 
   return (
     <article className="card-container poppins-regular">
       <section className="card--image-container">
-        <div className="card--image-banner">
-          <p>SOLD OUT</p>
-        </div>
+        {card.banner && (
+          <div className="card--image-banner">
+            <p>{card.banner}</p>
+          </div>
+        )}
         <img
           className="card--image"
           src={card.image}

@@ -1,16 +1,32 @@
 import Card from './Card';
 
 export default function Activities() {
-  const mockCard = {
-    review: 6,
-    description: 'Life lessons with Katie Zaferes',
-    location: 'USA',
-    price: 136,
-  };
+  const mockCard = [
+    {
+      review: 6,
+      description: 'Life lessons with Katie Zaferes',
+      location: 'USA',
+      price: 136,
+    },
+    {
+      review: 3,
+      description: 'Fly with John Wheeler',
+      location: 'Sweden',
+      price: 655,
+    },
+    {
+      review: 388,
+      description: 'Photograph Lessons with John Travolta',
+      location: 'USA',
+      price: 923,
+    },
+  ];
 
   return (
     <section className="activities-container">
-      <Card card={mockCard} />
+      <Card card={mockCard[0]} />
+      <Card card={mockCard[1]} />
+      <Card card={mockCard[2]} />
     </section>
   );
 }

@@ -1,3 +1,7 @@
 export default function AddActivity() {
-  return <></>;
+  return (
+    <>
+      <div>Add Activity Component</div>
+    </>
+  );
 }

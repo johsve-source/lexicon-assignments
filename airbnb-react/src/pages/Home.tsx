@@ -1,9 +1,11 @@
-import Main from '../components/Main';
+import Hero from '../components/Hero';
+import Featured from '../components/Featured';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Main />
-    </div>
+    <main>
+      <Hero />
+      <Featured />
+    </main>
   );
 }

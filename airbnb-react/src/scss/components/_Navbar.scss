@@ -11,5 +11,31 @@ nav {
     max-width: 100%;
     width: auto;
     height: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .nav--links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    color: #e45257;
+  }
+
+  .nav--link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.9);
+    }
   }
 }

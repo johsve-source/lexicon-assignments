@@ -10,13 +10,13 @@ import AddActivity from './pages/AddActivity';
 
 export default function App() {
   return (
-    <Routes>
-      <Router>
-        <Navbar />
+    <Router>
+      <Navbar />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add-activity" element={<AddActivity />} />
-        <Footer />
-      </Router>
-    </Routes>
+      </Routes>
+      <Footer />
+    </Router>
   );
 }

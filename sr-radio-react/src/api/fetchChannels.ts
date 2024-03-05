@@ -28,7 +28,7 @@ export const useFetchChannels = () => {
         }));
         setChannels(loadedChannels);
       } catch (error) {
-        setError(error);
+        setError(error.message);
       } finally {
         setIsLoading(false);
       }

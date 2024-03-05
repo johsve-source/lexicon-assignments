@@ -9,7 +9,7 @@ interface Channel {
 export const useFetchChannels = () => {
   const [channels, setChannels] = useState<Channel[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>('');
 
   useEffect(() => {
     const fetchChannels = async () => {

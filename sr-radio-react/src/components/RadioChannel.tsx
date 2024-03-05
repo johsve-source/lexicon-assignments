@@ -31,9 +31,12 @@ export const RadioChannel: React.FC<ChannelProps> = ({
   return (
     <div className="radio-channel">
       <h2>{name}</h2>
-      <audio controls src={liveaudio.url}>
-        Your browser does not support the audio element.
-      </audio>
+      if(liveaudio)
+      {
+        <audio controls src={liveaudio.url}>
+          Your browser does not support the audio element.
+        </audio>
+      }
       <button onClick={handleFavoriteClick}>
         {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
       </button>

@@ -10,13 +10,46 @@ body {
   flex-direction: column;
 }
 
-img {
-  width: 100px;
+.title {
+  margin-bottom: 20px;
+}
+
+.channel-name {
   margin-left: 10px;
 }
 
-ul {
+.channels {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.channel {
+  margin-bottom: 10px;
+}
+
+.channel-audio {
+  display: none;
+  margin-top: 10px;
+}
+
+.channel-source {
+  display: none;
+}
+
+.channel-image {
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.channel:hover .channel-audio {
+  display: block;
+}
+
+.channel:hover .channel-source {
+  display: block;
 }

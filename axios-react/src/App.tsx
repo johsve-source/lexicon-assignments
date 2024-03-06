@@ -19,14 +19,14 @@ function App() {
       url="https://api.sr.se/api/v2/channels/?format=json"
       render={(data) => (
         <div className='container'>
-          <h2>Radio Channels</h2>
-          <ul>
+          <h2 className='title'>Radio Channels</h2>
+          <ul className='channels'>
             {data.channels.map((channel: Channel) => (
-              <li key={channel.id}>
-                <img src={channel.image} alt={channel.name} />
-                {channel.name}
-                <audio controls>
-                  <source src={channel.liveaudio.url} type="audio/mpeg" />
+              <li className='channel' key={channel.id}>
+                <img className='channel-image' src={channel.image} alt={channel.name} />
+                <span className='channel-name'>{channel.name}</span>
+                <audio className='channel-audio' controls>
+                  <source className='channel-source' src={channel.liveaudio.url} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
               </li>

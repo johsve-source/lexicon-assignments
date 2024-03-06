@@ -1,8 +1,10 @@
-import { useState } from 'react';
 import { useFavorites } from '../../hooks/useFavorites';
+import { useFetchChannels } from '../../api/fetchChannels';
+import { RadioChannelList } from '../../components/RadioChannelList';
 
 export default function Home() {
-  const [channels, setChannels] = useState([]);
+  const { channels, isLoading, error } = useFetchChannels();
+
   const { favorites, addFavorite, removeFavorite } = useFavorites();
 
   return (
@@ -11,7 +13,12 @@ export default function Home() {
         <h1>Channels</h1>
       </header>
       <main>
-        <p>Channels</p>
+        <RadioChannelList
+          channels={channels}
+          favorites={favorites}
+          onAddFavorite={addFavorite}
+          onRemoveFavorite={removeFavorite}
+        />
       </main>
     </div>
   );

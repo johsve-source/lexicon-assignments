@@ -28,16 +28,14 @@ const FetchData: React.FC<FetchDataProps> = ({ url, render, autoFetch = false })
 
   // useEffect to automatically fetch data if autoFetch is true
   useEffect(() => {
-    if (autoFetch) {
-      fetchData();
-    }
+    {autoFetch && fetchData();}
   }, [url, autoFetch]);
 
   return (
     <div>
-      {!autoFetch && <button onClick={fetchData}>Fetch Data</button>}
-      {loading && <div>Loading...</div>}
-      {error && <div>{error}</div>}
+      {!autoFetch && <button className='autofetch-button' onClick={fetchData}>Fetch Data</button>}
+      {loading && <div className='autofetch-loading'>Loading...</div>}
+      {error && <div className='autofetch-error'>{error}</div>}
       {data && render(data)}
     </div>
   );

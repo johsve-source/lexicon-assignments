@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(27, 27, 27, 0.95);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.channel {
+  box-sizing: border-box;
+}
+
+.channel-card {
+  border: 1px solid rgba(163, 163, 163, 0.1);
+  background: rgba(163, 163, 163, 0.1);
+  box-sizing: border-box;
+}
+
+.channel-image {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.channel-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.channel-name {
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.channel-audio {
+  width: 100%;
+}

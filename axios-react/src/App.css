@@ -1,5 +1,13 @@
 body {
   font-family: Arial, sans-serif;
+  background: rgb(27, 27, 27, 0.95);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -14,42 +22,41 @@ body {
   margin-bottom: 20px;
 }
 
-.channel-name {
-  margin-left: 10px;
-}
-
 .channels {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 10px;
 }
 
 .channel {
-  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
-.channel-audio {
-  display: none;
-  margin-top: 10px;
-}
-
-.channel-source {
-  display: none;
+.channel-card {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .channel-image {
-  width: 100px;
-  margin-left: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.channel-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.channel-name {
+  margin-top: 10px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.channel:hover .channel-audio {
-  display: block;
-}
-
-.channel:hover .channel-source {
-  display: block;
+.channel-audio {
+  width: 100%;
 }

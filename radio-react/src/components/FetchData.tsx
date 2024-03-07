@@ -37,7 +37,7 @@ const FetchData: React.FC<FetchDataProps> = ({
 
   return (
     <div>
-      {data && render(data)}
+      {data?.channels && render({ channels: data.channels })}
       {loading && <div>Loading...</div>}
       {error && <div>Error: {error}</div>}
       {!loading && !hasMore && <div>No more data</div>}

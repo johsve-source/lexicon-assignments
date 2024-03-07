@@ -1,52 +1,48 @@
-import axios from 'axios';
-import { useState, useEffect, useCallback } from 'react';
-
+import React, { useEffect } from 'react';
 import { Channel } from '../interfaces/IChannel';
 
 interface FetchDataProps {
-  url: string;
+  data: { channels: Channel[] } | null;
   render: (data: { channels: Channel[] }) => JSX.Element;
-  autoFetch?: boolean;
+  loading: boolean;
+  error: string;
+  hasMore: boolean;
+  fetchMore: () => void;
 }
 
-export const FetchData: React.FC<FetchDataProps> = ({
-  url,
+const FetchData: React.FC<FetchDataProps> = ({
+  data,
   render,
-  autoFetch = false,
+  loading,
+  error,
+  hasMore,
+  fetchMore,
 }) => {
-  const [data, setData] = useState<{ channels: Channel[] } | null>(null);
-  const [error, setError] = useState<string>('');
-  const [loading, setLoading] = useState<boolean>(false);
-
-  const fetchData = useCallback(async () => {
-    setLoading(true);
-    try {
-      const response = await axios.get(url);
-      setData(response.data);
-      setError('');
-    } catch (error) {
-      setError('There was an error fetching the data');
-      setData(null);
-    } finally {
-      setLoading(false);
-    }
-  }, [url]);
-
-  // useEffect to automatically fetch data if autoFetch is true
   useEffect(() => {
-    autoFetch && fetchData();
-  }, [url, autoFetch, fetchData]);
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop ===
+        document.documentElement.offsetHeight
+      ) {
+        fetchMore();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [fetchMore]);
 
   return (
     <div>
-      {!autoFetch && (
-        <button className="autofetch-button" onClick={fetchData}>
-          Fetch Data
-        </button>
-      )}
-      {loading && <div className="autofetch-loading">Loading...</div>}
-      {error && <div className="autofetch-error">{error}</div>}
       {data && render(data)}
+      {loading && <div>Loading...</div>}
+      {error && <div>Error: {error}</div>}
+      {!loading && !hasMore && <div>No more data</div>}
     </div>
   );
 };
+
+export default FetchData;

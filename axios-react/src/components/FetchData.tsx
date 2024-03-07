@@ -1,20 +1,22 @@
 import axios from 'axios';
 import { useState, useEffect, useCallback } from 'react';
 
+import { Channel } from '../interfaces/IChannel';
+
 interface FetchDataProps {
   url: string;
-  render: (data: unknown) => JSX.Element;
+  render: (data: { channels: Channel[] }) => JSX.Element;
   autoFetch?: boolean;
 }
 
-const FetchData: React.FC<FetchDataProps> = ({
+export const FetchData: React.FC<FetchDataProps> = ({
   url,
   render,
   autoFetch = false,
 }) => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState<{ channels: Channel[] } | null>(null);
+  const [error, setError] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
 
   const fetchData = useCallback(async () => {
     setLoading(true);
@@ -48,5 +50,3 @@ const FetchData: React.FC<FetchDataProps> = ({
     </div>
   );
 };
-
-export default FetchData;

@@ -18,9 +18,11 @@ const FetchChannels: React.FC = () => {
       const audioElement = audioRef.current;
       if (audioElement) {
         if (audioElement.paused) {
+          audioElement.controls = true;
           audioElement.play();
         } else {
           audioElement.pause();
+          audioElement.controls = false;
         }
       }
     } else {

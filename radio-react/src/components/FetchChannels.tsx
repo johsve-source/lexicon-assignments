@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
-import FetchData from './FetchData';
 import { Channel } from '../interfaces/IChannel';
-import '../Normalize.css';
+import FetchData from './FetchData';
 
 const FetchChannels: React.FC = () => {
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null);
@@ -25,24 +24,30 @@ const FetchChannels: React.FC = () => {
         }
       }
     } else {
+      setSelectedChannel((prevChannel) =>
+        prevChannel === channelId ? null : channelId
+      );
       setPlayingChannel(channelId);
-      setSelectedChannel(channelId);
     }
   };
 
-  useEffect(() => {
+  const handleAudioPlayback = useCallback(() => {
     const audioElement = audioRef.current;
     if (audioElement) {
-      audioElement.pause(); // Pause the audio before changing the source
+      audioElement.pause();
       audioElement.src =
         data?.channels.find((c) => c.id === selectedChannel)?.liveaudio.url ||
         '';
-      audioElement.load(); // Load the new source
+      audioElement.load();
       audioElement.play().catch((error) => {
         setAudioError('Error playing audio: ' + error.message);
       });
     }
   }, [selectedChannel, data]);
+
+  useEffect(() => {
+    handleAudioPlayback();
+  }, [handleAudioPlayback, selectedChannel, data]);
 
   return (
     <FetchData

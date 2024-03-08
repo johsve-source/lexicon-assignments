@@ -5,6 +5,7 @@
   "type": "module",
   "homepage": "https://johsve-source.github.io/lexicon-assignments/radio-react/",
   "scripts": {
+    "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",

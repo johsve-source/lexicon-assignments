@@ -61,14 +61,17 @@ ul {
   position: sticky;
   bottom: 0;
   width: 100%;
-  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
   z-index: 1;
 }
 
 .audio-controls {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgba(99, 99, 99, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 8px 12px;
+  width: 100%;
 }
 
 .channel-audio {

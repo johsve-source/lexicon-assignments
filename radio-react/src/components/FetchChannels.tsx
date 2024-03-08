@@ -35,10 +35,10 @@ const FetchChannels: React.FC = () => {
 
   const handleAudioPlayback = useCallback(() => {
     const audioElement = audioRef.current;
-    if (audioElement) {
+    if (audioElement && data) {
       audioElement.pause();
       audioElement.src =
-        data?.channels.find((c) => c.id === selectedChannel)?.liveaudio.url ||
+        data.channels.find((c) => c.id === selectedChannel)?.liveaudio.url ||
         '';
       audioElement.load();
       audioElement.play().catch((error) => {
@@ -52,61 +52,65 @@ const FetchChannels: React.FC = () => {
   }, [handleAudioPlayback, selectedChannel, data]);
 
   return (
-    <FetchData
-      data={data}
-      render={(data: { channels: Channel[] }) => (
-        <div className="container">
-          <ul className="channels">
-            {data.channels.map((channel: Channel) => (
-              <li
-                key={channel.id}
-                className={`channel-card ${
-                  selectedChannel === channel.id ? 'selected' : ''
-                }`}
-                onClick={() => handlePlay(channel.id)}
-              >
-                <img
-                  className="channel-image"
-                  src={channel.image}
-                  alt={channel.name}
-                />
-                <span className="channel-tagline">{channel.tagline}</span>
-              </li>
-            ))}
-          </ul>
-
-          {selectedChannel && (
-            <div className="sticky-audio-bar">
-              <div className="audio-controls">
-                <audio
-                  ref={audioRef}
-                  className="channel-audio"
-                  controls
-                  autoPlay
-                  onPlay={() => setAudioError(null)}
-                  onError={() => setAudioError('Error playing audio.')}
-                >
-                  <source
-                    className="channel-source"
-                    src={
-                      data.channels.find((c) => c.id === selectedChannel)
-                        ?.liveaudio.url
-                    }
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-                {audioError && <div className="audio-error">{audioError}</div>}
-              </div>
+    <div>
+      {data && (
+        <FetchData
+          data={data}
+          render={(data: { channels: Channel[] }) => (
+            <div className="container">
+              <ul className="channels">
+                {data.channels.map((channel: Channel) => (
+                  <li
+                    key={channel.id}
+                    className={`channel-card ${
+                      selectedChannel === channel.id ? 'selected' : ''
+                    }`}
+                    onClick={() => handlePlay(channel.id)}
+                  >
+                    <img
+                      className="channel-image"
+                      src={channel.image}
+                      alt={channel.name}
+                    />
+                    <span className="channel-tagline">{channel.tagline}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
+          loading={loading}
+          error={error}
+          hasMore={hasMore}
+          fetchMore={fetchMore}
+        />
+      )}
+
+      {selectedChannel && (
+        <div className="sticky-audio-bar">
+          <div className="audio-controls">
+            <audio
+              ref={audioRef}
+              className="channel-audio"
+              controls
+              autoPlay
+              onPlay={() => setAudioError(null)}
+              onError={() => setAudioError('Error playing audio.')}
+            >
+              <source
+                className="channel-source"
+                src={
+                  data?.channels.find((c) => c.id === selectedChannel)
+                    ?.liveaudio.url
+                }
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio element.
+            </audio>
+            {audioError && <div className="audio-error">{audioError}</div>}
+          </div>
         </div>
       )}
-      loading={loading}
-      error={error}
-      hasMore={hasMore}
-      fetchMore={fetchMore}
-    />
+    </div>
   );
 };
 
